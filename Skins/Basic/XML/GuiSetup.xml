@@ -1,0 +1,81 @@
+<gui
+  title="Setup"
+  width="160"
+  height="160"
+  onback="gotopage Home"
+  cachetype="-1"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="1" y="1"
+    width="62" height="13"
+    active="0"
+    framed="0"
+    source="guiname"
+  />
+
+  <button
+    x="65" y="1"
+    width="28" height="13"
+    active="0"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    x="20" y="22"
+    width="120" height="110"
+    labeldx="4" labeldy="4"
+    rows="5" columns="1"
+    look="7016" states="2" stretch="6"
+  >
+
+    <cell
+      label="Guide Setup"
+      pietouch=":GuideSetup"
+    />
+
+    <cell
+      label="TV Tuner Setup"
+      pietouch=":TVTunerSetup"
+    />
+
+    <cell
+      label="Train with Remote"
+      pietouch=":train"
+    />
+
+    <cell
+      label="Input Button Setup"
+      pietouch=":inputbuttons"
+    />
+
+    <cell
+      label="User Setup"
+      pietouch=":UserSetup"
+    />
+
+  </button>
+
+  <button
+    label="Home"
+    x="1" y="135"
+    width="40" height="24"
+    labeldx="4" labeldy="5"
+    pietouch=":gotopage Home"
+    look="7016" states="2" stretch="6"
+  />
+
+  <button
+    label="Shows"
+    x="118" y="135"
+    width="41" height="24"
+    labeldx="6" labeldy="5"
+    pietouch=":gotopage ConnectedTV"
+    look="7010" states="2" stretch="6"
+  />
+
+</gui>

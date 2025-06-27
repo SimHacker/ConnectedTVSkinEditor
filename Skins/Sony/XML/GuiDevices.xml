@@ -1,0 +1,111 @@
+<gui
+  title="Devices"
+  width="160"
+  height="240"
+  bottomedge="15"
+  onback="gotopage ConnectedTV"
+>
+
+  <!-- Copyright 2002-2003 ConnectedMedia Corporation --> 
+
+  <button
+    x="0" y="0"
+    width="62" height="16"
+    labeldy="2"
+    active="0"
+    framed="0"
+    source="guiname"
+  />
+
+  <button
+    x="62" y="0"
+    width="28" height="16"
+    labeldy="2"
+    active="0"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    label="Browse Devices"
+    x="1" y="17"
+    width="80" height="25"
+    labeldx="4" labeldy="7"
+    action="Browse Devices"
+    look="7010" stretch="12" states="3" hires="1"
+  />
+
+  <button
+    label="Box"
+    x="41" y="70"
+    width="29" height="25"
+    labeldx="4" labeldy="7"
+    action="gotopage Box"
+    look="7010" stretch="12" states="3" hires="1"
+  />
+
+  <button
+    label="VCR"
+    x="81" y="70"
+    width="29" height="25"
+    labeldx="4" labeldy="7"
+    action="gotopage VCR"
+    look="7010" stretch="12" states="3" hires="1"
+  />
+
+  <button
+    label="TV"
+    x="121" y="70"
+    width="29" height="25"
+    labeldx="4" labeldy="7"
+    action="gotopage TV"
+    look="7010" stretch="12" states="3" hires="1"
+  />
+
+  <button
+    label="CD"
+    x="41" y="105"
+    width="29" height="25"
+    labeldx="4" labeldy="7"
+    action="gotopage CD"
+    look="7010" stretch="12" states="3" hires="1"
+  />
+
+  <button
+    label="DVD"
+    x="81" y="105"
+    width="29" height="25"
+    labeldx="4" labeldy="7"
+    action="gotopage DVD"
+    look="7010" stretch="12" states="3" hires="1"
+  />
+
+  <button
+    label="DVR"
+    x="121" y="105"
+    width="29" height="25"
+    labeldx="4" labeldy="7"
+    action="gotopage DVR"
+    look="7010" stretch="12" states="3" hires="1"
+  />
+
+  <button
+    label="Stations"
+    x="81" y="140"
+    width="38" height="19"
+    labeldx="0" labeldy="3"
+    action="gotopage Stations"
+    look="7010" stretch="12" states="3" hires="1"
+  />
+
+ <button
+    label="Shows"
+    x="121" y="140"
+    width="38" height="19"
+    labeldx="1" labeldy="3"
+    action="gotopage ConnectedTV"
+    look="7010" stretch="12" states="3" hires="1"
+  />
+
+</gui>

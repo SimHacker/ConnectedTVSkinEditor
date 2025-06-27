@@ -1,0 +1,127 @@
+<gui
+  title="Help"
+  width="160"
+  height="160"
+  browser="Help"
+  cachetype="-1"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="0" y="0"
+    width="160" height="13"
+    active="0"
+    framed="0"
+    label="Help"
+  />
+
+  <button
+    label="Category"
+    x="100" y="0"
+    labeldx="1" labeldy="4"
+    width="50" height="19"
+    style="4"
+    pietouch="Categories:"
+    piedown="Stations:"
+    pieleft="cancel:"
+    look="7010" states="2" stretch="4"
+  />
+
+  <button
+    label=" Selected Show
+            Tap for Show Details"
+    x="10" y="19"
+    width="105" height="30"
+    labeldx="20" labeldy="2"
+    wrap="1"
+    pieup="  Tune Show:"
+    pietouch=" Show Details:"
+    piedown=" Show Details:"
+    pieright=" Next Page:"
+    pieleft="Previous Page:"
+    look="7012" states="3" stretch="4"
+  />
+
+  <button
+    label="Tune Show"
+    x="115" y="19"
+    width="35" height="30"
+    labeldx="5" labeldy="2"
+    wrap="1"
+    pieup= "Tune Show:"
+    piedown= "Last Chan:"
+    look="7011" states="2" stretch="4"
+  />
+
+  <button
+    label="    Show Title"
+    comment="grid of show titles"
+    x="10" y="49"
+    width="140" height="38"
+    labeldx="4" labeldy="4"
+    rows="2" columns="2"
+    rowlayout="0"
+    pager="1"
+    style="3"
+    index="0"
+    pietouch=" Select Show:"
+    pieup= "  Tune Show:"
+    piedown= " Show Details:"
+    pieleft= "  Prev Page:"
+    pieright="  Next Page:"
+    look="7013" states="3" stretch="4"
+  />
+
+  <button
+    label="Guide Time &amp; Day"
+    x="35" y="87"
+    width="85" height="20"
+    labeldx="4" labeldy="4"
+    pietouch="               Now:"
+    piedown="Previous 1/2 Hour:"
+    pieup="    Next 1/2 Hour:"
+    pieleft="         Set Time:"
+    pieright="          Set Day:"
+    look="7015" states="2" stretch="4"
+  />
+
+  <button
+    label=" Stroke screen displays for more info."
+    x="0" y="108"
+    width="160" height="13"
+    framed="0" active="0"
+  />
+
+  <button
+    label=""
+    x="32" y="120"
+    width="96" height="40"
+    framed="0" active="0"
+    look="7020" states="1"
+  />
+
+
+  <button
+    label="Home"
+    x="0" y="140"
+    width="30" height="20"
+    labeldx="1" labeldy="3"
+    pieup="cancel:"
+    piedown="cancel:"
+    pietouch=":gotopage Home"
+    look="7016" states="2" stretch="6"
+  />
+
+  <button
+    label="More"
+    x="130" y="140"
+    width="30" height="20"
+    labeldx="1" labeldy="3"
+    pieup="cancel:"
+    piedown="cancel:"
+    pietouch=":gotopage Strokes"
+    look="7016" states="2" stretch="6"
+  />
+
+</gui>

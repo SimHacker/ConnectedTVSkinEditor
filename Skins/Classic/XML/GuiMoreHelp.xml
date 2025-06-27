@@ -1,0 +1,237 @@
+<gui
+  title="MoreHelp"
+  width="160"
+  height="160"
+  browser="Help"
+  cachetype="-1"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="1" y="1"
+    width="62" height="13"
+    active="0"
+    framed="0"
+    label="More Strokes"
+  />
+
+  <button
+    label=" Description"
+    x="62" y="10"
+    width="60" height="20"
+    labeldx="2" labeldy="4"
+    wrap="1"
+
+    pieup=    "      cancel:"
+    pietouch= "Show Details:"
+    piedown=  "Show Details:"
+    pieright="Next Page:"
+    pieleft= "Prev Page:"
+
+  />
+
+  <button
+    label=" title"
+    comment="grid of show titles"
+    x="62" y="30"
+    width="60" height="30"
+    labeldx="2" labeldy="1"
+    rows="2" columns="2"
+    rowlayout="0"
+    pager="1"
+    style="3"
+
+    index="0"
+    pietouch="select:"
+    piedown= "Detail:"
+    pieleft= " Prev:"
+    pieright=" Next:"
+
+  />
+
+  <button
+    label="Prev Page"
+    x="31" y="16"
+    labeldx="0" labeldy="4"
+    width="30" height="35"
+    framed="0" active="0"
+    wrap="1"
+  />
+  <button
+    label=""
+    comment="Paging left arrow"
+    x="54" y="27"
+    width="47" height="7"
+    framed="0" active="0"
+  />
+
+  <button
+    label="Next Page"
+    x="130" y="16"
+    labeldx="0" labeldy="4"
+    width="30" height="35"
+    framed="0" active="0"
+    wrap="1"
+  />
+
+  <button
+    label=""
+    comment="Paging right arrow"
+    x="123" y="27"
+    width="7" height="7"
+    framed="0" active="0"
+  />
+
+  <button
+    x="88" y="61"
+    comment="Show Details down arrow"
+    width="10" height="10"
+    framed="0" active="0"
+  />
+  <button
+    x="64" y="68"
+    comment="Show Details down arrow label"
+    width="60" height="13"
+    labeldx="0" labeldy="0"
+    framed="0" active="0"
+    label="Show Details"
+   />
+
+
+  <button
+    x="2" y="54"
+    comment="Play button"
+    width="30" height="30"
+    labeldx="3" labeldy="8"
+    pietouch="Play:send Play"
+    piedown=" Rec:send Record"
+
+  />
+  <button
+    x="13" y="82"
+    comment="Play Record down arrow"
+    width="10" height="10"
+    framed="0" active="0"
+  />
+  <button
+    x="1" y="89"
+    comment="Record down label"
+    width="34" height="13"
+    labeldx="0" labeldy="0"
+    framed="0" active="0"
+    label="Record"
+   />
+
+
+
+  <button
+    x="35" y="84"
+    width="90" height="30"
+    labeldx="2" labeldy="8"
+    rows="1" columns="3"
+  >
+
+    <cell
+      labeldx="2" labeldy="0"
+      piedown= "Rep:"
+      pietouch="Rew:"
+      pieleft="SkipBack:"
+     />
+
+    <cell
+      labeldx="-2" labeldy="0"
+      pietouch="Pause:"
+      piedown=" Stop:"
+    />
+
+    <cell
+      labeldx="3" labeldy="0"
+      pietouch=" FF:"
+      piedown="Adv:"
+      pieright="Skip:"
+    />
+
+  </button>
+
+  <button
+    x="46" y="112"
+    comment="Shuttle down arrows"
+    width="90" height="10"
+    framed="0" active="0"
+    rows="1" columns="3"
+  >
+    <cell
+     />
+    <cell
+    />
+    <cell
+    />
+  </button>
+
+  <button
+    x="32" y="119"
+    comment="Shuttle down arrow labels"
+    width="70" height="13"
+    labeldx="0" labeldy="0"
+    framed="0" active="0"
+    rows="1" columns="2"
+  >
+    <cell
+    label=" Replay"
+     />
+    <cell
+    label=" Stop"
+    />
+  </button>
+
+  <button
+    x="92" y="119"
+    comment="FF down arrow label"
+    width="40" height="13"
+    labeldx="0" labeldy="0"
+    framed="0" active="0"
+    label="Advance"
+   />
+
+
+  <button
+    x="0" y="135"
+    width="160" height="24"
+    labeldx="2" labeldy="6"
+    pieup="  cancel:"
+    piedown="  cancel:"
+    columns="4"
+  >
+
+    <cell
+      label="  Home"
+      pietouch=":gotopage Home"
+    />
+
+    <cell
+      label="   Help"
+      pietouch=":gotopage Help"
+    />
+
+    <cell
+      label="  More"
+      pietouch=":gotopage Basics"
+    />
+
+    <cell
+      label="  Shows"
+      pietouch=":gotopage ConnectedTV"
+    />
+
+  </button>
+
+  <button
+    x="136" y="60"
+    comment="Calc and Search silscreen docs"
+    width="22" height="68"
+    labeldx="0" labeldy="0"
+    framed="0" active="0"
+  />
+
+</gui>

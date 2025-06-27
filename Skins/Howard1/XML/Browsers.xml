@@ -1,0 +1,109 @@
+<browsers
+  id="browsers">
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <browser
+    name="Browsers"
+    type="0"
+    gui="Browser"
+    source=""
+    title=""
+    pagelabel=""
+    action=""
+    tap=""
+    select="BrowseCategory"
+    cancel="gotopage ConnectedTV"
+    pagenext=""
+    pageback=""
+    chainnext=""
+    chainback=""
+    buttonviewer="Viewer"
+    buttonpager="Pager"
+  />
+
+  <browser
+    name="Pages"
+    type="1"
+    gui="Browser"
+  />
+
+  <browser
+    name="Categories"
+    type="3"
+    gui="Browser"
+  />
+
+  <browser
+    name="Users"
+    type="4"
+    gui="Browser"
+  />
+
+  <browser
+    name="Rooms"
+    type="5"
+    gui="Browser"
+  />
+
+  <browser
+    name="Devices"
+    type="6"
+    gui="Browser"
+  />
+
+  <browser
+    name="IRCommands"
+    type="7"
+    gui="Browser"
+  />
+
+  <browser
+    name="Channels"
+    type="8"
+    gui="ConnectedTV"
+  />
+
+  <browser
+    name="Programs"
+    type="9"
+    gui="ConnectedTV"
+  />
+
+  <browser
+    name="Attributes"
+    type="10"
+    gui="Browser"
+  />
+
+  <browser
+    name="Element"
+    type="11"
+    gui="Browser"
+  />
+
+  <browser
+    name="ProgramDescriptions"
+    type="12"
+    gui="Show Details"
+  />
+
+  <browser
+    name="Favorites"
+    type="14"
+    gui="Browser"
+  />
+
+  <browser
+    name="Filters"
+    type="15"
+    gui="Browser"
+  />
+
+  <browser
+    name="Help"
+    type="16"
+    gui="Help"
+  />
+
+</browsers>

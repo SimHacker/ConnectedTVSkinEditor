@@ -1,0 +1,534 @@
+<resources>
+
+  <!-- Copyright (C) 2003 by ConnectedMedia. All rights reserved. -->
+
+  <resource
+    name="NavStretchButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7010"
+    url="Images/NavStretchButton8Bitmap.bmp"
+    width="96"
+    height="48"
+    compress="1"
+    rcp='BITMAPFAMILY ID NavStretchButtonBitmapFamily "Images/NavStretchButton1Bitmap.bmp" "Images/NavStretchButton2Bitmap.bmp" "" "Images/NavStretchButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="IRStretchButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7011"
+    url="Images/IRStretchButton8Bitmap.bmp"
+    width="96"
+    height="48"
+    compress="1"
+    rcp='BITMAPFAMILY ID IRStretchButtonBitmapFamily "Images/NavStretchButton1Bitmap.bmp" "Images/NavStretchButton2Bitmap.bmp" "" "Images/IRStretchButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="BrowseStretchButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7012"
+    url="Images/BrowseStretchButton8Bitmap.bmp"
+    width="144"
+    height="48"
+    compress="1"
+    rcp='BITMAPFAMILY ID BrowseStretchButtonBitmapFamily "Images/ContentButton1Bitmap.bmp" "Images/ContentButton2Bitmap.bmp" "" "Images/BrowseStretchButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="ContentButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7013"
+    url="Images/ContentButton8Bitmap.bmp"
+    width="144"
+    height="48"
+    compress="1"
+    rcp='BITMAPFAMILY ID ContentButtonBitmapFamily "Images/ContentButton1Bitmap.bmp" "Images/ContentButton2Bitmap.bmp" "" "Images/ContentButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="DeviceStretchButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7014"
+    url="Images/DeviceStretchButton8Bitmap.bmp"
+    width="96"
+    height="48"
+    compress="1"
+    rcp='BITMAPFAMILY ID DeviceStretchButtonBitmapFamily "Images/NavStretchButton1Bitmap.bmp" "Images/NavStretchButton2Bitmap.bmp" "" "Images/DeviceStretchButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="TimeStretchButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7015"
+    url="Images/SystemStretchButton8Bitmap.bmp"
+    width="96"
+    height="48"
+    compress="1"
+    rcp='BITMAPFAMILY ID TimeStretchButtonBitmapFamily "Images/NavStretchButton1Bitmap.bmp" "Images/NavStretchButton2Bitmap.bmp" "" "Images/SystemStretchButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="SystemStretchButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7016"
+    url="Images/SystemStretchButton8Bitmap.bmp"
+    width="96"
+    height="48"
+    compress="1"
+    rcp='BITMAPFAMILY ID SystemStretchButtonBitmapFamily "Images/NavStretchButton1Bitmap.bmp" "Images/NavStretchButton2Bitmap.bmp" "" "Images/SystemStretchButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="NeutralStretchButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7017"
+    url="Images/NeutralStretchButton8Bitmap.bmp"
+    width="48"
+    height="48"
+    compress="1"
+    rcp='BITMAPFAMILY ID NeutralStretchButtonBitmapFamily "Images/NeutralStretchButton1Bitmap.bmp" "Images/NeutralStretchButton1Bitmap.bmp" "" "Images/NeutralStretchButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="CalcSearchBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7018"
+    url="Images/CalcSearch2Bitmap.bmp"
+    width="22"
+    height="68"
+    compress="1"
+    rcp='BITMAPFAMILY ID CalcSearchBitmapFamily "Images/CalcSearch1Bitmap.bmp" "Images/CalcSearch2Bitmap.bmp" "" "" COMPRESS'
+  />
+
+  <resource
+    name="DescStretchButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7019"
+    url="Images/DescStretchButton8Bitmap.bmp"
+    width="96"
+    height="48"
+    compress="1"
+    rcp='BITMAPFAMILY ID DescStretchButtonBitmapFamily "Images/NavStretchButton1Bitmap.bmp" "Images/NavStretchButton2Bitmap.bmp" "" "Images/DescStretchButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="HardwareButtonsBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7020"
+    url="Images/HardwareButtons1Bitmap.bmp"
+    width="96"
+    height="40"
+    compress="1"
+    rcp='BITMAPFAMILY ID HardwareButtonsBitmapFamily "Images/HardwareButtons1Bitmap.bmp" "" "" "" COMPRESS'
+  />
+
+  <resource
+    name="ConnectedTVButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7021"
+    url="Images/ConnectedTVButton8Bitmap.bmp"
+    width="96"
+    height="48"
+    compress="1"
+    rcp='BITMAPFAMILY ID ConnectedTVButtonBitmapFamily "Images/ConnectedTVButton1Bitmap.bmp" "Images/ConnectedTVButton2Bitmap.bmp" "" "Images/ConnectedTVButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="LeftStrokeBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7022"
+    url="Images/LeftStroke1Bitmap.bmp"
+    width="7"
+    height="7"
+    compress="1"
+    rcp='BITMAPFAMILY ID LeftStrokeBitmapFamily "Images/LeftStroke1Bitmap.bmp" "" "" "" COMPRESS'
+  />
+
+  <resource
+    name="RightStrokeBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7023"
+    url="Images/RightStroke1Bitmap.bmp"
+    width="7"
+    height="7"
+    compress="1"
+    rcp='BITMAPFAMILY ID RightStrokeBitmapFamily "Images/RightStroke1Bitmap.bmp" "" "" "" COMPRESS'
+  />
+
+  <resource
+    name="UpStrokeBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7024"
+    url="Images/UpStroke1Bitmap.bmp"
+    width="7"
+    height="7"
+    compress="1"
+    rcp='BITMAPFAMILY ID UpStrokeBitmapFamily "Images/UpStroke1Bitmap.bmp" "" "" "" COMPRESS'
+  />
+
+  <resource
+    name="DownStrokeBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7025"
+    url="Images/DownStroke1Bitmap.bmp"
+    width="7"
+    height="7"
+    compress="1"
+    rcp='BITMAPFAMILY ID DownStrokeBitmapFamily "Images/DownStroke1Bitmap.bmp" "" "" "" COMPRESS'
+  />
+
+  <resource
+    name="PlayIRButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7030"
+    url="Images/PlayIRButton8Bitmap.bmp"
+    width="56"
+    height="28"
+    compress="1"
+    rcp='BITMAPFAMILY ID PlayIRButtonBitmapFamily "Images/PlayIRButton1Bitmap.bmp" "Images/PlayIRButton2Bitmap.bmp" "" "Images/PlayIRButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="StopIRButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7031"
+    url="Images/StopIRButton8Bitmap.bmp"
+    width="56"
+    height="28"
+    compress="1"
+    rcp='BITMAPFAMILY ID StopIRButtonBitmapFamily "Images/StopIRButton1Bitmap.bmp" "Images/StopIRButton2Bitmap.bmp" "" "Images/StopIRButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="PauseIRButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7032"
+    url="Images/PauseIRButton8Bitmap.bmp"
+    width="56"
+    height="28"
+    compress="1"
+    rcp='BITMAPFAMILY ID PauseIRButtonBitmapFamily "Images/PauseIRButton1Bitmap.bmp" "Images/PauseIRButton2Bitmap.bmp" "" "Images/PauseIRButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="FastForwardIRButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7033"
+    url="Images/FastForwardIRButton8Bitmap.bmp"
+    width="56"
+    height="28"
+    compress="1"
+    rcp='BITMAPFAMILY ID FastForwardIRButtonBitmapFamily "Images/FastForwardIRButton1Bitmap.bmp" "Images/FastForwardIRButton2Bitmap.bmp" "" "Images/FastForwardIRButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="RewindIRButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7034"
+    url="Images/RewindIRButton8Bitmap.bmp"
+    width="56"
+    height="28"
+    compress="1"
+    rcp='BITMAPFAMILY ID RewindIRButtonBitmapFamily "Images/RewindIRButton1Bitmap.bmp" "Images/RewindIRButton2Bitmap.bmp" "" "Images/RewindIRButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="RecordIRButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7037"
+    url="Images/RecordIRButton8Bitmap.bmp"
+    width="56"
+    height="28"
+    compress="1"
+    rcp='BITMAPFAMILY ID RecordIRButtonBitmapFamily "Images/RecordIRButton1Bitmap.bmp" "Images/RecordIRButton2Bitmap.bmp" "" "Images/RecordIRButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="PowerIRButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7038"
+    url="Images/PowerIRButton8Bitmap.bmp"
+    width="60"
+    height="30"
+    compress="1"
+    rcp='BITMAPFAMILY ID PowerIRButtonBitmapFamily "Images/PowerIRButton1Bitmap.bmp" "Images/PowerIRButton2Bitmap.bmp" "" "Images/PowerIRButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="MuteIRButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7039"
+    url="Images/MuteIRButton8Bitmap.bmp"
+    width="60"
+    height="30"
+    compress="1"
+    rcp='BITMAPFAMILY ID MuteIRButtonBitmapFamily "Images/MuteIRButton1Bitmap.bmp" "Images/MuteIRButton2Bitmap.bmp" "" "Images/MuteIRButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="VolUpIRButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7040"
+    url="Images/VolUpIRButton8Bitmap.bmp"
+    width="60"
+    height="30"
+    compress="1"
+    rcp='BITMAPFAMILY ID VolUpIRButtonBitmapFamily "Images/VolUpIRButton1Bitmap.bmp" "Images/VolUpIRButton2Bitmap.bmp" "" "Images/VolUpIRButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="VolDownIRButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7041"
+    url="Images/VolDownIRButton8Bitmap.bmp"
+    width="60"
+    height="30"
+    compress="1"
+    rcp='BITMAPFAMILY ID VolDownIRButtonBitmapFamily "Images/VolDownIRButton1Bitmap.bmp" "Images/VolDownIRButton2Bitmap.bmp" "" "Images/VolDownIRButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="UpIRButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7049"
+    url="Images/UpIRButton8Bitmap.bmp"
+    width="56"
+    height="28"
+    compress="1"
+    rcp='BITMAPFAMILY ID UpIRButtonBitmapFamily "Images/UpIRButton1Bitmap.bmp" "Images/UpIRButton2Bitmap.bmp" "" "Images/UpIRButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="DownIRButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7050"
+    url="Images/DownIRButton8Bitmap.bmp"
+    width="56"
+    height="28"
+    compress="1"
+    rcp='BITMAPFAMILY ID DownIRButtonBitmapFamily "Images/DownIRButton1Bitmap.bmp" "Images/DownIRButton2Bitmap.bmp" "" "Images/DownIRButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="LeftIRButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7051"
+    url="Images/LeftIRButton8Bitmap.bmp"
+    width="56"
+    height="28"
+    compress="1"
+    rcp='BITMAPFAMILY ID LeftIRButtonBitmapFamily "Images/LeftIRButton1Bitmap.bmp" "Images/LeftIRButton2Bitmap.bmp" "" "Images/LeftIRButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="RightIRButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7052"
+    url="Images/RightIRButton8Bitmap.bmp"
+    width="56"
+    height="28"
+    compress="1"
+    rcp='BITMAPFAMILY ID RightIRButtonBitmapFamily "Images/RightIRButton1Bitmap.bmp" "Images/RightIRButton2Bitmap.bmp" "" "Images/RightIRButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="PlusIRButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7055"
+    url="Images/PlusIRButton8Bitmap.bmp"
+    width="60"
+    height="30"
+    compress="1"
+    rcp='BITMAPFAMILY ID PlusIRButtonBitmapFamily "Images/PlusIRButton1Bitmap.bmp" "Images/PlusIRButton2Bitmap.bmp" "" "Images/PlusIRButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="MinusIRButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7056"
+    url="Images/MinusIRButton8Bitmap.bmp"
+    width="60"
+    height="30"
+    compress="1"
+    rcp='BITMAPFAMILY ID MinusIRButtonBitmapFamily "Images/MinusIRButton1Bitmap.bmp" "Images/MinusIRButton2Bitmap.bmp" "" "Images/MinusIRButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    name="SelectIRButtonBitmapFamily"
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7057"
+    url="Images/SelectIRButton8Bitmap.bmp"
+    width="56"
+    height="28"
+    compress="1"
+    rcp='BITMAPFAMILY ID SelectIRButtonBitmapFamily "Images/SelectIRButton1Bitmap.bmp" "Images/SelectIRButton2Bitmap.bmp" "" "Images/SelectIRButton8Bitmap.bmp" COMPRESS'
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="5000"
+    url="XML/UserDefaultUser.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="5001"
+    url="XML/Categories.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="5002"
+    url="XML/DeviceBox.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6000"
+    url="XML/GuiBrowser.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6001"
+    url="XML/GuiConnectedTV.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6002"
+    url="XML/GuiSetup.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6003"
+    url="XML/GuiMoreHelp.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6004"
+    url="XML/GuiHome.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6005"
+    url="XML/GuiDetails.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6006"
+    url="XML/GuiStations.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6007"
+    url="XML/GuiBox.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6008"
+    url="XML/GuiDVR.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6009"
+    url="XML/GuiTV.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6010"
+    url="XML/GuiVCR.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6011"
+    url="XML/GuiHelp.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6012"
+    url="XML/GuiStatus.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6013"
+    url="XML/GuiBasics.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6014"
+    url="XML/GuiStrokes.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6015"
+    url="XML/GuiShowList.xml"
+  />
+
+</resources>

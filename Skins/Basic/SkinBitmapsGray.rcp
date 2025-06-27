@@ -1,0 +1,49 @@
+////////////////////////////////////////////////////////////////////////
+// Skin Basic Bitmaps Gray
+
+
+////////////////////////////////////////////////////////////////////////
+
+
+#include "SkinRsc.h"
+
+
+////////////////////////////////////////////////////////////////////////
+
+
+BITMAPFAMILY ID MuteIRButtonBitmapFamily "" "Images/MuteIRButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID CalcSearchBitmapFamily "" "Images/CalcSearch2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID VolDownIRButtonBitmapFamily "" "Images/VolDownIRButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID VolUpIRButtonBitmapFamily "" "Images/VolUpIRButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID PowerIRButtonBitmapFamily "" "Images/PowerIRButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID HardwareButtonsBitmapFamily "" "Images/HardwareButtons2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID MinusIRButtonBitmapFamily "" "Images/MinusIRButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID PlusIRButtonBitmapFamily "" "Images/PlusIRButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID SelectIRButtonBitmapFamily "" "Images/SelectIRButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID RightIRButtonBitmapFamily "" "Images/RightIRButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID LeftIRButtonBitmapFamily "" "Images/LeftIRButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID DownIRButtonBitmapFamily "" "Images/DownIRButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID UpIRButtonBitmapFamily "" "Images/UpIRButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID RecordIRButtonBitmapFamily "" "Images/RecordIRButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID RewindIRButtonBitmapFamily "" "Images/RewindIRButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID FastForwardIRButtonBitmapFamily "" "Images/FastForwardIRButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID PauseIRButtonBitmapFamily "" "Images/PauseIRButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID StopIRButtonBitmapFamily "" "Images/StopIRButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID DownStrokeBitmapFamily "Images/DownStroke1Bitmap.bmp" "" "" "" COMPRESS
+BITMAPFAMILY ID UpStrokeBitmapFamily "Images/UpStroke1Bitmap.bmp" "" "" "" COMPRESS
+BITMAPFAMILY ID RightStrokeBitmapFamily "Images/RightStroke1Bitmap.bmp" "" "" "" COMPRESS
+BITMAPFAMILY ID LeftStrokeBitmapFamily "Images/LeftStroke1Bitmap.bmp" "" "" "" COMPRESS
+BITMAPFAMILY ID PlayIRButtonBitmapFamily "" "Images/PlayIRButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID NeutralStretchButtonBitmapFamily "Images/NeutralStretchButton1Bitmap.bmp" "" "" "" COMPRESS
+BITMAPFAMILY ID SystemStretchButtonBitmapFamily "" "Images/NavStretchButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID TimeStretchButtonBitmapFamily "" "Images/NavStretchButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID DeviceStretchButtonBitmapFamily "" "Images/NavStretchButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID BrowseStretchButtonBitmapFamily "" "Images/ContentButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID NavStretchButtonBitmapFamily "" "Images/NavStretchButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID DescStretchButtonBitmapFamily "" "Images/NavStretchButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID ContentButtonBitmapFamily "" "Images/ContentButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID IRStretchButtonBitmapFamily "" "Images/NavStretchButton2Bitmap.bmp" "" "" COMPRESS
+BITMAPFAMILY ID ConnectedTVButtonBitmapFamily "" "Images/ConnectedTVButton2Bitmap.bmp" "" "" COMPRESS
+
+
+////////////////////////////////////////////////////////////////////////

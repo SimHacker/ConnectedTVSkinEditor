@@ -1,0 +1,93 @@
+<skin
+  name="Howard1"
+  base="Howard1"
+  resourceurl="XML/Resources.xml"
+>
+
+  <!-- Copyright (C) 2003 by ConnectedMedia. All rights reserved. -->
+
+  <!-- Users -->
+
+  <user name="Default User" url="XML/UserDefaultUser.xml"/>
+
+  <!-- Categories -->
+
+  <categories name="categories" url="XML/Categories.xml"/>
+
+  <!-- Devices -->
+
+  <device name="Box" url="XML/DeviceBox.xml"/>
+
+  <!-- Guis -->
+
+  <gui
+    name="Browser"
+    url="XML/GuiBrowser.xml"
+  />
+
+  <gui
+    name="ConnectedTV"
+    url="XML/GuiConnectedTV.xml"
+  />
+
+  <gui
+    name="Setup"
+    url="XML/GuiSetup.xml"
+  />
+
+  <gui
+    name="Hello"
+    url="XML/GuiHello.xml"
+  />
+
+  <gui
+    name="Home"
+    url="XML/GuiHome.xml"
+  />
+
+  <gui
+    name="Show Details"
+    url="XML/GuiDetails.xml"
+  />
+
+  <gui
+    name="Stations"
+    url="XML/GuiStations.xml"
+  />
+
+  <gui
+    name="Box"
+    url="XML/GuiBox.xml"
+  />
+
+  <gui
+    name="DVR"
+    url="XML/GuiDVR.xml"
+  />
+
+  <gui
+    name="TV"
+    url="XML/GuiTV.xml"
+  />
+
+  <gui
+    name="VCR"
+    url="XML/GuiVCR.xml"
+  />
+
+  <gui
+    name="Help"
+    url="XML/GuiHelp.xml"
+  />
+
+  <gui
+    name="Status"
+    url="XML/GuiStatus.xml"
+  />
+
+  <gui
+    name="Basics"
+    url="XML/GuiBasics.xml"
+  />
+
+</skin>

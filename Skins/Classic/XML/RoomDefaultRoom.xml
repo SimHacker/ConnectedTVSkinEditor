@@ -1,0 +1,13 @@
+<room
+  name="Default Room">
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <roomdevice name="Box"/>
+  <roomdevice name="CD"/>
+  <roomdevice name="DVD"/>
+  <roomdevice name="DVR"/>
+  <roomdevice name="TV"/>
+  <roomdevice name="VCR"/>
+
+</room>

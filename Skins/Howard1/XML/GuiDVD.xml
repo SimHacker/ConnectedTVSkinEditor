@@ -1,0 +1,44 @@
+<gui
+  title="DVD"
+  width="160"
+  height="160"
+  device="DVD"
+  cachetype="0"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="1" y="1"
+    width="62" height="13"
+    active="0"
+    framed="0"
+    source="guiname"
+  />
+
+  <button
+    x="65" y="1"
+    width="28" height="13"
+    active="0"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    label="Devices"
+    x="1" y="140"
+    width="37" height="19"
+    labeldx="1" labeldy="3"
+    action="gotopage Devices"
+  />
+
+ <button
+    label="Shows"
+    x="121" y="140"
+    width="38" height="19"
+    labeldx="1" labeldy="3"
+    action="gotopage ConnectedTV"
+  />
+
+</gui>

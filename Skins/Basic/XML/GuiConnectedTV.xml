@@ -1,0 +1,188 @@
+<gui
+  title="ConnectedTV"
+  width="160"
+  height="240"
+  bottomedge="15"
+  browser="Timeline"
+  pagetype="5"
+  cachetype="0"
+  onback="gotopage Home"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="1" y="1"
+    width="62" height="13"
+    active="0"
+    framed="0"
+    source="guiname"
+  />
+
+  <button
+    x="65" y="1"
+    width="28" height="13"
+    active="0"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    id="Category"
+    label="Category"
+    x="95" y="0"
+    labeldx="1" labeldy="4"
+    width="64" height="19"
+    style="4"
+    source="categoryname"
+    pietouch="  Categories:Browse Categories"
+    piedown="   Show List:ShowList"
+    pieup="      cancel:"
+    look="7010" states="2" stretch="4"
+  />
+
+  <button
+    id="Description"
+    x="1" y="19"
+    width="121" height="36"
+    labeldx="1" labeldy="1"
+    wrap="1"
+    source="currenttimelineprogramdescription"
+    pietouch="              Show Details:ShowDetails"
+    pieup="               Previous Page:scrollchannels -1"
+    piedown="                Next Page:scrollchannels 1"
+    xpiedown="                 Show List:ShowList"
+    xpieleft="        Previous 1/2 Hour:changetime -30"
+    xpieright="          Next 1/2 Hour:changetime 30"
+    look="7019" states="2" stretch="4"
+  />
+
+  <button
+    id="Tune"
+    alt="Tune Show"
+    comment="ConnectedTV Icon button to tune show"
+    x="122" y="19"
+    width="37" height="36"
+    labeldx="6" labeldy="7"
+    pietouch="Tune Show:gotocurrentchannel"
+    piedown="Last Chan:send Last"
+    pieup="   cancel:"
+    look="7021" states="2" stretch="4"
+    wrap="1"
+  />
+
+  <button
+    id="Timeline"
+    x="1" y="55"
+    width="158" height="85"
+    pager="1"
+    style="5"
+    onsize="StretchToBottom 20"
+    look="7019" states="3" stretch="4"
+  />
+
+  <button
+    x="1" y="141"
+
+    width="30" height="19"
+    onsize="StickToBottom 1"
+
+    label="Box"
+    labeldx="4" labeldy="4"
+
+    pietouch=":gotopage Box"
+    pieright=" TV:gotopage TV"
+    pieleft="Box:gotopage Box"
+    pieup="DVR:gotopage DVR"
+    piedown="VCR:gotopage VCR"
+
+    look="7014" states="2" stretch="4"
+  />
+
+   <button
+    x="31" y="141"
+
+    width="35" height="19"
+    onsize="StickToBottom 1"
+
+    label="-1/2hr"
+    labeldx="1" labeldy="4"
+    pietouch="earlier:changetime -30"
+    pieup=" Date:gotodate"
+    look="7015" states="2" stretch="4"
+  />
+
+
+   <button
+    x="66" y="141"
+
+    width="30" height="19"
+    onsize="StickToBottom 1"
+
+    label=" Now"
+    labeldx="2" labeldy="4"
+    xsource="currenttimerange"
+    pietouch=" Now:gotocurrenttime"
+
+    piedown="Date:gotodate"
+    pieup="Time:gototime"
+
+    pieleft=" Zm-:ZoomOut"
+    pieright=" Zm+:ZoomIn"
+
+    look="7015" states="2" stretch="4"
+   />
+
+   <button
+    x="96" y="141"
+
+    width="35" height="19"
+    onsize="StickToBottom 1"
+
+    label="1/2hr+"
+    labeldx="1" labeldy="4"
+    pietouch="later:changetime 30"
+
+    pieup=" Date:gotodate"
+
+    look="7015" states="2" stretch="4"
+   />
+
+   <xbutton
+    x="131" y="141"
+
+    width="29" height="19"
+    onsize="StickToBottom 1"
+
+    label="  +&gt;"
+    labeldx="1" labeldy="4"
+    pietouch="NxtPg:scrollchannels 1"
+    xpietouch=":gotopage Stations"
+    xpiedown=" Details:ShowDetails"
+    xpieup="Category:Browse Categories"
+    look="7010" states="2" stretch="4"  
+   />
+
+   <button
+    x="131" y="141"
+
+    width="29" height="19"
+    onsize="StickToBottom 1"
+
+    label="  List"
+    labeldx="1" labeldy="4"
+    pietouch="  List:ShowList"
+
+    pieup="Home:gotopage Home"
+    pieleft="Home:gotopage Home"
+
+    pieright="  List:ShowList"
+
+    xpietouch=":gotopage Stations"
+    xpiedown="Detail:ShowDetails"
+
+    look="7010" states="2" stretch="4"  
+   />
+
+</gui>

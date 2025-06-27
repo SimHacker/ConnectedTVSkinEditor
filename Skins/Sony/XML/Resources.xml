@@ -1,0 +1,1000 @@
+<?xml version='1.0'?>
+<?xml-stylesheet type="text/xsl" href="Resources.xsl" ?>
+
+<resources>
+
+  <!-- Copyright 2002-2003 ConnectedMedia Corporation --> 
+
+  <comment>ConnectedTV Logo Tiles</comment>
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="1500" 
+    url="Images/ConnectedTVLogo320x450-0.bmp" 
+    width="320" height="90"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="1501" 
+    url="Images/ConnectedTVLogo320x450-1.bmp" 
+    width="320" height="90"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="1502" 
+    url="Images/ConnectedTVLogo320x450-2.bmp" 
+    width="320" height="90"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="1503" 
+    url="Images/ConnectedTVLogo320x450-3.bmp" 
+    width="320" height="90"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="1504" 
+    url="Images/ConnectedTVLogo320x450-4.bmp" 
+    width="320" height="90"
+    compress="1"/>
+
+  <comment>Generic Resizable Buttons (NOCOMPRESS for maximum drawing speed)</comment>
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7002" 
+    url="Images/StretchButton.bmp" 
+    width="288" height="96"
+    compress="0"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7003" 
+    url="Images/SonyStretchButton.bmp" 
+    width="288" height="96"
+    compress="0"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7004" 
+    url="Images/GoldStretchButton.bmp" 
+    width="96" height="96"
+    compress="0"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7005" 
+    url="Images/FlatStretchBanner.bmp" 
+    width="24" height="24"
+    compress="0"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7006" 
+    url="Images/GrayOnBlueStretchButton.bmp" 
+    width="288" height="96"
+    compress="0"/>
+
+  <comment>Default Skin Resizable Bitmaps (NOCOMPRESS for maximum drawing speed)</comment>
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7010" 
+    url="Images/Default/NavStretchButton.bmp" 
+    width="288" height="96"
+    compress="0"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7011" 
+    url="Images/Default/IRStretchButton.bmp" 
+    width="288" height="96"
+    compress="0"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7012" 
+    url="Images/Default/BrowseStretchButton.bmp" 
+    width="288" height="96"
+    compress="0"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7013" 
+    url="Images/Default/ContentStretchButton.bmp" 
+    width="288" height="96"
+    compress="0"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7014" 
+    url="Images/Default/DeviceStretchButton.bmp" 
+    width="288" height="96"
+    compress="0"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7015" 
+    url="Images/Default/TimeStretchButton.bmp" 
+    width="288" height="96"
+    compress="0"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7016" 
+    url="Images/Default/SystemStretchButton.bmp" 
+    width="288" height="96"
+    compress="0"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7017" 
+    url="Images/Default/NeutralStretchButton.bmp" 
+    width="288" height="96"
+    compress="0"/>
+
+  <comment>Default Skin Remote Control Buttons</comment>
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7030" 
+    url="Images/Default/Remote60/PlayIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7031" 
+    url="Images/Default/Remote60/StopIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7032" 
+    url="Images/Default/Remote60/PauseIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7033" 
+    url="Images/Default/Remote60/FastForwardIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7034" 
+    url="Images/Default/Remote60/RewindIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7035" 
+    url="Images/Default/Remote60/SkipForwardIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7036" 
+    url="Images/Default/Remote60/SkipBackIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7037" 
+    url="Images/Default/Remote60/RecordIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7038" 
+    url="Images/Default/Remote60/SlowIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7039" 
+    url="Images/Default/Remote64x50/ReplayIRButton.bmp" 
+    width="128" height="50"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7040" 
+    url="Images/Default/Remote64x50/AdvanceIRButton.bmp" 
+    width="128" height="50"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7041" 
+    url="Images/Default/Remote60/TiVoIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7042" 
+    url="Images/Default/Remote60/VolUpIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7043" 
+    url="Images/Default/Remote60/VolDownIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7044" 
+    url="Images/Default/Remote60/ChanUpIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7045" 
+    url="Images/Default/Remote60/ChanDownIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7046" 
+    url="Images/Default/Remote60/LastIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7047" 
+    url="Images/Default/Remote60/ThumbsUpIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7048" 
+    url="Images/Default/Remote60/ThumbsDownIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7049" 
+    url="Images/Default/Remote60/UpIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7050" 
+    url="Images/Default/Remote60/DownIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7051" 
+    url="Images/Default/Remote60/LeftIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7052" 
+    url="Images/Default/Remote60/RightIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7053" 
+    url="Images/Default/StrokedSelectIRButton.bmp" 
+    width="160" height="80"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7054" 
+    url="Images/Default/Remote60/MuteIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7055" 
+    url="Images/Default/Remote64x50/PlusIRButton.bmp" 
+    width="128" height="50"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7056" 
+    url="Images/Default/Remote64x50/MinusIRButton.bmp" 
+    width="128" height="50"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="7057" 
+    url="Images/Default/Remote60/SelectIRButton.bmp" 
+    width="120" height="60"
+    compress="1"/>
+
+  <comment>Sony Skin Bitmaps</comment>
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8001" 
+    url="Images/Controls/CableTopLeft.bmp" 
+    width="220" height="50"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8002" 
+    url="Images/Controls/CableTopRight.bmp" 
+    width="100" height="50"
+    compress="1"/> 
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8003" 
+    url="Images/Controls/TVTopLeft.bmp" 
+    width="230" height="50"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8004" 
+    url="Images/Controls/TVTopRight.bmp" 
+    width="90" height="50"
+    compress="1"/> 
+
+  <comment>Unpressed and Pressed TAB buttons</comment>
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8006" 
+    url="Images/Tabs/10KeyButtonUnpressed.bmp" 
+    width="80" height="36"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8007" 
+    url="Images/Tabs/CursorButtonUnpressed.bmp" 
+    width="80" height="36"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8008" 
+    url="Images/Tabs/VODButtonUnpressed.bmp" 
+    width="80" height="36"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8009" 
+    url="Images/Tabs/EPGButtonUnpressed.bmp" 
+    width="80" height="36"
+    compress="1"/> 
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8010" 
+    url="Images/Tabs/Wide10KeyButtonPressed.bmp" 
+    width="160" height="36"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8011" 
+    url="Images/Tabs/WideCursorButtonUnpressed.bmp" 
+    width="160" height="36"
+    compress="1"/> 
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8016" 
+    url="Images/Tabs/10KeyButtonPressed.bmp" 
+    width="80" height="36"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8017" 
+    url="Images/Tabs/CursorButtonPressed.bmp" 
+    width="80" height="36"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8018" 
+    url="Images/Tabs/VODButtonPressed.bmp" 
+    width="80" height="36"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8019" 
+    url="Images/Tabs/EPGButtonPressed.bmp" 
+    width="80" height="36"
+    compress="1"/> 
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8021" 
+    url="Images/Cursor/CursorMenuButton.bmp" 
+    width="90" height="50"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8022" 
+    url="Images/Cursor/CursorGuideButton.bmp" 
+    width="78" height="42"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8023" 
+    url="Images/Cursor/CursorDisplayButton.bmp" 
+    width="76" height="36"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8024" 
+    url="Images/Cursor/CursorStarButton.bmp" 
+    width="84" height="56"
+    compress="1"/> 
+
+<!--
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8031" 
+    url="Images/Cursor/CursorOK.bmp" 
+    width="82" height="84"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8032" 
+    url="Images/Cursor/CursorLeftArrow.bmp" 
+    width="82" height="70"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8033" 
+    url="Images/Cursor/CursorRightArrow.bmp" 
+    width="82" height="70"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8034" 
+    url="Images/Cursor/CursorUpArrow.bmp" 
+    width="82" height="70"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8035" 
+    url="Images/Cursor/CursorDownArrow.bmp" 
+    width="82" height="70"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8036" 
+    url="Images/Cursor/CursorExitButton.bmp" 
+    width="76" height="58"
+    compress="1"/> 
+-->
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8031" 
+    url="Images/Cursor/CursorOK.bmp" 
+    width="82" height="84"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8032" 
+    url="Images/Cursor/CursorLeftArrow.bmp" 
+    width="82" height="70"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8033" 
+    url="Images/Cursor/CursorRightArrow.bmp" 
+    width="82" height="70"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8034" 
+    url="Images/Cursor/CursorUpArrow.bmp" 
+    width="82" height="70"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8035" 
+    url="Images/Cursor/CursorDownArrow.bmp" 
+    width="82" height="70"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8036" 
+    url="Images/Cursor/CursorExitButton.bmp" 
+    width="76" height="58"
+    compress="1"/> 
+
+  <comment>Volume and Tuning controls</comment>
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8042" 
+    url="Images/Controls/PeopleIcon.bmp" 
+    width="52" height="58"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8043" 
+    url="Images/Controls/MuteIcon.bmp" 
+    width="52" height="58"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8044" 
+    url="Images/Controls/FavoriteIcon.bmp" 
+    width="48" height="62"
+    compress="1"/> 
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8051" 
+    url="Images/Controls/ForwardIcon.bmp" 
+    width="48" height="80"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8052" 
+    url="Images/Controls/BackIcon.bmp" 
+    width="52" height="84"
+    compress="1"/> 
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8053" 
+    url="Images/Controls/ChannelButtonPositive.bmp" 
+    width="56" height="62"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8054" 
+    url="Images/Controls/ChannelButtonNegative.bmp" 
+    width="56" height="58"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8055" 
+    url="Images/Controls/VolumeButtonPositive.bmp" 
+    width="60" height="62"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8056" 
+    url="Images/Controls/VolumeButtonNegative.bmp" 
+    width="60" height="58"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8057" 
+    url="Images/Controls/PageButtonPositive.bmp" 
+    width="52" height="56"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8058" 
+    url="Images/Controls/PageButtonNegative.bmp" 
+    width="52" height="56"
+    compress="1"/> 
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8060" 
+    url="Images/EPG/EPGShowPicture.bmp" 
+    width="100" height="78"
+    compress="1"/> 
+
+  <comment>TV control versions</comment>
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8025" 
+    url="Images/TV10Key/TV10KeyMuteIcon.bmp" 
+    width="44" height="58"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8026" 
+    url="Images/TV10Key/TV10KeyChannelPositive.bmp" 
+    width="58" height="58"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8027" 
+    url="Images/TV10Key/TV10KeyChannelNegative.bmp" 
+    width="58" height="58"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8028" 
+    url="Images/TV10Key/TV10KeyVolumePositive.bmp" 
+    width="58" height="58"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8029" 
+    url="Images/TV10Key/TV10KeyVolumeNegative.bmp" 
+    width="58" height="58"
+    compress="1"/> 
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="9001" 
+    url="Images/TV10Key/TV10KeyTVVideoButton.bmp" 
+    width="104" height="68"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="9002" 
+    url="Images/TV10Key/TV10KeyDisplayButton.bmp" 
+    width="100" height="60"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="9003" 
+    url="Images/TV10Key/TV10KeyWideModeButton.bmp" 
+    width="100" height="66"
+    compress="1"/> 
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="9004" 
+    url="Images/TV10Key/TV10KeyDotButton.bmp" 
+    width="68" height="50"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="9005" 
+    url="Images/TV10Key/TV10KeyEnterButton.bmp" 
+    width="82" height="50"
+    compress="1"/> 
+
+  <comment>Transport and VOD controls</comment>
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8061" 
+    url="Images/VOD/VODPlayButton.bmp" 
+    width="94" height="70"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8062" 
+    url="Images/VOD/VODStopButton.bmp" 
+    width="88" height="66"
+    compress="1"/> 
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8063" 
+    url="Images/VOD/VODRewindButton.bmp" 
+    width="56" height="86"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8064" 
+    url="Images/VOD/VODPauseButton.bmp" 
+    width="88" height="88"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8065" 
+    url="Images/VOD/VODForwardButton.bmp" 
+    width="58" height="88"
+    compress="1"/> 
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8066" 
+    url="Images/VOD/VODMoviesButton.bmp" 
+    width="112" height="70"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8067" 
+    url="Images/VOD/VODRentedVideosButton.bmp" 
+    width="114" height="70"
+    compress="1"/> 
+
+  <comment>10 Key keypad digits</comment>
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8070" 
+    url="Images/10Key/10KeyButtonZero8.bmp" 
+    width="56" height="54"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8071" 
+    url="Images/10Key/10KeyButtonOne8.bmp" 
+    width="70" height="58"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8072" 
+    url="Images/10Key/10KeyButtonTwo8.bmp" 
+    width="66" height="58"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8073" 
+    url="Images/10Key/10KeyButtonThree8.bmp" 
+    width="72" height="58"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8074" 
+    url="Images/10Key/10KeyButtonFour8.bmp" 
+    width="74" height="56"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8075" 
+    url="Images/10Key/10KeyButtonFive8.bmp" 
+    width="64" height="56"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8076" 
+    url="Images/10Key/10KeyButtonSix8.bmp" 
+    width="70" height="56"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8077" 
+    url="Images/10Key/10KeyButtonSeven8.bmp" 
+    width="72" height="56"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8078" 
+    url="Images/10Key/10KeyButtonEight8.bmp" 
+    width="64" height="56"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8079" 
+    url="Images/10Key/10KeyButtonNine8.bmp" 
+    width="72" height="56"
+    compress="1"/> 
+
+  <comment>Content screens are at 0,86(320x160) and 0,246(320x70) totalling (320x230)</comment>
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8081" 
+    url="Images/10Key/10KeyContentTop.bmp" 
+    width="320" height="160"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8082" 
+    url="Images/10Key/10KeyContentBottom.bmp" 
+    width="320" height="70"
+    compress="1"/> 
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8083" 
+    url="Images/Cursor/CursorContentTop.bmp" 
+    width="320" height="160"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8084" 
+    url="Images/Cursor/CursorContentBottom.bmp" 
+    width="320" height="70"
+    compress="1"/> 
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8085" 
+    url="Images/VOD/VODContentTop.bmp" 
+    width="320" height="160"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8086" 
+    url="Images/VOD/VODContentBottom.bmp" 
+    width="320" height="70"
+    compress="1"/> 
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8087" 
+    url="Images/TV10Key/TV10KeyContentTop.bmp" 
+    width="320" height="160"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8088" 
+    url="Images/TV10Key/TV10KeyContentBottom.bmp" 
+    width="320" height="70"
+    compress="1"/> 
+
+<!--
+  <comment>Bottom 'silkscreen' is at 0,452(320x28)</comment>
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8089" 
+    url="Images/Controls/BottomIconBar.bmp" 
+    width="320" height="28"
+    compress="1"/> 
+-->
+
+  <comment>Background for common area for Volume/Channel etc.</comment>
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8090" 
+    url="Images/Controls/ControlArea.bmp" 
+    width="320" height="142"
+    compress="1"/> 
+
+  <comment>And other version for TV control:</comment>
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8091" 
+    url="Images/Controls/TVControlArea.bmp" 
+    width="320" height="142"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8092" 
+    url="Images/10Key/10KeyStarButton8.bmp" 
+    width="76" height="54"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8093" 
+    url="Images/10Key/10KeyDoneButton8.bmp" 
+    width="76" height="54"
+    compress="1"/> 
+
+  <comment>Home page buttons</comment>
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8101" 
+    url="Images/Home/HomeTopLeft.bmp" 
+    width="206" height="50"
+    compress="1"/> 
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8102" 
+    url="Images/Home/SystemStandbyTopRight.bmp" 
+    width="114" height="50"
+    compress="1"/>
+
+<!--
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8103" 
+    url="Images/Home/HomeMain01Button.bmp" 
+    width="106" height="36"
+    compress="1"/> 
+-->
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8104" 
+    url="Images/Home/HomeMain01ButtonPressed.bmp" 
+    width="106" height="36"
+    compress="1"/> 
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8105" 
+    url="Images/Home/HomeMain02Button.bmp" 
+    width="108" height="36"
+    compress="1"/> 
+
+<!--
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8106" 
+    url="Images/Home/HomeMain02ButtonPressed.bmp" 
+    width="108" height="36"
+    compress="1"/> 
+-->
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8107" 
+    url="Images/Home/HomeSetupButton.bmp" 
+    width="106" height="36"
+    compress="1"/> 
+
+<!--
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8108" 
+    url="Images/Home/HomeSetupButtonPressed.bmp" 
+    width="106" height="36"
+    compress="1"/> 
+-->
+
+  <comment>Top and Bottom background pieces</comment>
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8109" 
+    url="Images/Home/HomeContentTop.bmp" 
+    width="320" height="160"
+    compress="1"/> 
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8110" 
+    url="Images/Home/HomeContentBottom.bmp"  
+    width="320" height="70"
+    compress="1"/> 
+
+  <comment>Many buttons - in initial demo, only Cable and TV will be used.</comment>
+
+<!--
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8111" 
+    url="Images/Home/HomeCableButton.bmp" 
+    width="106" height="74"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8112" 
+    url="Images/Home/HomeDBSButton.bmp" 
+    width="106" height="74"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8113" 
+    url="Images/Home/HomeDVRButton.bmp" 
+    width="108" height="74"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8114" 
+    url="Images/Home/HomeTVButton.bmp" 
+    width="106" height="74"
+    compress="1"/> 
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8115" 
+    url="Images/Home/HomeSTRButton.bmp" 
+    width="106" height="74"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8116" 
+    url="Images/Home/HomeDVDButton.bmp" 
+    width="108" height="74"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8117" 
+    url="Images/Home/HomeVCRButton.bmp" 
+    width="106" height="74"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8118" 
+    url="Images/Home/HomeVideoButton.bmp" 
+    width="106" height="74"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8119" 
+    url="Images/Home/HomeTapeButton.bmp" 
+    width="108" height="74"
+    compress="1"/> 
+-->
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8211" 
+    url="Images/Home/HomeCableButtonPressed.bmp" 
+    width="106" height="74"
+    compress="1"/> 
+
+<!--
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8212" 
+    url="Images/Home/HomeDBSButtonPressed.bmp" 
+    width="106" height="74"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8213" 
+    url="Images/Home/HomeDVRButtonPressed.bmp" 
+    width="108" height="74"
+    compress="1"/> 
+-->
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8214" 
+    url="Images/Home/HomeTVButtonPressed.bmp" 
+    width="106" height="74"
+    compress="1"/> 
+
+<!--
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8215" 
+    url="Images/Home/HomeSTRButton.bmp" 
+    width="106" height="74"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8216" 
+    url="Images/Home/HomeDVDButton.bmp" 
+    width="108" height="74"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8217" 
+    url="Images/Home/HomeVCRButton.bmp" 
+    width="106" height="74"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8218" 
+    url="Images/Home/HomeVideoButton.bmp" 
+    width="106" height="74"
+    compress="1"/> 
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="8219" 
+    url="Images/Home/HomeTapeButton.bmp" 
+    width="108" height="74"
+    compress="1"/> 
+-->
+
+  <comment>Default User</comment>
+
+  <resource
+    cmd="DATA" type="xBIN" id="5000" 
+    url="XML/UserDefaultUser.xml"/>
+
+  <comment>Default Categories</comment>
+
+  <resource
+    cmd="DATA" type="xBIN" id="5001" 
+    url="XML/Categories.xml"/>
+
+  <comment>Default Devices</comment>
+
+  <resource
+    cmd="DATA" type="xBIN" id="5002" 
+    url="XML/DeviceBox.xml"/>
+
+<!--
+  <resource
+    cmd="DATA" type="xBIN" id="5003" 
+    url="XML/DeviceCD.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="5004" 
+    url="XML/DeviceDVD.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="5005" 
+    url="XML/DeviceDVR.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="5006" 
+    url="XML/DeviceTV.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="5007" 
+    url="XML/DeviceVCR.xml"/>
+-->
+
+<!--
+  <comment>Default Room</comment>
+
+  <resource
+    cmd="DATA" type="xBIN" id="5008" 
+    url="XML/RoomDefaultRoom.xml"/>
+-->
+
+  <comment>Default Guis</comment>
+
+  <resource
+    cmd="DATA" type="xBIN" id="6000" 
+    url="XML/GuiBrowser.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6001" 
+    url="XML/GuiConnectedTV.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6002" 
+    url="XML/GuiSetup.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6003" 
+    url="XML/GuiHello.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6004" 
+    url="XML/GuiHome.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6005" 
+    url="XML/GuiDetails.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6006" 
+    url="XML/GuiStations.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6007" 
+    url="XML/GuiBox.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6008" 
+    url="XML/GuiDVD.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6009" 
+    url="XML/GuiDVR.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6010" 
+    url="XML/GuiTV.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6011" 
+    url="XML/GuiVCR.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6012" 
+    url="XML/GuiHelp.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6013" 
+    url="XML/GuiStatus.xml"/>
+
+  <comment>Sony Clie Guis</comment>
+
+  <resource
+    cmd="DATA" type="xBIN" id="6014" 
+    url="XML/GuiSHome.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6015" 
+    url="XML/GuiS10Key.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6016" 
+    url="XML/GuiSCursor.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6017" 
+    url="XML/GuiSVOD.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6018" 
+    url="XML/GuiSStations.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6019" 
+    url="XML/GuiSTV10Key.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6020" 
+    url="XML/GuiSShows.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6021" 
+    url="XML/GuiSDetails.xml"/>
+
+</resources>

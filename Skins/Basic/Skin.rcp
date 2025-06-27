@@ -1,0 +1,31 @@
+////////////////////////////////////////////////////////////////////////
+// Skin XML Files
+
+
+#include "SkinRsc.h"
+
+
+////////////////////////////////////////////////////////////////////////
+// Default Guis
+
+
+DATA "xBIN" ID 6000 "../Skins/Basic/XML/GuiBrowser.xml"
+DATA "xBIN" ID 6001 "../Skins/Basic/XML/GuiConnectedTV.xml"
+DATA "xBIN" ID 6002 "../Skins/Basic/XML/GuiSetup.xml"
+DATA "xBIN" ID 6003 "../Skins/Basic/XML/GuiMoreHelp.xml"
+DATA "xBIN" ID 6004 "../Skins/Basic/XML/GuiHome.xml"
+DATA "xBIN" ID 6005 "../Skins/Basic/XML/GuiDetails.xml"
+DATA "xBIN" ID 6006 "../Skins/Basic/XML/GuiStations.xml"
+DATA "xBIN" ID 6007 "../Skins/Basic/XML/GuiBox.xml"
+DATA "xBIN" ID 6008 "../Skins/Basic/XML/GuiDVR.xml"
+DATA "xBIN" ID 6009 "../Skins/Basic/XML/GuiTV.xml"
+DATA "xBIN" ID 6010 "../Skins/Basic/XML/GuiVCR.xml"
+DATA "xBIN" ID 6011 "../Skins/Basic/XML/GuiHelp.xml"
+DATA "xBIN" ID 6012 "../Skins/Basic/XML/GuiStatus.xml"
+DATA "xBIN" ID 6013 "../Skins/Basic/XML/GuiBasics.xml"
+DATA "xBIN" ID 6014 "../Skins/Basic/XML/GuiStrokes.xml"
+DATA "xBIN" ID 6015 "../Skins/Basic/XML/GuiShowList.xml"
+DATA "xBIN" ID 6016 "../Skins/Basic/XML/GuiListHelp.xml"
+
+
+////////////////////////////////////////////////////////////////////////

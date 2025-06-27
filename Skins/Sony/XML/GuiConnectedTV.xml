@@ -1,0 +1,122 @@
+<gui
+  title="ConnectedTV"
+  width="160"
+  height="240"
+  bottomedge="15"
+  pagetype="1"
+  cellsperpage="12"
+  onback="Browse Categories"
+>
+
+  <!-- Copyright 2002-2003 ConnectedMedia Corporation --> 
+
+  <button
+    x="0" y="0"
+    width="62" height="16"
+    labeldy="2"
+    active="0"
+    framed="0"
+    source="guiname"
+  />
+
+  <button
+    x="62" y="0"
+    width="28" height="16"
+    labeldy="2"
+    active="0"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    label="Category"
+    x="90" y="0"
+    labeldy="2"
+    width="70" height="16"
+    style="4"
+    source="categoryname"
+    action="Browse Categories"
+    look="7010" stretch="12" states="3" hires="1"
+  />
+
+  <button
+    id="Description"
+    label=""
+    x="0" y="16"
+    labeldy="1"
+    width="160" height="40"
+    wrap="1"
+    source="currentprogramdescription"
+    pietouch="    Stroke Down to Change Channels:gotopage Show Details"
+    piedown="                  Watch This Channel:gotocurrentchannel"
+    pieup="                      Show Details:gotopage Show Details"
+    pieright="                         Next Page:scrollchannels 1"
+    pieleft="                        Previous Page:scrollchannels -1"
+    look="7013" stretch="12" states="3" hires="1"
+  />
+
+  <button
+    label=""
+    x="0" y="56"
+    width="160" height="140"
+    labeldx="0" labeldy="5"
+    rows="7" columns="2"
+    rowlayout="0"
+    pager="1"
+    style="3"
+    source="programs"
+    index="0"
+    action="selectchannel"
+    piedown="Watch:gotochannel"
+    pieup="Show Details:gotopage Show Details"
+    pieright="Next Page:scrollchannels 1"
+    pieleft="Previous Page:scrollchannels -1"
+    xpietouch=":tapchannel"
+    look="7012" stretch="12" states="3" hires="1"
+    onsize="StretchToBottom 24 20"
+  />
+
+  <button
+    label="Box"
+    x="0" y="201"
+    width="30" height="24"
+    labeldx="4" labeldy="5"
+    pietouch=":gotopage Box"
+    pieup=" TV:gotopage TV"
+    piedown="DVR:gotopage DVR"
+    pieright="VCR:gotopage VCR"
+    pieleft="Box:gotopage Box"
+    look="7010" stretch="12" states="3" hires="1"
+    onsize="StickToBottom 0"
+  />
+
+  <button
+    label=""
+    x="30" y="201"
+    width="90" height="24"
+    labeldx="0" labeldy="5"
+    source="currenttime"
+    pietouch="Now:gotocurrenttime"
+    piedown="Next 1/2 hour:changetime 30"
+    pieup="Previous 1/2 hour:changetime -30"
+    pieleft="Set Time:gototime"
+    pieright="Set Day:gotodate"
+    look="7015" stretch="12" states="3" hires="1"
+    onsize="StickToBottom 0"
+  />
+
+  <button
+    label="Stations"
+    x="120" y="201"
+    width="40" height="24"
+    labeldx="0" labeldy="5"
+    look="7010" stretch="12" states="3" hires="1"
+    pietouch=":gotopage Stations"
+    pieup="Category:Browse Categories"
+    piedown=" Details:gotopage Show Details"
+    pieleft="   Home:gotopage Home"
+    onsize="StickToBottom 0"
+  />
+
+</gui>

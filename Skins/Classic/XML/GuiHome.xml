@@ -1,0 +1,285 @@
+<gui
+  title="Home"
+  onback="quit"
+  cachetype="1"
+>
+
+  <!-- Copyright (C) 2003 by ConnectedMedia. All rights reserved. -->
+
+  <button
+    label="Home"
+    x="1"
+    y="1"
+    width="62"
+    height="13"
+    antialiased="0"
+    hires="0"
+    wrap="0"
+    clock="0"
+    rowlayout="1"
+    active="0"
+    framed="0"
+    transparent="0"
+    invisible="0"
+    background="0"
+    overbackground="0"
+  >
+
+    <cell
+      active="1"
+    />
+
+  </button>
+
+  <button
+    source="showclock"
+    x="65"
+    y="1"
+    width="28"
+    height="13"
+    antialiased="0"
+    hires="0"
+    wrap="0"
+    clock="1"
+    rowlayout="1"
+    active="0"
+    framed="0"
+    transparent="0"
+    invisible="0"
+    background="0"
+    overbackground="0"
+  >
+
+    <cell
+      active="1"
+    />
+
+  </button>
+
+  <button
+    source="Expires"
+    x="1"
+    y="15"
+    width="158"
+    height="13"
+    antialiased="0"
+    hires="0"
+    wrap="0"
+    clock="0"
+    rowlayout="1"
+    active="0"
+    framed="0"
+    transparent="0"
+    invisible="0"
+    background="0"
+    overbackground="0"
+  >
+
+    <cell
+      active="1"
+    />
+
+  </button>
+
+  <button
+    x="71"
+    y="32"
+    width="88"
+    height="28"
+    labeldy="9"
+    columns="2"
+    antialiased="0"
+    hires="0"
+    wrap="0"
+    clock="0"
+    rowlayout="1"
+    active="1"
+    framed="1"
+    transparent="0"
+    invisible="0"
+    background="0"
+    overbackground="0"
+  >
+
+    <cell
+      label="     Help"
+      action="gotopage Help"
+      active="1"
+    />
+
+    <cell
+      label="Category"
+      action="Browse Categories"
+      labeldx="1"
+      active="1"
+    />
+
+  </button>
+
+  <button
+    x="71"
+    y="64"
+    width="88"
+    height="30"
+    labeldy="9"
+    columns="2"
+    antialiased="0"
+    hires="0"
+    wrap="0"
+    clock="0"
+    rowlayout="1"
+    active="1"
+    framed="1"
+    transparent="0"
+    invisible="0"
+    background="0"
+    overbackground="0"
+  >
+
+    <cell
+      label="    Input"
+      pietouch=":send Input"
+      active="1"
+    />
+
+    <cell
+      label="     Last"
+      pietouch=":send Last"
+      active="1"
+    />
+
+  </button>
+
+  <button
+    x="1"
+    y="99"
+    width="90"
+    height="60"
+    labeldy="9"
+    rows="2"
+    columns="2"
+    antialiased="0"
+    hires="0"
+    wrap="0"
+    clock="0"
+    rowlayout="1"
+    active="1"
+    framed="1"
+    transparent="0"
+    invisible="0"
+    background="0"
+    overbackground="0"
+  >
+
+    <cell
+      label="     VCR"
+      action="gotopage VCR"
+      active="1"
+    />
+
+    <cell
+      label="     DVR"
+      action="gotopage DVR"
+      active="1"
+    />
+
+    <cell
+      label="     Box"
+      action="gotopage Box"
+      active="1"
+    />
+
+    <cell
+      label="      TV"
+      action="gotopage TV"
+      active="1"
+    />
+
+  </button>
+
+  <button
+    x="1"
+    y="32"
+    width="66"
+    height="62"
+    labeldy="9"
+    rows="2"
+    columns="2"
+    antialiased="0"
+    hires="0"
+    wrap="0"
+    clock="0"
+    rowlayout="1"
+    active="1"
+    framed="1"
+    transparent="0"
+    invisible="0"
+    background="0"
+    overbackground="0"
+  >
+
+    <cell
+      label="  Quit"
+      pietouch="  Bye!:quit"
+      pieup="Cancel:"
+      piedown="Cancel:"
+      active="1"
+    />
+
+    <cell
+      label=" Status"
+      action="gotopage Status"
+      labeldx="-1"
+      active="1"
+    />
+
+    <cell
+      label=" Setup"
+      action="gotopage Setup"
+      active="1"
+    />
+
+    <cell
+      label=" Train"
+      action="train"
+      active="1"
+    />
+
+  </button>
+
+  <button
+    x="115"
+    y="99"
+    width="44"
+    height="60"
+    labeldx="-1"
+    labeldy="8"
+    rows="2"
+    antialiased="0"
+    hires="0"
+    wrap="0"
+    clock="0"
+    rowlayout="1"
+    active="1"
+    framed="1"
+    transparent="0"
+    invisible="0"
+    background="0"
+    overbackground="0"
+  >
+
+    <cell
+      label="  Stations"
+      action="gotopage Stations"
+      active="1"
+    />
+
+    <cell
+      label="    Shows"
+      action="gotopage ConnectedTV"
+      active="1"
+    />
+
+  </button>
+
+</gui>

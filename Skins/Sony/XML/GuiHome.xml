@@ -1,0 +1,266 @@
+<gui
+  title="Home"
+  onback="quit"
+  height="240"
+  bottomedge="15"
+>
+
+  <!-- Copyright (C) 2003 by ConnectedMedia. All rights reserved. -->
+
+  <button
+    source="guiname"
+    width="62"
+    height="16"
+    labeldy="2"
+    antialiased="0"
+    hires="0"
+    wrap="0"
+    clock="0"
+    rowlayout="1"
+    active="0"
+    framed="0"
+    transparent="0"
+    invisible="0"
+    background="0"
+    overbackground="0"
+  >
+
+    <cell
+      active="1"
+    />
+
+  </button>
+
+  <button
+    source="showclock"
+    x="62"
+    width="28"
+    height="16"
+    labeldy="2"
+    antialiased="0"
+    hires="0"
+    wrap="0"
+    clock="1"
+    rowlayout="1"
+    active="0"
+    framed="0"
+    transparent="0"
+    invisible="0"
+    background="0"
+    overbackground="0"
+  >
+
+    <cell
+      active="1"
+    />
+
+  </button>
+
+  <button
+    source="Expires"
+    y="15"
+    width="160"
+    height="13"
+    antialiased="0"
+    hires="0"
+    wrap="0"
+    clock="0"
+    rowlayout="1"
+    active="0"
+    framed="0"
+    transparent="1"
+    invisible="0"
+    background="0"
+    overbackground="0"
+  >
+
+    <cell
+      active="1"
+    />
+
+  </button>
+
+  <button
+    look="7010"
+    y="32"
+    width="90"
+    height="60"
+    states="3"
+    stretch="12"
+    labeldx="8"
+    labeldy="9"
+    rows="2"
+    columns="2"
+    antialiased="0"
+    hires="1"
+    wrap="0"
+    clock="0"
+    rowlayout="1"
+    active="1"
+    framed="1"
+    transparent="0"
+    invisible="0"
+    background="0"
+    overbackground="0"
+  >
+
+    <cell
+      label="  Quit"
+      pietouch="  Bye!:quit"
+      pieup="Cancel:"
+      piedown="Cancel:"
+      look="7014"
+      active="1"
+    />
+
+    <cell
+      label="Status"
+      action="gotopage Status"
+      active="1"
+    />
+
+    <cell
+      label=" Setup"
+      action="gotopage Setup"
+      active="1"
+    />
+
+    <cell
+      label=" Train"
+      action="train"
+      active="1"
+    />
+
+  </button>
+
+  <button
+    look="7010"
+    y="100"
+    width="90"
+    height="60"
+    states="3"
+    stretch="12"
+    labeldy="9"
+    rows="2"
+    columns="2"
+    antialiased="0"
+    hires="1"
+    wrap="0"
+    clock="0"
+    rowlayout="1"
+    active="1"
+    framed="1"
+    transparent="0"
+    invisible="0"
+    background="0"
+    overbackground="0"
+  >
+
+    <cell
+      label="     Box"
+      action="gotopage Box"
+      active="1"
+    />
+
+    <cell
+      label="      TV"
+      action="gotopage TV"
+      active="1"
+    />
+
+    <cell
+      label="     DVR"
+      action="gotopage DVR"
+      active="1"
+    />
+
+    <cell
+      label="     VCR"
+      action="gotopage VCR"
+      active="1"
+    />
+
+  </button>
+
+  <button
+    look="7010"
+    x="115"
+    y="32"
+    width="45"
+    height="128"
+    states="3"
+    stretch="12"
+    labeldx="-1"
+    labeldy="9"
+    rows="4"
+    antialiased="0"
+    hires="1"
+    wrap="0"
+    clock="0"
+    rowlayout="1"
+    active="1"
+    framed="1"
+    transparent="0"
+    invisible="0"
+    background="0"
+    overbackground="0"
+  >
+
+    <cell
+      label="     Help"
+      action="gotopage Help"
+      active="1"
+    />
+
+    <cell
+      label="Category"
+      action="Browse Categories"
+      labeldx="1"
+      active="1"
+    />
+
+    <cell
+      label="    Shows"
+      action="gotopage ConnectedTV"
+      active="1"
+    />
+
+    <cell
+      label="  Stations"
+      action="gotopage Stations"
+      active="1"
+    />
+
+  </button>
+
+  <button
+    label="Sony Clie Skin"
+    action="gotopage SHome"
+    look="7010"
+    y="170"
+    width="160"
+    height="55"
+    states="3"
+    stretch="12"
+    labeldx="50"
+    labeldy="23"
+    antialiased="0"
+    hires="1"
+    wrap="0"
+    clock="0"
+    rowlayout="1"
+    active="1"
+    framed="1"
+    transparent="0"
+    invisible="0"
+    background="0"
+    overbackground="0"
+  >
+
+    <cell
+      active="1"
+    />
+
+  </button>
+
+</gui>

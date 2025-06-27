@@ -1,0 +1,172 @@
+1000 1 AppIcon1
+     1002
+1001 2 AppIcon2
+     1002
+1002 8 AppIcon8
+     1002
+
+1110 1 ConnectedTVLogo1
+     1110
+
+1300 1 Splash1
+     1500
+1400 4 Splash4
+     1500
+
+1450 1 UpArrow1
+     1450
+1451 1 DownArrow1
+     1451
+
+7010 8 NavStretchButton8
+     7010
+7011 8 IRStretchButton8
+     7011
+7012 8 BrowseStretchButton8
+     7012
+7013 8 ContentButton8
+     7013
+7014 8 DeviceStretchButton8
+     7014
+7016 8 SystemStretchButton8
+     7015 7016
+7017 8 NeutralStretchButton8
+     7017
+7021 8 ConnectedTVButton8
+     7021
+7030 8 PlayIRButton8
+     7030
+7031 8 StopIRButton8
+     7031
+7032 8 PauseIRButton8
+     7032
+7033 8 FastForwardIRButton8
+     7033
+7034 8 RewindIRButton8
+     7034
+7037 8 RecordIRButton8
+     7037
+7038 8 PowerIRButton8
+     7038
+7039 8 MuteIRButton8
+     7039
+7040 8 VolUpIRButton8
+     7040
+7041 8 VolDownIRButton8
+     7041
+7049 8 UpIRButton8
+     7049
+7050 8 DownIRButton8
+     7050
+7051 8 LeftIRButton8
+     7051
+7052 8 RightIRButton8
+     7052
+7055 8 PlusIRButton8
+     7055
+7056 8 MinusIRButton8
+     7056
+7057 8 SelectIRButton8
+     7057
+
+7110 2 NavStretchButton2
+     7010 7011 7014 7015 7016
+7113 2 ContentButton2
+     7012 7013
+7118 2 CalcSearch2
+     7018
+7120 2 HardwareButtons2
+     7020
+7121 2 ConnectedTVButton2
+     7021
+7130 2 PlayIRButton2
+     7030
+7131 2 StopIRButton2
+     7031
+7132 2 PauseIRButton2
+     7032
+7133 2 FastForwardIRButton2
+     7033
+7134 2 RewindIRButton2
+     7034
+7137 2 RecordIRButton2
+     7037
+7138 2 PowerIRButton2
+     7038
+7139 2 MuteIRButton2
+     7039
+7140 2 VolUpIRButton2
+     7040
+7141 2 VolDownIRButton2
+     7041
+7149 2 UpIRButton2
+     7049
+7150 2 DownIRButton2
+     7050
+7151 2 LeftIRButton2
+     7051
+7152 2 RightIRButton2
+     7052
+7155 2 PlusIRButton2
+     7055
+7156 2 MinusIRButton2
+     7056
+7157 2 SelectIRButton2
+     7057
+
+7210 1 NavStretchButton1
+     7010 7011 7014 7015 7016
+7213 1 ContentButton1
+     7012 7013
+7217 1 NeutralStretchButton1
+     7017
+7218 1 CalcSearch1
+     7018
+7220 1 HardwareButton1
+     7020
+7221 1 ConnectedTVButton1
+     7021
+7222 1 LeftStroke1
+     7022
+7223 1 RightStroke1
+     7023
+7224 1 UpStroke1
+     7024
+7225 1 DownStroke1
+     7025
+7230 1 PlayIRButton1
+     7030
+7231 1 StopIRButton1
+     7031
+7232 1 PauseIRButton1
+     7032
+7233 1 FastForwardIRButton1
+     7033
+7234 1 RewindIRButton1
+     7034
+7237 1 RecordIRButton1
+     7037
+7238 1 PowerIRButton1
+     7038
+7239 1 MuteIRButton1
+     7039
+
+7240 1 VolUpIRButton1
+     7040
+7241 1 VolDownIRButton1
+     7041
+7249 1 UpIRButton1
+     7049
+7250 1 DownIRButton1
+     7050
+7251 1 LeftIRButton1
+     7051
+7252 1 RightIRButton1
+     7052
+7255 1 PlusIRButton1
+     7055
+7256 1 MinusIRButton1
+     7056
+7257 1 SelectIRButton1
+     7057
+

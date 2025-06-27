@@ -1,0 +1,231 @@
+<gui
+  title="MoreHelp"
+  width="160"
+  height="160"
+  browser="Help"
+  cachetype="-1"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="0" y="0"
+    width="160" height="13"
+    active="0"
+    framed="0"
+    label="More Strokes"
+  />
+
+  <button
+    label="Description"
+    x="31" y="13"
+    width="70" height="20"
+    labeldx="6" labeldy="4"
+    wrap="1"
+    pieup=" Tune Show:"
+    pietouch="Show Details:"
+    piedown="Show Details:"
+    pieright=" Next Page:"
+    pieleft=" Prev Page:"
+    look="7012" states="3" stretch="4"
+  />
+
+  <button
+    label=" Title"
+    comment="grid of show titles"
+    x="31" y="33"
+    width="70" height="30"
+    labeldx="1" labeldy="1"
+    rows="2" columns="2"
+    rowlayout="0"
+    pager="1"
+    style="3"
+    index="0"
+    pietouch="Select:"
+    pieup= " Tune:"
+    piedown= "Details:"
+    pieleft= " Prev:"
+    pieright=" Next:"
+    look="7013" states="3" stretch="4"
+  />
+
+  <button
+    label="Prev Page"
+    x="0" y="19"
+    labeldx="0" labeldy="4"
+    width="30" height="35"
+    framed="0" active="0"
+    wrap="1"
+  />
+
+  <button
+    label=""
+    comment="Paging left arrow"
+    x="23" y="30"
+    width="47" height="7"
+    framed="0" active="0"
+    look="7022" states="1"
+  />
+
+  <button
+    label="Next Page"
+    x="109" y="19"
+    labeldx="0" labeldy="4"
+    width="30" height="35"
+    framed="0" active="0"
+    wrap="1"
+  />
+
+  <button
+    label=""
+    comment="Paging right arrow"
+    x="102" y="30"
+    width="7" height="7"
+    framed="0" active="0"
+    look="7023" states="1"
+  />
+
+  <button
+    x="62" y="64"
+    comment="Show Details down arrow"
+    width="10" height="10"
+    look="7025" states="1"
+    framed="0" active="0"
+  />
+
+  <button
+    x="33" y="71"
+    comment="Show Details down arrow label"
+    width="60" height="13"
+    labeldx="0" labeldy="0"
+    framed="0" active="0"
+    label="Show Details"
+   />
+
+  <button
+    x="136" y="13"
+    comment="Calc and Search silkscreen docs"
+    width="22" height="68"
+    labeldx="0" labeldy="0"
+    framed="0" active="0"
+    look="7018" states="1"
+  />
+
+  <button
+    x="20" y="87"
+    width="120" height="30"
+    labeldx="2" labeldy="8"
+    rows="1" columns="4"
+  >
+
+    <cell
+      pietouch="Play:"
+      piedown=" Rec:"
+      look="7030" states="2"
+     />
+
+    <cell
+      piedown= " Rep:"
+      pietouch=" Rew:"
+      pieleft="SkipBack:"
+      look="7034" states="2"
+     />
+
+    <cell
+      pietouch="Pause:"
+      piedown="Stop:"
+      look="7032" states="2"
+    />
+
+    <cell
+      pietouch=" FF:"
+      piedown=" Adv:"
+      pierigh="Skip:"
+      look="7033" states="2"
+    />
+
+  </button>
+
+  <button
+    x="30" y="116"
+    comment="Shuttle down arrows"
+    width="120" height="10"
+    look="7025" states="1"
+    framed="0" active="0"
+    rows="1" columns="4"
+  >
+
+    <cell/>
+
+    <cell/>
+
+    <cell/>
+
+    <cell/>
+
+  </button>
+
+  <button
+    x="0" y="123"
+    comment="Shuttle down arrow labels"
+    width="160" height="13"
+    labeldx="0" labeldy="0"
+    framed="0" active="0"
+    rows="1" columns="4"
+  >
+
+    <cell
+      labeldx="7"
+      label="Record"
+    />
+
+    <cell
+      labeldx="5"
+      label="Replay"
+    />
+
+    <cell
+      labeldx="4"
+      label="Stop"
+    />
+
+    <cell
+      labeldx="-1"
+      label="Advance"
+    />
+
+  </button>
+
+  <button
+    x="0" y="141"
+    width="160" height="20"
+    labeldx="2" labeldy="3"
+    pieup="  cancel:"
+    piedown="  cancel:"
+    columns="4"
+    look="7016" states="2" stretch="6"
+  >
+
+    <cell
+      label="  Home"
+      pietouch=":gotopage Home"
+    />
+
+    <cell
+      label="   Help"
+      pietouch=":gotopage Help"
+    />
+
+    <cell
+      label="Strokes"
+      pietouch=":gotopage Strokes"
+    />
+
+    <cell
+      label="   More"
+      pietouch=":gotopage Basics"
+    />
+
+  </button>
+
+</gui>

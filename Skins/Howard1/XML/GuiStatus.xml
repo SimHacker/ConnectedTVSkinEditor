@@ -1,0 +1,72 @@
+<gui
+  title="Status"
+  width="160"
+  height="160"
+  cachetype="-1"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="1" y="1"
+    width="62" height="13"
+    active="0"
+    framed="0"
+    source="guiname"
+  />
+
+  <button
+    x="65" y="1"
+    width="28" height="13"
+    active="0"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    source="Status"
+    x="1" y="18"
+    width="158" height="115"
+    wrap="1"
+    framed="0"
+    active="0"
+    xpietouch=":gotopage ConnectedTV"
+    xpieup="Home:gotopage Home"
+    xpiedown=":gotopage ConnectedTV"
+  />
+
+  <button
+    x="1" y="135"
+    width="159" height="24"
+    labeldx="2" labeldy="6"
+    pieup="  cancel:"
+    piedown="  cancel:"
+    columns="4"
+    look="7016"  states="2" stretch="6"
+  >
+
+    <cell
+      label="  Home"
+      pietouch=":gotopage Home"
+    />
+
+    <cell
+      label="  Setup"
+      pietouch=":gotopage Setup"
+    />
+
+    <cell
+      label="   Quit"
+      pietouch="  Bye!:quit"
+    />
+
+    <cell
+      label=" Shows"
+      pietouch=":gotopage ConnectedTV"
+      look="7010"  states="2" stretch="6"
+    />
+
+  </button>
+
+</gui>

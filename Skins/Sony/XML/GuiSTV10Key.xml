@@ -1,0 +1,270 @@
+<gui
+  title="STV10Key"
+  width="160"
+  height="240"
+  bottomedge="15"
+  onback="gotopage SHome"
+ >
+
+  <!-- Copyright 2002-2003 ConnectedMedia Corporation --> 
+
+  <!-- TV header and Power button -->
+
+  <button
+    x="0" y="0"
+    width="115" height="25"
+    framed="0"
+    look="8003" states="1" hires="1"
+    action="gotopage SHome"
+  />
+
+  <button
+    x="115" y="0"
+    width="45" height="25"
+    framed="0"
+    look="8004" states="1" hires="1"
+    action="send TVPower"
+  />
+
+  <!-- 2 tabs: 10Key(pressed) and Cursor (but Cursor tab is a dummy) -->
+
+  <button
+    x="0" y="25"
+    width="80" height="18"
+    framed="0"
+    look="8010" states="1" hires="1"
+  />
+
+  <button
+    x="80" y="25"
+    width="80" height="18"
+    framed="0"
+    active="0"
+    look="8011" states="1" hires="1"
+  />
+
+  <!-- TV10Key Content Area Background Bands -->
+
+  <button
+    x="0" y="43"
+    width="160" height="115"
+    framed="0"
+    active="0"
+    look="8087" states="1" hires="1"
+    bands="2" background="1"
+  />
+
+  <!-- TV 10 Key Digit buttons, Dot and Enter -->
+
+  <!-- Digits 1 thru 9, 0 -->
+
+  <button
+    x="28" y="43"
+    width="35" height="29"
+    framed="0"
+    look="8071" states="1" hires="1"
+    overbackground="1"
+    action="send TV1"
+  />
+
+  <button
+    x="63" y="43"
+    width="33" height="29"
+    framed="0"
+    look="8072" states="1" hires="1"
+    overbackground="1"
+    action="send TV2"
+  />
+
+  <button
+    x="96" y="43"
+    width="36" height="29"
+    framed="0"
+    look="8073" states="1" hires="1"
+    overbackground="1"
+    action="send TV3"
+  />
+
+  <button
+    x="28" y="72"
+    width="37" height="28"
+    framed="0"
+    look="8074" states="1" hires="1"
+    overbackground="1"
+    action="send TV4"
+  />
+
+  <button
+    x="65" y="72"
+    width="31" height="28"
+    framed="0"
+    look="8075" states="1" hires="1"
+    overbackground="1"
+    action="send TV5"
+  />
+
+  <button
+    x="97" y="72"
+    width="35" height="28"
+    framed="0"
+    look="8076" states="1" hires="1"
+    overbackground="1"
+    action="send TV6"
+  />
+
+  <button
+    x="28" y="100"
+    width="36" height="28"
+    framed="0"
+    look="8077" states="1" hires="1"
+    overbackground="1"
+    action="send TV7"
+  />
+
+  <button
+    x="64" y="100"
+    width="32" height="28"
+    framed="0"
+    look="8078" states="1" hires="1"
+    overbackground="1"
+    action="send TV8"
+  />
+
+  <button
+    x="96" y="100"
+    width="36" height="28"
+    framed="0"
+    look="8079" states="1" hires="1"
+    overbackground="1"
+    action="send TV9"
+  />
+
+  <button
+    x="66" y="128"
+    width="30" height="27"
+    framed="0"
+    look="8070" states="1" hires="1"
+    overbackground="1"
+    action="send TV0"
+  />
+
+  <!-- Dot and Enter buttons -->
+
+  <button
+    x="32" y="130"
+    width="34" height="25"
+    framed="0"
+    look="9004" states="1" hires="1"
+    overbackground="1"
+    action="send TVDot"
+  />
+
+  <button
+    x="96" y="130"
+    width="41" height="25"
+    framed="0"
+    look="9005" states="1" hires="1"
+    overbackground="1"
+    action="send TVEnter"
+  />
+
+  <!-- TV version of Control area background with Volume etc -->
+
+  <button
+    x="0" y="155"
+    width="160" height="71"
+    framed="0"
+    active="0"
+    look="8091" states="1" hires="1"
+    background="1"
+  />
+
+  <!-- Mute button x coord is "59"/2?? -->
+
+  <button
+    x="30" y="155"
+    width="22" height="29"
+    framed="0"
+    look="8025" states="1" hires="1"
+    overbackground="1"
+    action="send Mute"
+  />
+
+  <!-- Volume+ button -->
+
+  <button
+    x="52" y="168"
+    width="29" height="29"
+    framed="0"
+    look="8028" states="1" hires="1"
+    overbackground="1"
+    action="send Volume +"
+  />
+
+  <!-- Volume- button -->
+
+  <button
+    x="52" y="197"
+    width="29" height="29"
+    framed="0"
+    look="8029" states="1" hires="1"
+    overbackground="1"
+    action="send Volume -"
+  />
+
+  <!-- TV Channel + button -->
+
+  <button
+    x="81" y="168"
+    width="29" height="29"
+    framed="0"
+    look="8026" states="1" hires="1"
+    overbackground="1"
+    action="send TVChannel +"
+  />
+
+  <!-- TV Channel - button -->
+
+  <button
+    x="81" y="197"
+    width="29" height="29"
+    framed="0"
+    look="8027" states="1" hires="1"
+    overbackground="1"
+    action="send TVChannel -"
+  />
+
+  <!-- TV/Video button is standard CTV Input button -->
+
+  <button
+    x="0" y="192"
+    width="52" height="34"
+    framed="0"
+    look="9001" states="1" hires="1"
+    overbackground="1"
+    action="send Input"
+  />
+
+  <!-- TV Display button -->
+
+  <button
+    x="110" y="155"
+    width="50" height="30"
+    framed="0"
+    look="9002" states="1" hires="1"
+    overbackground="1"
+    action="send TVDisplay"
+  />
+
+  <button
+    x="110" y="193"
+    width="50" height="33"
+    framed="0"
+    look="9003" states="1" hires="1"
+    overbackground="1"
+    action="send WideMode"
+  />
+
+  <!-- End Control Area buttons section -->
+
+</gui>

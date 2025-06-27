@@ -1,0 +1,233 @@
+<gui
+  title="VCR"
+  width="160"
+  height="160"
+  device="VCR"
+  cachetype="0"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="1" y="1"
+    width="62" height="13"
+    framed="0"
+    source="guiname"
+  />
+
+  <button
+    x="65" y="1"
+    width="28" height="13"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    label="Shows"
+    x="129" y="131"
+    width="30" height="28"
+    labeldx="0" labeldy="7"
+    pietouch=":gotopage ConnectedTV"
+    piedown="Stations:gotopage Stations"
+
+    look="7010" states="2" stretch="4"
+    onsize="StickToBottom 1"
+  />
+
+  <button
+    label="  TV"
+    x="1" y="131"
+    width="30" height="28"
+    labeldx="1" labeldy="8"
+    pietouch=":gotopage TV"
+    pieup=" DVR:gotopage DVR"
+    piedown="cancel:"
+    pieright=" Box:gotopage Box"
+
+    look="7014"  states="2" stretch="4"
+    onsize="StickToBottom 1"
+  />
+
+  <button
+    x="1" y="19"
+    width="158" height="28"
+    labeldx="2" labeldy="8"
+    rows="1" columns="5"
+
+    look="7011" states="2" stretch="4"
+  >
+
+    <cell
+      label="View"
+      labeldx="2"
+      action="send View"
+    />
+
+    <cell
+      label=" Guide"
+      labeldx="-2"
+      action="send Guide"
+    />
+
+    <cell
+      label=" Menu"
+      labeldx="-2"
+      pietouch=":send Menu"
+      pieleft="Men2:send Menu2"
+    />
+
+    <cell
+      label="  Info"
+      pietouch=":send Info"
+      piedown="Help:send Help"
+      pieleft="Info2:send Info2"
+    />
+
+    <cell
+      label=" Last"
+      action="send Last"
+      labeldx="1"
+    />
+
+ </button>
+
+  <button
+    label="SP/EP"
+    x="1" y="60"
+    width="30" height="28"
+    labeldx="1" labeldy="8"
+    action="send SP/EP"
+
+    look="7011" states="2" stretch="4"
+  />
+
+  <button
+    x="35" y="84"
+    width="90" height="60"
+    labeldx="2" labeldy="8"
+    rows="2" columns="3"
+  >
+
+    <cell
+      pietouch=" Rec:send Record"
+      look="7037" states="2"
+    />
+
+    <cell
+      labeldx="-2"
+      action="send Stop"
+      look="7031" states="2"
+    />
+
+    <cell
+      pietouch="Play:send Play"
+      look="7030" states="2"
+    />
+
+    <cell
+      labeldx="2" labeldy="0"
+      piedown= "Rep:send Replay"
+      pietouch="Rew:send Rewind"
+      look="7034" states="2"
+     />
+
+    <cell
+      labeldx="-2" labeldy="0"
+      pietouch="Pause:send Pause"
+      look="7032" states="2"
+    />
+
+    <cell
+      labeldx="3" labeldy="0"
+      pietouch=" FF:send FF"
+      piedown="Adv:send Advance"
+      pieright="Skip:send Skip"
+      look="7033" states="2"
+    />
+
+  </button>
+
+  <button
+    xlabel="+"
+    x="129" y="60"
+    width="30" height="30"
+    labeldx="2" labeldy="10"
+    pietouch="Page+:"
+    action="send +"
+
+    comment="graphic is 7055"
+    look="7055"  states="2"
+  />
+
+  <button
+    xlabel="-"
+    x="129" y="90"
+    width="30" height="30"
+    labeldx="2" labeldy="6"
+    pietouch="Page-:"
+    action="send -"
+
+    comment="graphic is 7056"
+    look="7056"  states="2"
+  />
+
+
+  <button
+    label="Home"
+    x="1" y="165"
+    width="30" height="30"
+    labeldx="1" labeldy="8"
+    pietouch=":gotopage Home"
+    look="7016"  states="2" stretch="4"
+  />
+
+  <button
+    x="65" y="164"
+    width="30" height="60"
+    labeldx="1" labeldy="8"
+
+    look="7011"  states="2" stretch="4"
+
+    rows="2" columns="1"
+  >
+
+    <cell
+      xlabel="Vol +"
+      look="7040"
+      labeldx="4" labeldy="1"
+      action="send Volume +"
+      pietouch="Vol+:"
+    />
+
+   <cell
+      xlabel="Vol -"
+      look="7041"
+      labeldx="4" labeldy="-2"
+      action="send Volume -"
+      pietouch="Vol-:"
+    />
+
+  </button>
+
+ <button
+    x="97" y="165"
+    width="30" height="30"
+    labeldx="2" labeldy="8"
+
+    xlabel="Mute"
+    action="send Mute"
+    pietouch="Mute:"
+    look="7039"  states="2"
+   />
+
+  <button
+    xlabel="Power"
+    x="129" y="165"
+    width="30" height="30"
+    labeldx="1" labeldy="8"
+    action="send Power"
+    look="7038"  states="2"
+  />
+
+</gui>

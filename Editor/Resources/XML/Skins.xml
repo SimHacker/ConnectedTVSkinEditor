@@ -1,0 +1,27 @@
+<skins
+  base="../Skins"
+>
+
+  <!-- Copyright (C) 2003 by ConnectedMedia. All rights reserved. -->
+
+  <skin
+    name="Basic"
+    url="Basic/XML/Skin.xml"
+  />
+
+  <skin
+    name="Classic"
+    url="Classic/XML/Skin.xml"
+  />
+
+  <skin
+    name="Howard 1"
+    url="Howard1/XML/Skin.xml"
+  />
+
+  <skin
+    name="Sony Clie NX/70V"
+    url="Sony/XML/Skin.xml"
+  />
+
+</skins>

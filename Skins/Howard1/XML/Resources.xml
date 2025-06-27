@@ -1,0 +1,422 @@
+<resources>
+
+  <!-- Copyright (C) 2003 by ConnectedMedia. All rights reserved. -->
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7010"
+    url="Images/StretchButtons/NavStretchButton.bmp"
+    compress="0"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7011"
+    url="Images/StretchButtons/IRStretchButton.bmp"
+    compress="0"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7014"
+    url="Images/StretchButtons/DeviceStretchButton.bmp"
+    compress="0"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7015"
+    url="Images/StretchButtons/TimeStretchButton.bmp"
+    compress="0"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7016"
+    url="Images/StretchButtons/SystemStretchButton.bmp"
+    compress="0"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7017"
+    url="Images/StretchButtons/NeutralStretchButton.bmp"
+    compress="0"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7012"
+    url="Images/BrowseButton.bmp"
+    compress="0"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7013"
+    url="Images/ContentButton.bmp"
+    compress="0"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7021"
+    url="Images/ConnectedTVButton.bmp"
+    compress="0"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7018"
+    url="Images/HelpArt/CalcSearch.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7020"
+    url="Images/HelpArt/HardwareButtons.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7022"
+    url="Images/HelpArt/LeftStroke.bmp"
+    compress="0"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7023"
+    url="Images/HelpArt/RightStroke.bmp"
+    compress="0"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7024"
+    url="Images/HelpArt/UpStroke.bmp"
+    compress="0"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7025"
+    url="Images/HelpArt/DownStroke.bmp"
+    compress="0"
+  />
+
+  <!-- Default Skin Remote Control Buttons -->
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7030"
+    url="Images/IRButtons28/PlayIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7031"
+    url="Images/IRButtons28/StopIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7032"
+    url="Images/IRButtons28/PauseIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7033"
+    url="Images/IRButtons28/FastForwardIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7034"
+    url="Images/IRButtons28/RewindIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7035"
+    url="Images/IRButtons28/SkipForwardIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7036"
+    url="Images/IRButtons28/SkipBackIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7037"
+    url="Images/IRButtons28/RecordIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7038"
+    url="Images/IRButtons28/SlowIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7038"
+    url="Images/IRButtons30/PowerIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7039"
+    url="Images/IRButtons30/MuteIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7040"
+    url="Images/IRButtons30/VolUpIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7041"
+    url="Images/IRButtons30/VolDownIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7049"
+    url="Images/IRButtons28/UpIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7050"
+    url="Images/IRButtons28/DownIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7051"
+    url="Images/IRButtons28/LeftIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7052"
+    url="Images/IRButtons28/RightIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7055"
+    url="Images/IRButtons30/PlusIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7056"
+    url="Images/IRButtons30/MinusIRButton.bmp"
+    compress="1"
+  />
+
+  <resource
+    cmd="BITMAPCOLOR16K"
+    type="Tbmp"
+    id="7057"
+    url="Images/IRButtons28/SelectIRButton.bmp"
+    compress="1"
+  />
+
+  <!-- XML Resources -->
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="5000"
+    url="XML/UserDefaultUser.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="5001"
+    url="XML/Categories.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="5002"
+    url="XML/DeviceBox.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6000"
+    url="XML/GuiBrowser.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6001"
+    url="XML/GuiConnectedTV.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6002"
+    url="XML/GuiSetup.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6003"
+    url="XML/GuiAbout.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6004"
+    url="XML/GuiHome.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6005"
+    url="XML/GuiDetails.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6006"
+    url="XML/GuiStations.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6007"
+    url="XML/GuiBox.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6008"
+    url="XML/GuiDVR.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6009"
+    url="XML/GuiTV.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6010"
+    url="XML/GuiVCR.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6011"
+    url="XML/GuiHelp.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6012"
+    url="XML/GuiStatus.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6013"
+    url="XML/GuiBasics.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6014"
+    url="XML/GuiStrokes.xml"
+  />
+
+  <resource
+    cmd="DATA"
+    type="xBIN"
+    id="6015"
+    url="XML/GuiMoreHelp.xml"
+  />
+
+</resources>

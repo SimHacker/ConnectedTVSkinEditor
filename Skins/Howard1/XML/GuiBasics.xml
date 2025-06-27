@@ -1,0 +1,89 @@
+<gui
+  title="Basics"
+  width="160"
+  height="160"
+  browser="Help"
+  cachetype="-1"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+
+  <button
+    x="0" y="0"
+    width="65" height="13"
+    active="0"
+    framed="0"
+    label="Help Basics"
+  />
+
+
+  <button
+    x="0" y="20" 
+    width="160" height="120"
+    wrap="1"
+    framed="0"
+    active="0"
+    rows="4"
+  >
+
+   <cell
+    label=
+"Sign up at Connected.TV if you
+haven't already."
+   />
+
+   <cell
+    label=
+"Visit Connected.TV/Download to
+download and HotSync your guide."
+   />
+
+   <cell
+    label=
+"To control your TV and tune shows,
+Train me with your remote controls.
+Do Config/Auto Detect for remote."
+   />
+
+   <cell
+    label=
+"For help, write: support@Connected.TV."
+   />
+
+ </button>
+
+  <button
+    x="0" y="140"
+    width="160" height="20"
+    labeldx="2" labeldy="3"
+    pieup="  cancel:"
+    piedown="  cancel:"
+    columns="4"
+    look="7016" states="2" stretch="4"
+  >
+
+    <cell
+      label=" Home"
+      pietouch=":gotopage Home"
+    />
+
+    <cell
+      label="  Help"
+      pietouch=":gotopage Help"
+    />
+
+    <cell
+      label="Strokes"
+      pietouch=":gotopage Strokes"
+    />
+
+    <cell
+      label=" More"
+      pietouch=":gotopage MoreHelp"
+    />
+
+  </button>
+
+
+</gui>

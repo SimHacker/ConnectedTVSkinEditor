@@ -1,0 +1,107 @@
+<gui
+  title="ConnectedTV"
+  width="160"
+  height="160"
+  browser="Programs"
+  pagetype="1"
+  cachetype="1"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="1" y="1"
+    width="62" height="13"
+    active="0"
+    framed="0"
+    source="guiname"
+  />
+
+  <button
+    x="65" y="1"
+    width="28" height="13"
+    active="0"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    label="Category"
+    x="95" y="0"
+    labeldx="1" labeldy="4"
+    width="64" height="18"
+    style="4"
+    source="categoryname"
+    action="Browse Categories"
+  />
+
+  <button
+    id="Description"
+    label=""
+    x="1" y="19"
+    width="158" height="38"
+    wrap="1"
+    source="currentprogramdescription"
+    pietouch="     DownStroke to Change Channels:gotopage Show Details"
+    piedown="                  Watch This Channel:gotocurrentchannel"
+    pieup="                      Show Details:gotopage Show Details"
+    pieright="                         Next Page:scrollchannels 1"
+    pieleft="                        Previous Page:scrollchannels -1"
+  />
+
+  <button
+    label=""
+    x="1" y="58"
+    width="158" height="80"
+    labeldx="0" labeldy="4"
+    rows="4" columns="2"
+    rowlayout="0"
+    pager="1"
+    style="3"
+    source="programs"
+    index="0"
+    action="selectchannel"
+    piedown="Watch:gotochannel"
+    pieup="Show Details:gotopage Show Details"
+    pieleft="Previous Page:scrollchannels -1"
+    pieright="Next Page:scrollchannels 1"
+    xpietouch=":tapchannel"
+    onsize="StretchToBottom 20 20"
+  />
+
+  <button
+    label="Box"
+    x="1" y="139"
+    width="31" height="20"
+    labeldx="4" labeldy="4"
+    action="gotopage Box"
+    onsize="StickToBottom 1"
+  />
+
+  <button
+    label=""
+    x="33" y="139"
+    width="86" height="20"
+    labeldx="0" labeldy="4"
+    source="currenttime"
+    pietouch="Now:gotocurrenttime"
+    piedown="Next 1/2 hour:changetime 30"
+    pieup="Previous 1/2 hour:changetime -30"
+    pieleft="Set Time:gototime"
+    pieright="Set Day:gotodate"
+    onsize="StickToBottom 1"
+  />
+
+  <button
+    label="Stations"
+    x="120" y="139"
+    width="39" height="20"
+    labeldx="0" labeldy="4"
+    pietouch=":gotopage Stations"
+    piedown="Category:Browse Categories"
+    pieup=" Details:gotopage Show Details"
+    onsize="StickToBottom 1"
+  />
+
+</gui>

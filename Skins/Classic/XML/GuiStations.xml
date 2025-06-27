@@ -1,0 +1,94 @@
+<gui
+  title="Stations"
+  width="160"
+  height="160"
+  browser="Stations"
+  pagetype="1"
+  cachetype="0"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="1" y="1"
+    width="62" height="13"
+    framed="0"
+    source="guiname"
+  />
+
+  <button
+    x="65" y="1"
+    width="28" height="13"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    label="Category"
+    x="95" y="0"
+    labeldx="1" labeldy="4"
+    width="64" height="18"
+    style="4"
+    source="categoryname"
+    pietouch=":Browse Categories"
+  />
+
+  <button
+    id="Description"
+    label=""
+    x="1" y="19"
+    width="158" height="38"
+    wrap="1"
+    source="currentprogramdescription"
+    pietouch="     DownStroke to Change Channels:gotopage Show Details"
+    piedown="                  Watch This Channel:gotocurrentchannel"
+    xpiedown="                        Show Details:gotopage Show Details"
+    pieright="                         Next Page:scrollchannels 1"
+    pieleft="                        Previous Page:scrollchannels -1"
+  />
+
+  <button
+    label=""
+    x="1" y="58"
+    width="158" height="80"
+    labeldx="0" labeldy="4"
+    rows="4" columns="2"
+    rowlayout="0"
+    pager="1"
+    style="3"
+    source="channels"
+    index="0"
+    action="selectchannel"
+    piedown="Watch:gotochannel"
+    pieup="Show Details:gotopage Show Details"
+    pieleft="Previous Page:scrollchannels -1"
+    pieright="Next Page:scrollchannels 1"
+    xpietouch=":tapchannel"
+    onsize="StretchToBottom 20 20"
+  />
+
+  <button
+    label="  Shows"
+    x="120" y="139"
+    width="39" height="20"
+    labeldx="0" labeldy="4"
+    pietouch=":gotopage ConnectedTV"
+    pieup=" Details:gotopage Show Details"
+    piedown="Category:Browse Categories"
+    onsize="StickToBottom 1"
+  />
+
+  <button
+    label=""
+    id="Schedule"
+    x="1" y="139"
+    width="118" height="20"
+    labeldx="0" labeldy="4"
+    wrap="1"
+    active="0"
+    source="currentprogramschedule"
+    onsize="StickToBottom 1"
+  />
+
+</gui>

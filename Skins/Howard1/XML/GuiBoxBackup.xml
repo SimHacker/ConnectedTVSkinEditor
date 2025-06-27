@@ -1,0 +1,234 @@
+<gui
+  title="Box"
+  width="160"
+  height="160"
+  device="Box"
+  cachetype="0"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="1" y="1"
+    width="62" height="13"
+    active="0"
+    framed="0"
+    source="guiname"
+  />
+
+  <button
+    x="65" y="1"
+    width="28" height="13"
+    active="0"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    label="Shows"
+    x="129" y="131"
+    width="30" height="28"
+    labeldx="0" labeldy="8"
+
+    pietouch=":gotopage ConnectedTV"
+    piedown="Stations:gotopage Stations"
+
+    look="7010"  states="2" stretch="4"
+    onsize="StickToBottom 1"
+  />
+
+  <button
+    label="TV"
+    x="1" y="131"
+    width="30" height="28"
+    labeldx="5" labeldy="8"
+    pietouch=":gotopage TV"
+    pieup="DVR:gotopage DVR"
+    piedown="VCR:gotopage VCR"
+
+    look="7014"  states="2" stretch="4"
+    onsize="StickToBottom 1"
+  />
+
+  <button
+    label="other"
+    x="2" y="60"
+    width="30" height="28"
+    labeldx="2" labeldy="8"
+    pieup="    A:send A"
+    pieright="    B:send B"
+    piedown="    C:send C"
+
+    look="7011"  states="2" stretch="4"
+  />
+
+  <button
+    label="Last"
+    x="129" y="24"
+    width="30" height="28"
+    labeldx="4" labeldy="8"
+    action="send Last"
+
+    look="7011"  states="2" stretch="4"
+  />
+
+  <button
+    label="Info"
+    x="97" y="20"
+    width="30" height="28"
+    labeldx="5" labeldy="8"
+    pietouch=":send Info"
+    piedown="Help:send Help"
+    pieleft="Info2:send Info2"
+    pieright="Live:send Live TV"
+
+    look="7011"  states="2" stretch="4"
+  />
+
+  <button
+   label="Menu"
+   x="65" y="16"
+   width="30" height="28"
+   labeldx="2" labeldy="8"
+   pietouch=":send Menu"
+   pieleft="Men2:send Menu2"
+   piedown="List:send List"
+
+   look="7011"  states="2" stretch="4"
+  />
+
+  <button
+    label="Guide"
+    x="33" y="20"
+    width="30" height="28"
+    labeldx="1" labeldy="8"
+    action="send Guide"
+
+    look="7011"  states="2" stretch="4"
+  />
+
+  <button
+    label="View"
+    x="1" y="24"
+    width="30" height="28"
+    labeldx="3" labeldy="8"
+    action="send View"
+
+    look="7011"  states="2" stretch="4"
+  />
+
+  <button
+    label=""
+    x="66" y="74"
+    width="28" height="28"
+    labeldx="2" labeldy="3"
+    action="send Select"
+
+    look="7011" states="2" stretch="4"
+  />
+
+  <button
+    label=""
+    x="66" y="102"
+    width="28" height="28"
+    labeldx="2" labeldy="3"
+    action="send Down"
+
+    look="7011"  states="2" stretch="4"
+  />
+
+  <button
+    label=""
+    x="38" y="74"
+    width="28" height="28"
+    labeldx="2" labeldy="6"
+    action="send Left"
+
+    look="7011"  states="2" stretch="4"
+  />
+
+  <button
+    label=""
+    x="94" y="74"
+    width="28" height="28"
+    labeldx="2" labeldy="6"
+    action="send Right"
+
+    look="7011"  states="2" stretch="4"
+  />
+
+  <button
+
+    x="1" y="94"
+    width="30" height="30"
+    labeldx="4" labeldy="8"
+    pietouch=":send Play"
+
+    look="7030" states="2" 
+  />
+
+  <button
+    label="&lt;&lt;"
+    x="33" y="131"
+    width="30" height="28"
+    labeldx="6" labeldy="9"
+    action="send Rewind"
+
+    look="7011"  states="2" stretch="4"
+  />
+
+  <button
+    label="    l l"
+    x="65" y="131"
+    width="30" height="28"
+    labeldx="2" labeldy="9"
+    action="send Pause"
+    piedown=" Stop:send Stop"
+
+    look="7011"  states="2" stretch="4"
+  />
+
+  <button
+    label=" &gt;&gt;"
+    x="97" y="131"
+    width="30" height="28"
+    labeldx="5" labeldy="9"
+    action="send FF"
+
+    look="7011"  states="2" stretch="4"
+  />
+
+  <button
+    label="+"
+    x="129" y="60"
+    width="30" height="30"
+    labeldx="11" labeldy="10"
+    action="send +"
+
+    look="7011"  states="2" stretch="4"
+  />
+
+  <button
+    label="-"
+    x="129" y="90"
+    width="30" height="30"
+    labeldx="11" labeldy="10"
+    action="send -"
+
+    look="7011"  states="2" stretch="4"
+  />
+
+  <button
+    label="Home"
+    x="32" y="211"
+    width="30" height="28"
+    labeldx="2" labeldy="8"
+    pietouch=":gotopage TV"
+    pieup="DVR:gotopage DVR"
+    piedown="VCR:gotopage VCR"
+
+    look="7014"  states="2" stretch="4"
+  />
+
+</gui>

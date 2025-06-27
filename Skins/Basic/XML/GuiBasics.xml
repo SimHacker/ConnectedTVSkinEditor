@@ -1,0 +1,100 @@
+<gui
+  title="Basics"
+  width="160"
+  height="160"
+  browser="Help"
+  cachetype="-1"
+  onback="gotopage ListHelp"
+  buttonpageup="gotopage MoreHelp"
+  buttonpagedown="gotopage Home"
+  buttonjogup="gotopage MoreHelp"
+  buttonjogdown="gotopage Home"
+  buttonjogpushed="Timeline"
+  buttonnavleft="gotopage MoreHelp"
+  buttonnavright="gotopage Home"
+  buttonnavselect="Timeline"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="0" y="0"
+    width="65" height="13"
+    active="0"
+    framed="0"
+    label="Help Basics"
+  />
+
+  <button
+    x="2" y="15" 
+    width="158" height="25"
+    wrap="1"
+    framed="0"
+    active="0"
+    label="Sign up at Connected.TV if you
+haven't already."
+   />
+
+  <button
+    x="2" y="40" 
+    width="158" height="25"
+    wrap="1"
+    framed="0"
+    active="0"
+    label="Visit Connected.TV/Download to
+download and HotSync your guide."
+   />
+
+  <button
+    x="2" y="65" 
+    width="158" height="40"
+    wrap="1"
+    framed="0"
+    active="0"
+    label="To control your TV and tune shows,
+train with your remote controls 
+or visit Connected.TV/Library."
+   />
+
+  <button
+    x="2" y="105" 
+    width="158" height="25"
+    wrap="1"
+    framed="0"
+    active="0"
+    label="For help, write:
+            support@Connected.TV."
+   />
+
+  <button
+    x="0" y="140"
+    width="160" height="20"
+    labeldx="2" labeldy="3"
+    columns="4"
+    look="7016" states="2" stretch="4"
+  >
+
+    <cell
+      label=" Home"
+      pietouch=":gotopage Home"
+    />
+
+    <cell
+      label="   Help"
+      pietouch=":gotopage Help"
+    />
+
+    <cell
+      label="Strokes"
+      pietouch=":gotopage Strokes"
+    />
+
+    <cell
+      label="   Back"
+      pietouch=":gotopage MoreHelp"
+    />
+
+  </button>
+
+
+</gui>

@@ -1,0 +1,292 @@
+<gui
+  title="Box"
+  width="160"
+  height="240"
+  bottomedge="15"
+  device="Box"
+  cachetype="0"
+  onback="Timeline"
+  buttonpageup="gotopage DVR"
+  buttonpagedown="gotopage TV"
+  buttonjogup="gotopage DVR"
+  buttonjogdown="gotopage TV"
+  buttonnavleft="gotopage DVR"
+  buttonnavright="gotopage TV"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="1" y="1"
+    width="62" height="13"
+    active="0"
+    framed="0"
+    source="guiname"
+  />
+
+  <button
+    x="65" y="1"
+    width="28" height="13"
+    active="0"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    label="Shows"
+    x="129" y="131"
+    width="30" height="28"
+    labeldx="1" labeldy="8"
+    pietouch=":Timeline"
+    pieup="  List:ShowList"
+    piedown="Stations:gotopage Stations"
+    look="7010" states="2" stretch="4"
+    onsize="StickToBottom 1"
+  />
+
+  <button
+    label="  TV"
+    x="1" y="131"
+    width="30" height="28"
+    labeldx="1" labeldy="8"
+    pietouch=":gotopage TV"
+    pieright="  TV:gotopage TV"
+    pieleft="Box:gotopage Box"
+    pieup="DVR:gotopage DVR"
+    piedown="VCR:gotopage VCR"
+    look="7014" states="2" stretch="4"
+    onsize="StickToBottom 1"
+  />
+
+  <button
+    label="View"
+    x="1" y="24"
+    width="30" height="28"
+    labeldx="3" labeldy="8"
+    pietouch=":send View"
+    look="7011" states="2" stretch="4"
+  />
+
+  <button
+    label="Guide"
+    x="33" y="20"
+    width="30" height="28"
+    labeldx="1" labeldy="8"
+    pietouch=":send Guide"
+    look="7011" states="2" stretch="4"
+  />
+
+  <button
+    label="Menu"
+    x="65" y="16"
+    width="30" height="28"
+    labeldx="2" labeldy="8"
+    pietouch=":send Menu"
+    pieup="Men2:send Menu2"
+    piedown=" List:send List"
+    look="7011" states="2" stretch="4"
+  />
+
+  <button
+    label="Info"
+    x="97" y="20"
+    width="30" height="28"
+    labeldx="4" labeldy="8"
+    pietouch=":send Info"
+    pieup=":send Info"
+    piedown="Help:send Help"
+    pieleft="Info2:send Info2"
+    pieright="Live:send Live TV"
+    look="7011" states="2" stretch="4"
+  />
+
+  <button
+    label="Last"
+    x="129" y="24"
+    width="30" height="28"
+    labeldx="4" labeldy="8"
+    pietouch=":send Last"
+    look="7011" states="2" stretch="4"
+  />
+
+  <button
+    label="other"
+    x="1" y="60"
+    width="30" height="30"
+    labeldx="1" labeldy="8"
+    pieup="    A:send A"
+    pieright="    B:send B"
+    piedown="    C:send C"
+    pieleft="    D:send D"
+    look="7011" states="2" stretch="4"
+  />
+
+  <button
+    alt="Up"
+    x="66" y="46"
+    width="28" height="28"
+    labeldx="4" labeldy="8"
+    pietouch=":send Up"
+    comment="graphic is 7049"
+    look="7049" states="2"
+  />
+
+  <button
+    alt="Sel"
+    x="66" y="74"
+    width="28" height="28"
+    labeldx="2" labeldy="8"
+    pietouch=":send Select"
+    comment="graphic is 7057"
+    look="7057" states="2"
+  />
+
+  <button
+    alt="Down"
+    x="66" y="102"
+    width="28" height="28"
+    labeldx="2" labeldy="8"
+    pietouch=":send Down"
+    comment="graphic is 7050"
+    look="7050" states="2" stretch="4"
+  />
+
+  <button
+    alt="Left"
+    x="38" y="74"
+    width="28" height="28"
+    labeldx="2" labeldy="8"
+    pietouch=":send Left"
+    comment="graphic is 7051"
+    look="7051" states="2"
+  />
+
+  <button
+    alt="Right"
+    x="94" y="74"
+    width="28" height="28"
+    labeldx="2" labeldy="8"
+    pietouch=":send Right"
+    comment="graphic is 7052"
+    look="7052" states="2"
+  />
+
+  <button
+    alt="Play"
+    x="1" y="94"
+    width="28" height="28"
+    labeldx="3" labeldy="8"
+    pietouch="Play:send Play"
+    pieup="Play:send Play"
+    piedown=" Rec:send Record"
+    look="7030" states="2" 
+  />
+
+  <button
+    alt="Rew"
+    comment="graphic is 7034"
+    x="38" y="131"
+    width="28" height="28"
+    labeldx="4" labeldy="8"
+    pietouch="Rew:send Rewind"
+    pieup="Rew:send Rewind"
+    piedown="Rep:send Replay"
+    look="7034" states="2"
+  />
+
+  <button
+    alt="Pause"
+    x="66" y="131"
+    width="28" height="28"
+    labeldx="1" labeldy="8"
+    comment="graphic is 7032"
+    pietouch="Pause:send Pause"
+    pieup="Pause:send Pause"
+    piedown=" Stop:send Stop"
+    look="7032" states="2" stretch="4"
+  />
+
+  <button
+    alt="FF"
+    x="94" y="131"
+    width="28" height="28"
+    labeldx="5" labeldy="8"
+    comment="graphic is 7033"
+    look="7033" states="2"
+    pietouch=" FF:send FF"
+    pieup="Skip:send Skip"
+    piedown="Adv:send Advance"
+  />
+
+  <button
+    alt="Page+"
+    x="129" y="60"
+    width="30" height="30"
+    labeldx="2" labeldy="12"
+    pietouch="Page+:send +"
+    comment="graphic is 7055"
+    look="7055" states="2"
+  />
+
+  <button
+    alt="Page-"
+    x="129" y="90"
+    width="30" height="30"
+    labeldx="2" labeldy="6"
+    pietouch="Page-:send -"
+    comment="graphic is 7056"
+    look="7056" states="2"
+  />
+
+  <button
+    label="Home"
+    x="1" y="165"
+    width="30" height="30"
+    labeldx="1" labeldy="8"
+    pietouch=":gotopage Home"
+    look="7016" states="2" stretch="4"
+  />
+
+  <button
+    x="65" y="164"
+    width="30" height="60"
+    look="7011" states="2"
+    rows="2" columns="1"
+  >
+
+    <cell
+      alt="Vol+"
+      look="7040"
+      labeldx="4" labeldy="12"
+      pietouch="Vol+:send Volume +"
+    />
+
+   <cell
+      alt="Vol-"
+      look="7041"
+      labeldx="4" labeldy="6"
+      pietouch="Vol-:send Volume -"
+    />
+
+  </button>
+
+  <button
+    alt="Mute"
+    x="97" y="165"
+    width="30" height="30"
+    labeldx="2" labeldy="8"
+    pietouch="Mute:send Mute"
+    look="7039" states="2"
+  />
+
+  <button
+    alt="Power"
+    x="129" y="165"
+    width="30" height="30"
+    labeldx="1" labeldy="8"
+    pietouch=":send Power"
+    look="7038" states="2"
+  />
+
+</gui>

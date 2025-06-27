@@ -1,0 +1,154 @@
+<skin
+  name="Sony Clie NX/70V"
+  base="Sony"
+  resourceurl="XML/Resources.xml"
+>
+
+  <!-- Copyright 2002-2003 ConnectedMedia Corporation --> 
+
+  <!-- Users -->
+
+  <user
+    name="Default User"
+    url="XML/UserDefaultUser.xml"
+  />
+
+  <!-- Categories -->
+
+  <categories
+    name="categories"
+    url="XML/Categories.xml"
+  />
+
+  <!-- Devices -->
+
+  <device
+    name="Box"
+    url="XML/DeviceBox.xml"
+  />
+
+<!-- Only one device for now.
+  <device
+    name="CD"
+    url="XML/DeviceCD.xml"
+  />
+  <device
+    name="DVD"
+    url="XML/DeviceDVD.xml"
+  />
+  <device
+    name="DVR"
+    url="XML/DeviceDVR.xml"
+  />
+  <device
+    name="TV"
+    url="XML/DeviceTV.xml"
+  />
+  <device
+    name="VCR"
+    url="XML/DeviceVCR.xml"
+  />
+-->
+
+  <!-- Rooms -->
+
+<!-- Room disabled for now.
+  <room
+    name="Default Room">
+    url="XML/RoomDefaultRoom.xml"
+  />
+-->
+
+  <!-- Guis -->
+
+  <!-- Generic Guis -->
+
+  <gui
+    name="Browser"
+    url="XML/GuiBrowser.xml"
+  />
+  <gui
+    name="ConnectedTV"
+    url="XML/GuiConnectedTV.xml"
+  />
+  <gui
+    name="Setup"
+    url="XML/GuiSetup.xml"
+  />
+  <gui
+    name="Hello"
+    url="XML/GuiHello.xml"
+  />
+  <gui
+    name="Home"
+    url="XML/GuiHome.xml"
+  />
+  <gui
+    name="Show Details"
+    url="XML/GuiDetails.xml"
+  />
+  <gui
+    name="Stations"
+    url="XML/GuiStations.xml"
+  />
+  <gui
+    name="Box"
+    url="XML/GuiBox.xml"
+  />
+  <gui
+    name="DVR"
+    url="XML/GuiDVR.xml"
+  />
+  <gui
+    name="TV"
+    url="XML/GuiTV.xml"
+  />
+  <gui
+    name="VCR"
+    url="XML/GuiVCR.xml"
+  />
+  <gui
+    name="Help"
+    url="XML/GuiHelp.xml"
+  />
+  <gui
+    name="Status"
+    url="XML/GuiStatus.xml"
+  />
+
+  <!-- Sony Clie Guis -->
+
+  <gui
+    name="SHome"
+    url="XML/GuiSHome.xml"
+  />
+  <gui
+    name="S10Key"
+    url="XML/GuiS10Key.xml"
+  />
+  <gui
+    name="SCursor"
+    url="XML/GuiSCursor.xml"
+  />
+  <gui
+    name="SVOD"
+    url="XML/GuiSVOD.xml"
+  />
+  <gui
+    name="SStations"
+    url="XML/GuiSStations.xml"
+  />
+  <gui
+    name="STV10Key"
+    url="XML/GuiSTV10Key.xml"
+  />
+  <gui
+    name="SShows"
+    url="XML/GuiSShows.xml"
+  />
+  <gui
+    name="SShow Details"
+    url="XML/GuiSDetails.xml"
+  />
+
+</skin>

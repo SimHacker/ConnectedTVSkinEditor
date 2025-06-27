@@ -1,0 +1,317 @@
+<gui
+  title="SCursor"
+  width="160"
+  height="240"
+  bottomedge="15"
+  onback="gotopage SHome"
+>
+
+  <!-- Copyright 2002-2003 ConnectedMedia Corporation --> 
+
+  <!-- Cable upper left marker -->
+
+  <button
+    x="0" y="0"
+    width="115" height="25"
+    framed="0"
+    look="8001" states="1" hires="1"
+    action="gotopage SHome"
+  />
+
+  <!-- Cable Power button -->
+
+  <button
+    x="110" y="0"
+    width="50" height="25"
+    framed="0"
+    look="8002" states="1" hires="1"
+    action="send Power"
+  />
+
+  <!-- 10Key, CURSOR(pushed), VOD, EPG buttons -->
+
+  <button
+    x="0" y="25"
+    width="40" height="18"
+    framed="0"
+    look="8006" states="1" hires="1"
+    action="gotopage S10Key"
+  />
+
+  <!-- show Cursor pushed in -->
+
+  <button
+    x="40" y="25"
+    width="40" height="18"
+    framed="0"
+    look="8017" states="1" hires="1"
+  />
+
+  <button
+    x="80" y="25"
+    width="40" height="18"
+    framed="0"
+    look="8008" states="1" hires="1"
+    action="gotopage SVOD"	  
+  />
+
+  <button
+    x="120" y="25"
+    width="40" height="18"
+    framed="0"
+    look="8009" states="1" hires="1"
+    action="gotopage SShows"	  
+  />
+
+  <!-- Background Bands -->
+
+  <button
+    x="0" y="43"
+    width="160" height="115"
+    framed="0"
+    active="0"
+    look="8083" states="1" hires="1"
+    bands="2" background="1"
+  />
+
+  <!-- Menu button -->
+
+  <button
+    x="0" y="43"
+    width="45" height="25"
+    framed="0"
+    look="8021" states="1" hires="1"
+    overbackground="1"
+    action="send Menu"	  
+  />
+
+  <!-- Guide button -->
+
+  <button
+    x="101" y="43"
+    width="39" height="21"
+    framed="0"
+    look="8022" states="1" hires="1"
+    overbackground="1"
+    action="send Guide"	  
+  />
+
+  <!-- Display button -->
+
+  <button
+    x="122" y="64"
+    width="38" height="18"
+    framed="0"
+    look="8023" states="1" hires="1"
+    overbackground="1"
+    action="send View"	  
+  />
+
+  <!-- Star button -->
+
+  <button
+    x="0" y="127"
+    width="42" height="28"
+    framed="0"
+    look="8024" states="1" hires="1"
+    overbackground="1"
+    action="send Star"	  
+  />
+
+  <!-- OK button -->
+
+  <button
+    x="60" y="78"
+    width="41" height="42"
+    framed="0"
+    look="8031" states="1" hires="1"
+    overbackground="1"
+    action="send Select"	  
+  />
+
+  <!-- Left, Right, Up, Down buttons -->
+
+  <button
+    x="19" y="81"
+    width="41" height="35"
+    framed="0"
+    look="8032" states="1" hires="1"
+    overbackground="1"
+    action="send Left"	  
+  />
+
+  <button
+    x="101" y="82"
+    width="41" height="35"
+    framed="0"
+    look="8033" states="1" hires="1"
+    overbackground="1"
+    action="send Right"	  
+  />
+
+  <button
+    x="60" y="43"
+    width="41" height="35"
+    framed="0"
+    look="8034" states="1" hires="1"
+    overbackground="1"
+    action="send Up"	  
+  />
+
+  <button
+    x="60" y="120"
+    width="41" height="35"
+    framed="0"
+    look="8035" states="1" hires="1"
+    overbackground="1"
+    action="send Down"	  
+  />
+
+  <!-- Exit button -->
+
+  <button
+    x="122" y="126"
+    width="38" height="29"
+    framed="0"
+    look="8036" states="1" hires="1"
+    overbackground="1"
+    action="send Exit"	  
+  />
+
+  <!--  Control Button Block - background and 11 buttons -->
+
+  <!-- Control area background with Volume etc -->
+
+  <button
+    x="0" y="155"
+    width="160" height="71"
+    framed="0"
+    active="0"
+    look="8090" states="1" hires="1"
+    background="1"
+  />
+
+  <!-- Mute button -->
+
+  <button
+    x="26" y="155"
+    width="26" height="29"
+    framed="0"
+    look="8043" states="1" hires="1"
+    overbackground="1"
+    action="send Mute"
+  />
+
+  <!-- Volume+ button -->
+
+  <button
+    x="52" y="166"
+    width="30" height="31"
+    framed="0"
+    look="8055" states="1" hires="1"
+    overbackground="1"
+    action="send Volume +"
+  />
+
+  <!-- Volume- button -->
+
+  <button
+    x="52" y="197"
+    width="30" height="29"
+    framed="0"
+    look="8056" states="1" hires="1"
+    overbackground="1"
+    action="send Volume -"
+  />
+
+  <!-- Channel+ button -->
+
+  <button
+    x="82" y="166"
+    width="28" height="31"
+    framed="0"
+    look="8053" states="1" hires="1"
+    overbackground="1"
+    action="send Channel +"
+  />
+
+  <!-- Channel- button -->
+
+  <button
+    x="82" y="197"
+    width="28" height="29"
+    framed="0"
+    look="8054" states="1" hires="1"
+    overbackground="1"
+    action="send Channel -"
+  />
+
+  <!-- Page+ button -->
+
+  <button
+    x="134" y="170"
+    width="26" height="28"
+    framed="0"
+    look="8057" states="1" hires="1"
+    overbackground="1"
+    action="send Page +"
+  />
+
+  <!-- Page- button -->
+
+  <button
+    x="134" y="198"
+    width="26" height="28"
+    framed="0"
+    look="8058" states="1" hires="1"
+    overbackground="1"
+    action="send Page -"
+  />
+
+  <!-- Forward button -->
+
+  <button
+    x="110" y="186"
+    width="24" height="40"
+    framed="0"
+    look="8051" states="1" hires="1"
+    overbackground="1"
+    action="send Forward"
+  />
+
+  <!-- Back button -->
+
+  <button
+    x="26" y="184"
+    width="26" height="42"
+    framed="0"
+    look="8052" states="1" hires="1"
+    overbackground="1"
+    action="send Back"
+  />
+
+  <!-- Favorite button -->
+
+  <button
+    x="110" y="155"
+    width="24" height="31"
+    framed="0"
+    look="8044" states="1" hires="1"
+    overbackground="1"
+    action="send Favorite"
+  />
+
+  <!-- Viewer button (People icon) -->
+
+  <button
+    x="0" y="155"
+    width="26" height="29"
+    framed="0"
+    look="8042" states="1" hires="1"
+    overbackground="1"
+    action="send People"
+  />
+
+  <!-- End Control Area buttons section -->
+
+</gui>

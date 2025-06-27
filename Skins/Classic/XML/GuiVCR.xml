@@ -1,0 +1,149 @@
+<gui
+  title="VCR"
+  width="160"
+  height="160"
+  device="VCR"
+  cachetype="0"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="1" y="1"
+    width="62" height="13"
+    framed="0"
+    source="guiname"
+  />
+
+  <button
+    x="65" y="1"
+    width="28" height="13"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    label="Shows"
+    x="129" y="131"
+    width="30" height="28"
+    labeldx="0" labeldy="7"
+    action="gotopage ConnectedTV"
+  />
+
+  <button
+    label="TV"
+    x="1" y="131"
+    width="30" height="28"
+    labeldx="5" labeldy="7"
+    action="gotopage TV"
+  />
+
+  <button
+    x="1" y="19"
+    width="158" height="28"
+    labeldx="2" labeldy="7"
+    rows="1" columns="5"
+  >
+
+    <cell
+      label="Last"
+      action="send Last"
+    />
+
+    <cell
+      label="Info"
+      pietouch=":send Info"
+      piedown="Help:send Help"
+      pieleft="Info2:send Info2"
+    />
+
+    <cell
+      label="Menu"
+      labeldx="-2"
+      pietouch=":send Menu"
+      pieleft="Men2:send Menu2"
+    />
+
+    <cell
+      label="Guide"
+      labeldx="-2"
+      action="send Guide"
+    />
+
+    <cell
+      label="View"
+      labeldx="2"
+      action="send View"
+    />
+
+ </button>
+
+  <button
+    label="SP/EP"
+    x="1" y="75"
+    width="30" height="28"
+    labeldx="0" labeldy="7"
+    action="send SP/EP"
+  />
+
+  <button
+    x="35" y="84"
+    width="90" height="67"
+    labeldx="4" labeldy="9"
+    rows="2" columns="3"
+  >
+
+    <cell
+      label="Rec"
+      action="send Record"
+    />
+
+    <cell
+      label="Stop"
+      labeldx="-2"
+      action="send Stop"
+    />
+
+    <cell
+      label="Play"
+      action="send Play"
+    />
+
+    <cell
+      label="&lt;&lt;"
+      labeldx="2" labeldy="2"
+      action="send Rewind"
+     />
+
+    <cell
+      label="  l l"
+      labeldx="1" labeldy="2"
+      action="send Pause"
+    />
+
+    <cell
+      label="&gt;&gt;"
+      labeldx="3" labeldy="2"
+      action="send FF"
+    />
+
+  </button>
+
+  <button
+    label="+"
+    x="129" y="60"
+    width="30" height="28"
+    labeldx="9" labeldy="7"
+    action="send +"
+  />
+
+  <button
+    label="-"
+    x="129" y="90"
+    width="30" height="28"
+    labeldx="9" labeldy="7"
+    action="send -"
+  />
+
+</gui>

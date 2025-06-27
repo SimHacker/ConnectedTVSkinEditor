@@ -1,0 +1,78 @@
+<gui
+  title="Browse Categories"
+  width="160"
+  height="160"
+  browser="Categories"
+  pagetype="4"
+  cellsperpage="12"
+  cachetype="1"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="1" y="1"
+    width="62" height="13"
+    active="0"
+    framed="0"
+    label="Categories"
+  />
+
+  <button
+    x="65" y="1"
+    width="28" height="13"
+    active="0"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    label="Shows"
+    x="95" y="0"
+    width="64" height="18"
+    labeldx="16" labeldy="4"
+    action="gotopage ConnectedTV"
+  />
+
+  <button
+    label=""
+    id="Viewer"
+    x="1" y="19"
+    width="158" height="120"
+    rows="6" columns="2"
+    rowlayout="0"
+    labeldx="0" labeldy="4"
+    pager="1"
+    action="NewBrowserTap"
+    pieleft="Previous Page:NewBrowserPageBack"
+    pieright="Next Page:NewBrowserPageNext"
+    pietouch=":NewBrowserAction"
+    onsize="StretchToBottom 20 20"
+  />
+
+  <button 
+    label="Page 1 of 10"
+    id="Pager"
+    x="1" y="140"
+    width="99" height="19"
+    labeldx="15" labeldy="3"
+    index="0"
+    piedown="Select:NewBrowserAction"
+    pieup="Cancel:NewBrowserCancel"
+    pieleft="Previous Page:NewBrowserPageBack"
+    pieright="Next Page:NewBrowserPageNext"
+    pietouch="Next Page:NewBrowserPageNext"
+    onsize="StickToBottom 1"
+  />
+
+  <button
+    label="Shows"
+    x="102" y="140"
+    width="57" height="19"
+    labeldx="10" labeldy="3"
+    pietouch=":gotopage ConnectedTV"
+    onsize="StickToBottom 1"
+  />
+
+</gui>

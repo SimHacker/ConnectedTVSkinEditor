@@ -1,0 +1,84 @@
+<gui
+  title="Hello"
+  width="160"
+  height="240"
+  bottomedge="15"
+  onback="gotopage Home"
+>
+
+  <!-- Copyright 2002-2003 ConnectedMedia Corporation --> 
+
+  <button
+    x="0" y="0"
+    width="62" height="16"
+    labeldy="2"
+    active="0"
+    framed="0"
+    source="guiname"
+  />
+
+  <button
+    x="62" y="0"
+    width="28" height="16"
+    labeldy="2"
+    active="0"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    label=
+"Welcome to ConnectedTV.
+Copyright (c) ConnectedMedia Corporation 2002.
+All Rights Reserved. 
+Use without permission is prohibited.
+Please Contact: info@Connected.TV"
+
+    x="1" y="18"
+    width="158" height="72"
+    wrap="1"
+    framed="0"
+    active="0"
+    xpietouch=":gotopage ConnectedTV"
+    xpieup="Home:gotopage Home"
+    xpiedown=":gotopage ConnectedTV"
+    look="7013" stretch="12" states="3" hires="1"
+  />
+
+  <button
+    x="1" y="132"
+    width="158" height="27"
+    labeldy="8"
+    pieup="  Cancel:"
+    piedown="  Cancel:"
+    columns="4"
+    look="7010" stretch="12" states="3" hires="1"
+  >
+
+    <cell
+      label="  Home"
+      action="gotopage Home"
+    />
+
+    <cell
+      label="  Setup"
+      action="gotopage Setup"
+    />
+
+    <cell
+      label="   Quit"
+      x="81" y="122"
+      width="36" height="29"
+      pietouch="  Bye!:quit"
+      look="7014"
+    />
+
+    <cell
+      label="   Shows"
+      action="gotopage ConnectedTV"
+    />
+
+  </button>
+
+</gui>

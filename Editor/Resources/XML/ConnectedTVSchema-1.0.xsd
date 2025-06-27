@@ -1,0 +1,4047 @@
+<?xml version="1.0"?>
+
+
+<!--
+************************************************************************
+*
+* ConnectedTV XML Schema Definitions.
+* Copyright (C) 2003 by ConnectedMedia. 
+* All rights reserved.
+* Written by Don Hopkins.
+*
+************************************************************************
+-->
+
+
+<schema 
+  xmlns="http://www.w3.org/1999/XMLSchema" 
+  targetNamespace="http://www.Connected.TV/ConnectedTVSchema-1.0.xsd" 
+  xmlns:ctv="http://www.Connected.TV/ConnectedTVSchema-1.0.xsd"
+  elementFormDefault="qualified" 
+  version="Feb 5 2003">
+
+
+  <annotation>
+    <documentation>A Schema for ConnectedTV Skins - by Don Hopkins.</documentation>
+  </annotation>
+
+
+<!--
+************************************************************************ 
+*     Skin Element
+************************************************************************
+-->
+
+
+  <complexType
+    name="skin"
+    content="elementOnly"
+    ctv:label="Skin">
+
+
+    <annotation>
+      <documentation>Skin element.</documentation>
+    </annotation>
+
+
+    <element
+      name="gui"
+      type="ctv:gui"
+      minOccurs="0"
+      maxOccurs="unbounded"
+      ctv:hidden="true"
+      ctv:edittypes="Element"
+      ctv:label="Gui">
+      <annotation>
+	<documentation>Skin elements can contain 0 or more gui elements.</documentation>
+      </annotation>
+    </element>
+
+
+    <attribute
+      name="name"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,String"
+      ctv:label="Name"
+      ctv:init='""'>
+      <annotation>
+        <documentation>Skin name.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="comment"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,String"
+      ctv:label="Comment"
+      ctv:init='""'>
+      <annotation>
+        <documentation>Comment.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="base"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,String"
+      ctv:label="Base"
+      ctv:init='""'>
+      <annotation>
+        <documentation>Skin base URL or directory.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="resourceurl"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,String"
+      ctv:label="Resources"
+      ctv:init='"XML/Resources.xml"'>
+      <annotation>
+        <documentation>URL of resources relative to skin base.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="guis"
+      type="view"
+      use="default"
+      value=""
+      ctv:edittypes="GuiIndex,Closed"
+      ctv:label="Guis"
+      ctv:init='""'>
+      <annotation>
+        <documentation>Gui Index.</documentation>
+      </annotation>
+    </attribute>
+
+
+  </complexType>
+
+
+<!--
+************************************************************************ 
+* Gui Element
+************************************************************************
+-->
+
+
+  <complexType
+    name="gui"
+    content="elementonly"
+    ctv:label="Gui">
+
+
+    <annotation>
+      <documentation>Gui element.</documentation>
+    </annotation>
+
+
+    <element
+      name="button"
+      type="ctv:button"
+      minoccurs="0"
+      maxoccurs="unbounded"
+      ctv:hidden="true"
+      ctv:edittypes="Element"
+      ctv:label="Button">
+
+      <annotation>
+	<documentation>Gui elements can contain 0 or more button elements.</documentation>
+      </annotation>
+    </element>
+
+
+    <attribute
+      name="title"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,String"
+      ctv:label="Title"
+      ctv:init='""'>
+      <annotation>
+        <documentation>Gui title.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="comment"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,String"
+      ctv:label="Comment"
+      ctv:init='""'>
+      <annotation>
+        <documentation>Comment.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="device"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Device,String"
+      ctv:label="Device"
+      ctv:init='""'>
+      <annotation>
+        <documentation>Gui device name, the default device this Gui controls.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="piewidget"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,String"
+      ctv:label="Pie Widget"
+      ctv:init='""'>
+      <annotation>
+        <documentation>Name of button widget to use for pie menu.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="onback"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Command,String"
+      ctv:label="On Back"
+      ctv:init='""'>
+      <annotation>
+        <documentation>Command to run when user presses Back button.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="browser"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,String"
+      ctv:label="Browser"
+      ctv:init='""'>
+      <annotation>
+        <documentation>Name of Browser associated with this gui.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="width"
+      type="int"
+      use="default"
+      value="0"
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Width"
+      ctv:init='160'>
+      <annotation>
+        <documentation>Width of Gui screen.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="height"
+      type="int"
+      use="default"
+      value="0"
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Height"
+      ctv:init='160'>
+      <annotation>
+        <documentation>Height of Gui screen.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="bottomedge"
+      type="int"
+      use="default"
+      value="0"
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Bottom Edge"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Height of bottom edge of Gui screen.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="cellsperpage"
+      type="int"
+      use="default"
+      value="0"
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Cells Per Page"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Number of cells per page.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="cachetype"
+      type="int"
+      use="default"
+      value="0"
+      ctv:edittypes="ReadOnly,IntegerEnumeration,Integer"
+      ctv:label="Cache Type"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Controls Gui caching behavior.</documentation>
+      </annotation>
+      <enumeration value='-1'>
+	<annotation>
+	  <documentation>Never cache.</documentation></annotation></enumeration>
+      <enumeration value='0'>
+	<annotation>
+	  <documentation>Cache if not low memory.</documentation></annotation></enumeration>
+      <enumeration value='1'>
+	<annotation>
+	  <documentation>Always cache.</documentation></annotation></enumeration>
+    </attribute>
+
+
+    <attribute
+      name="buttons"
+      type="view"
+      use="default"
+      value=""
+      ctv:edittypes="ButtonIndex,Closed"
+      ctv:label="Buttons"
+      ctv:init='""'>
+      <annotation>
+        <documentation>Button Index.</documentation>
+      </annotation>
+    </attribute>
+
+
+  </complexType>
+
+
+<!--
+************************************************************************ 
+* Button Element
+************************************************************************
+-->
+
+
+  <complexType
+    name="button"
+    content="elementOnly"
+    ctv:label="Button">
+
+
+    <annotation>
+      <documentation>Button element.</documentation>
+    </annotation>
+
+
+    <element
+      name="cell"
+      type="ctv:cell"
+      minOccurs='0'
+      maxOccurs='unbounded'
+      ctv:hidden="true"
+      ctv:edittypes="Element"
+      ctv:label="Cell">
+      <annotation>
+	<documentation>A Button element can contain 0 or more Cell elements.</documentation>
+      </annotation>
+    </element>
+
+
+    <attribute
+      name="label"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,String"
+      ctv:label="Label"
+      ctv:init='""'>
+      <annotation>
+        <documentation>The default string displayed in cells with no label.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="comment"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,String"
+      ctv:label="Comment"
+      ctv:init='""'>
+      <annotation>
+        <documentation>Comment.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="preview"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Command,String"
+      ctv:label="Preview"
+      ctv:init='""'>
+      <annotation>
+        <documentation>A Command that's called repeatedly during tracking.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="action"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Command,String"
+      ctv:label="Action"
+      ctv:init='""'>
+      <annotation>
+        <documentation>A Command that's called when the cell is first pressed.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="pietouch"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,LabelCommand,String"
+      ctv:label="Pie Touch"
+      ctv:init='""'>
+      <annotation>
+        <documentation>A Label:Command that's displayed and called when the cell is first touched.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="pietap"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,LabelCommand,String"
+      ctv:label="Pie Tap"
+      ctv:init='""'>
+      <annotation>
+        <documentation>A Label:Command that's displayed and called when the cell is tapped.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="pieup"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,LabelCommand,String"
+      ctv:label="Pie Up"
+      ctv:init='""'>
+      <annotation>
+        <documentation>A Label:Command that's displayed and called when the cell is stroked Up.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="piedown"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,LabelCommand,String"
+      ctv:label="Pie Down"
+      ctv:init='""'>
+      <annotation>
+        <documentation>A Label:Command that's displayed and called when the cell is stroked Down.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="pieleft"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,LabelCommand,String"
+      ctv:label="Pie Left"
+      ctv:init='""'>
+      <annotation>
+        <documentation>A Label:Command that's displayed and called when the cell is stroked Left.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="pieright"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,LabelCommand,String"
+      ctv:label="Pie Right"
+      ctv:init='""'>
+      <annotation>
+        <documentation>A Label:Command that's displayed and called when the cell is stroked Right.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="source"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Source,String"
+      ctv:label="Source"
+      ctv:init='""'>
+      <annotation>
+        <documentation>The automatic label Source.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="param"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,String"
+      ctv:label="Param"
+      ctv:init='""'>
+      <annotation>
+        <documentation>User defined paramater string.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="id"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,String"
+      ctv:label="ID"
+      ctv:init='""'>
+      <annotation>
+        <documentation>Button ID string.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="onsize"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Command,String"
+      ctv:label="On Size"
+      ctv:init='""'>
+      <annotation>
+        <documentation>Command called when gui size changes.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="look"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,LookMenu,LookView,Integer"
+      ctv:label="Look"
+      ctv:init='0'>
+      <annotation>
+        <documentation>An image resource identifier, or zero for no image, or -1 to inherit from the Button.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="x"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="X"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Button X position.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="y"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Y"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Button Y position.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="width"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Width"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Button width.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="height"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Height"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Button height.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="font"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Font,String"
+      ctv:label="Font"
+      ctv:init='""'>
+      <annotation>
+        <documentation>Label font name.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="fontsize"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Font Size"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Label font size.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="fontnumber"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Font Number"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Label font number.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="states"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="States"
+      ctv:init='2'>
+      <annotation>
+        <documentation>Number of states in button image. (Not including transparent state 0 if overbackground). </documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="stretch"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Stretch"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Edge width of resizable image buttons.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="style"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,IntegerEnumeration,Integer"
+      ctv:label="Style"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Button style.</documentation>
+      </annotation>
+      <enumeration value='0'>
+	<annotation>
+	  <documentation>Normal style.</documentation></annotation></enumeration>
+      <enumeration value='1'>
+	<annotation>
+	  <documentation>Channel page scroll bar style.</documentation></annotation></enumeration>
+      <enumeration value='2'>
+	<annotation>
+	  <documentation>Dot shows starting now style.</documentation></annotation></enumeration>
+      <enumeration value='3'>
+	<annotation>
+	  <documentation>Dog-ear shows starting now style.</documentation></annotation></enumeration>
+      <enumeration value='4'>
+	<annotation>
+	  <documentation>Channel page scroll underline style.</documentation></annotation></enumeration>
+    </attribute>
+
+
+    <attribute
+      name="radius"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Radius"
+      ctv:init='2'>
+      <annotation>
+        <documentation>Rounded rectangle cell frame radius.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="labeldx"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Label DX"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Label DX offset, added to Cell's Label DX.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="labeldy"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Label DY"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Label DY offset, added to Cell's Label DY.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="pager"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Pager"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Pager mode.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="rows"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Rows"
+      ctv:init='1'>
+      <annotation>
+        <documentation>Row count of Cell grid.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="columns"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Columns"
+      ctv:init='1'>
+      <annotation>
+        <documentation>Column count of Cell grid.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="bands"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Bands"
+      ctv:init='1'>
+      <annotation>
+        <documentation>Number of image bands.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="antialiased"
+      type="boolean"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Boolean"
+      ctv:label="Anti-Aliased"
+      ctv:init='false'>
+      <annotation>
+        <documentation>Anti-Aliased text flag.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="hires"
+      type="boolean"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Boolean"
+      ctv:label="Hires"
+      ctv:init='false'>
+      <annotation>
+        <documentation>Hi-Res image flag.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="wrap"
+      type="boolean"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Boolean"
+      ctv:label="Wrap"
+      ctv:init='false'>
+      <annotation>
+        <documentation>Text wrap flag.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="justify"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,IntegerEnumeration,Integer"
+      ctv:label="Justify"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Label justification.</documentation>
+      </annotation>
+      <enumeration value='0'>
+	<annotation>
+	  <documentation>Left.</documentation></annotation></enumeration>
+      <enumeration value='1'>
+	<annotation>
+	  <documentation>Center.</documentation></annotation></enumeration>
+      <enumeration value='2'>
+	<annotation>
+	  <documentation>Right.</documentation></annotation></enumeration>
+    </attribute>
+
+
+    <attribute
+      name="clock"
+      type="boolean"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Boolean"
+      ctv:label="Clock"
+      ctv:init='false'>
+      <annotation>
+        <documentation>Clock update flag.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="rowlayout"
+      type="boolean"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Boolean"
+      ctv:label="Row Layout"
+      ctv:init='true'>
+      <annotation>
+        <documentation>Cell row layout flag. Layout by rows if true, by columns if false.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="active"
+      type="boolean"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Boolean"
+      ctv:label="Active"
+      ctv:init='true'>
+      <annotation>
+        <documentation>Active cells respond to mouse input. Cells must also be active.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="framed"
+      type="boolean"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Boolean"
+      ctv:label="Framed"
+      ctv:init='true'>
+      <annotation>
+        <documentation>Draw frame around cell.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="transparent"
+      type="boolean"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Boolean"
+      ctv:label="Transparent"
+      ctv:init='false'>
+      <annotation>
+        <documentation>Transparent background flag.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="invisible"
+      type="boolean"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Boolean"
+      ctv:label="Invisible"
+      ctv:init='false'>
+      <annotation>
+        <documentation>Invisible button flag.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="background"
+      type="boolean"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Boolean"
+      ctv:label="Background"
+      ctv:init='false'>
+      <annotation>
+        <documentation>Background image flag. Drawn behind overbackground buttons.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="overbackground"
+      type="boolean"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Boolean"
+      ctv:label="Over Background"
+      ctv:init='false'>
+      <annotation>
+        <documentation>Invisible background overlay flag. State 0 is transparent, state 1 is first bitmap state, etc.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="overlay"
+      type="boolean"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Boolean"
+      ctv:label="Overlay"
+      ctv:init='false'>
+      <annotation>
+        <documentation>Overlay flag. False is normal, true redraws button on top of other buttons it overlaps.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="cells"
+      type="view"
+      use="default"
+      value=""
+      ctv:edittypes="CellIndex,Closed"
+      ctv:label="Cells"
+      ctv:init='""'>
+      <annotation>
+        <documentation>Cell Index.</documentation>
+      </annotation>
+    </attribute>
+
+
+<!--
+    <attribute
+      name="test"
+      type="view"
+      use="default"
+      value=""
+      ctv:edittypes="Closed,Test"
+      ctv:label="Test"
+      ctv:init='""'>
+      <annotation>
+        <documentation>Test.</documentation>
+      </annotation>
+    </attribute>
+-->
+
+
+  </complexType>
+
+
+<!--
+************************************************************************ 
+* Cell Element
+************************************************************************
+-->
+
+
+  <complexType
+    name="cell"
+    content="none"
+    ctv:label="Cell">
+
+
+    <annotation>
+      <documentation>Cell element.</documentation>
+    </annotation>
+
+
+    <attribute
+      name="label"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,String"
+      ctv:label="Label"
+      ctv:init='""'>
+      <annotation>
+        <documentation>The string displayed in the cell.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="comment"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,String"
+      ctv:label="Comment"
+      ctv:init='""'>
+      <annotation>
+        <documentation>Comment.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="preview"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Command,String"
+      ctv:label="Preview"
+      ctv:init='""'>
+      <annotation>
+        <documentation>A Command that's called repeatedly during tracking.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="action"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Command,String"
+      ctv:label="Action"
+      ctv:init='""'>
+      <annotation>
+        <documentation>A Command that's called when the cell is first pressed.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="pietouch"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,LabelCommand,String"
+      ctv:label="Pie Touch"
+      ctv:init='""'>
+      <annotation>
+        <documentation>A Label:Command that's displayed and called when the cell is first touched.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="pietap"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,LabelCommand,String"
+      ctv:label="Pie Tap"
+      ctv:init='""'>
+      <annotation>
+        <documentation>A Label:Command that's displayed and called when the cell is tapped.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="pieup"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,LabelCommand,String"
+      ctv:label="Pie Up"
+      ctv:init='""'>
+      <annotation>
+        <documentation>A Label:Command that's displayed and called when the cell is stroked Up.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="piedown"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,LabelCommand,String"
+      ctv:label="Pie Down"
+      ctv:init='""'>
+      <annotation>
+        <documentation>A Label:Command that's displayed and called when the cell is stroked Down.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="pieleft"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,LabelCommand,String"
+      ctv:label="Pie Left"
+      ctv:init='""'>
+      <annotation>
+        <documentation>A Label:Command that's displayed and called when the cell is stroked Left.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="pieright"
+      type="string"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,LabelCommand,String"
+      ctv:label="Pie Right"
+      ctv:init='""'>
+      <annotation>
+        <documentation>A Label:Command that's displayed and called when the cell is stroked Right.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="look"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,LookMenu,LookView,Integer"
+      ctv:label="Look"
+      ctv:init='-1'>
+      <annotation>
+        <documentation>An image resource identifier, or zero for no image.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="flags"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Flags"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Cell Flags. User internally at runtime.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="labeldx"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Label DX"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Label DX offset, added to Button's Label DX.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="labeldy"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Integer"
+      ctv:label="Label DY"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Label DY offset, added to Button's Label DY.</documentation>
+      </annotation>
+    </attribute>
+
+
+    <attribute
+      name="framed"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,IntegerEnumeration,Integer"
+      ctv:label="Framed"
+      ctv:init='-1'>
+      <annotation>
+        <documentation>Draw frame around cell.</documentation>
+      </annotation>
+      <enumeration value='-1'>
+	<annotation>
+	  <documentation>Inherit from Button.</documentation></annotation></enumeration>
+      <enumeration value='0'>
+	<annotation>
+	  <documentation>No cell frame.</documentation></annotation></enumeration>
+      <enumeration value='1'>
+	<annotation>
+	  <documentation>Draw cell frame.</documentation></annotation></enumeration>
+    </attribute>
+
+
+    <attribute
+      name="justify"
+      type="int"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,IntegerEnumeration,Integer"
+      ctv:label="Justify"
+      ctv:init='0'>
+      <annotation>
+        <documentation>Label justification.</documentation>
+      </annotation>
+      <enumeration value='-1'>
+	<annotation>
+	  <documentation>Inherit from Button.</documentation></annotation></enumeration>
+      <enumeration value='0'>
+	<annotation>
+	  <documentation>Left.</documentation></annotation></enumeration>
+      <enumeration value='1'>
+	<annotation>
+	  <documentation>Center.</documentation></annotation></enumeration>
+      <enumeration value='2'>
+	<annotation>
+	  <documentation>Right.</documentation></annotation></enumeration>
+    </attribute>
+
+
+    <attribute
+      name="active"
+      type="boolean"
+      use="default"
+      value=""
+      ctv:edittypes="ReadOnly,Boolean"
+      ctv:label="Active"
+      ctv:init='true'>
+      <annotation>
+        <documentation>Active cells respond to mouse input. Button must also be active.</documentation>
+      </annotation>
+    </attribute>
+
+
+  </complexType>
+
+
+  <element
+    name="gui"
+    type="ctv:gui"
+    minOccurs="1"
+    maxOccurs="1">
+
+
+    <annotation>
+      <documentation>Top level gui element.</documentation>
+    </annotation>
+
+
+  </element>
+
+
+<!--
+************************************************************************ 
+* Annotations: Application Information for Skin Editor.
+************************************************************************
+-->
+
+
+  <annotation>
+    <appinfo>
+
+
+<!--
+************************************************************************ 
+* XML Templates
+************************************************************************
+-->
+
+
+      <templates>
+
+
+<!--
+************************************************************************ 
+* Global Data
+************************************************************************
+-->
+
+      <globals
+        id="Application_Globals">
+
+        <global name="CommandNames" type="array">
+	  [
+	    ["", "(none)", ""],
+	    ["gotogui", "gotogui [name]", "name"],
+	    ["send", "send [ircommand]", "ircommand"],
+	    ["scroll", "scroll [delta]", "delta"],
+	    ["quit", "quit", ""],
+	    ["gotopage", "gotopage [name]", "name"],
+	    ["scrollchannels", "scrollchannels [delta]", "delta"],
+	    ["scrollcategories", "scrollcategories [delta]", "delta"],
+	    ["Browse", "Browse [name]", "name"],
+	    ["Browse2", "Browse2 [name]", "name"],
+	    ["dragchannels", "dragchannels [delta]", "delta"],
+	    ["pagechannels", "pagechannels", ""],
+	    ["changetime", "changetime [delta]", "delta"],
+	    ["gotocurrenttime", "gotocurrenttime", ""],
+	    ["pagetime", "pagetime", ""],
+	    ["gotochannel", "gotochannel", ""],
+	    ["changechannel", "changechannel [delta]", "delta"],
+	    ["setcurrentchannel", "setcurrentchannel", ""],
+	    ["selectchannel", "selectchannel", ""],
+	    ["tapchannel", "tapchannel", ""],
+	    ["gotocurrentchannel", "gotocurrentchannel", ""],
+	    ["selectcategory", "selectcategory", ""],
+	    ["fetch", "fetch [url]", "url"],
+	    ["gototime", "gototime", ""],
+	    ["gotodate", "gotodate", ""],
+	    ["train", "train", ""],
+	    ["UserSetup", "UserSetup", ""],
+	    ["GuideSetup", "GuideSetup", ""],
+	    ["TVTunerSetup", "TVTunerSetup", ""],
+	    ["DrawSplashScreen", "DrawSplashScreen", ""],
+	    ["StickToBottom", "StickToBottom [dist]", "dist"],
+	    ["StretchToBottom", "StretchToBottom [dist] [rowheight]", "dist rowheight"],
+	    ["RateCurrentProgram0", "RateCurrentProgram0 [val]", "val"],
+	    ["RateCurrentProgram1", "RateCurrentProgram1 [val]", "val"],
+	    ["BrowserAction", "BrowserAction", ""],
+	    ["BrowserTap", "BrowserTap", ""],
+	    ["BrowserSelect", "BrowserSelect", ""],
+	    ["BrowserCancel", "BrowserCancel", ""],
+	    ["BrowserPageBack", "BrowserPageBack", ""],
+	    ["BrowserPageNext", "BrowserPageNext", ""],
+	    ["DoBrowserAction", "DoBrowserAction", ""],
+	    ["DoBrowserTap", "DoBrowserTap", ""],
+	    ["BrowseBrowser", "BrowseBrowser", ""],
+	    ["BrowsePage", "BrowsePage", ""],
+	    ["BrowseCategory", "BrowseCategory", ""],
+	    ["BrowseUser", "BrowseUser", ""],
+	    ["BrowseRoom", "BrowseRoom", ""],
+	    ["BrowseDevice", "BrowseDevice", ""],
+	    ["BrowseIRCommand", "BrowseIRCommand", ""],
+	    ["BrowseChannel", "BrowseChannel", ""],
+	    ["BrowseProgram", "BrowseProgram", ""],
+	    ["BrowseAttribute", "BrowseAttribute", ""],
+	    ["BrowseElement", "BrowseElement", ""]
+	  ]
+        </global>
+
+        <global name="SourceNames" type="array">
+	  [
+	    ["", "(none)"],
+	    ["channels", "channels"],
+	    ["categories", "categories"],
+	    ["programs", "programs"],
+	    ["currentprogramdescription", "currentprogramdescription"],
+	    ["currentprogramschedule", "currentprogramschedule"],
+	    ["categoryname", "categoryname"],
+	    ["guiname", "guiname"],
+	    ["showclock", "showclock"],
+	    ["currenttime", "currenttime"],
+	    ["nowtime", "nowtime"],
+	    ["BrowserSource", "BrowserSource"],
+	    ["BrowserTitle", "BrowserTitle"],
+	    ["BrowserPageLabel", "BrowserPageLabel"],
+	    ["NewBrowserSource", "NewBrowserSource"],
+	    ["BrowserTitle", "BrowserTitle"],
+	    ["BrowserPageLabel", "BrowserPageLabel"],
+	    ["Version", "Version"],
+	    ["Status", "Status"],
+	    ["Expires", "Expires"]
+	  ]
+        </global>
+
+        <global name="FontNames" type="array">
+	  [
+	    ["", "(none)"],
+	    ["font1", "font1"],
+	    ["font2", "font2"],
+	    ["font3", "font3"],
+	    ["etc", "etc"]
+	  ]
+        </global>
+
+        <global name="ColorNames" type="array">
+	  [
+	    ["", "(none)"],
+	    ["color1", "color1"],
+	    ["color2", "color2"],
+	    ["color3", "color3"],
+	    ["etc", "etc"]
+	  ]
+        </global>
+
+        <global name="DeviceNames" type="array">
+	  [
+	    ["", "(none)"],
+	    ["Box", "Box"],
+	    ["CD", "CD"],
+	    ["DVD", "DVD"],
+	    ["DVR", "DVR"],
+	    ["TV", "TV"],
+	    ["VCR", "VCR"]
+	  ]
+        </global>
+
+        <global name="EditorNames" type="array">
+	  [
+	    [
+	      "Editor",
+	      ["Index", "Editor Index", "Index"],
+	      ["Help", "Editor Help", "Help"]
+	    ],
+	    [
+	      "Skin",
+	      ["SkinIndex", "Skin Index", "Index"],
+	      ["SkinEditor", "Skin Editor", "Editor"],
+	      ["SkinCreator", "Skin Creator", "Creator"],
+	      ["SkinDeleter", "Skin Deleter", "Deleter"]
+	    ],
+	    [
+	      "Gui",
+	      ["GuiIndex", "Gui Index", "Index"],
+	      ["GuiEditor", "Gui Editor", "Editor"],
+	      ["GuiCreator", "Gui Creator", "Creator"],
+	      ["GuiDeleter", "Gui Deleter", "Deleter"],
+	      ["GuiViewXML", "Gui XML View", "XML"],
+	      ["GuiViewText", "Gui Text View", "Text"]
+	    ],
+	    [
+	      "Button",
+	      ["ButtonIndex", "Button Index", "Index"],
+	      ["ButtonEditor", "Button Editor", "Editor"],
+	      ["ButtonCreator", "Button Creator", "Creator"],
+	      ["ButtonDeleter", "Button Deleter", "Deleter"]
+	    ],
+	    [
+	      "Cell",
+	      ["CellIndex", "Cell Index", "Index"],
+	      ["CellEditor", "Cell Editor", "Editor"],
+	      ["CellCreator", "Cell Creator", "Creator"],
+	      ["CellDeleter", "Cell Deleter", "Deleter"]
+	    ],
+	    [
+	      "Resource",
+	      ["ResourceIndex", "Resource Index", "Index"],
+	      ["ResourceEditor", "Resource Editor", "Editor"],
+	      ["ResourceCreator", "Resource Creator", "Creator"],
+	      ["ResourceDeleter", "Resource Deleter", "Deleter"]
+	    ],
+	    [
+	      "Schema",
+	      ["SchemaIndex", "Schema Index", "Index"]
+	    ]
+	  ]
+        </global>
+
+      </globals>
+
+
+<!--
+************************************************************************ 
+* Command Schemas
+************************************************************************
+-->
+
+      <commands
+        id="Application_Commands">
+
+        <command
+	  name="gotogui"
+	  documentation="Load and show a gui on the screen.">
+	  <argument
+	    name="gui"
+	    type="GuiName"
+	    documentation="Name of the Gui to go to."/>
+	</command>
+
+        <command
+	  name="send"
+	  documentation="Send an IR command.">
+	  <argument
+	    name="command"
+	    type="IRCommandName"
+	    documentation="Name of the IR Command to send."/>
+	</command>
+
+      </commands>
+
+
+<!--
+************************************************************************ 
+* XHTML Root Template
+************************************************************************
+-->
+
+
+	<DIV
+	  id="Application_Root"
+	  style="width: 100%; height: 100%"
+	><DIV
+	    style="width: 100% ; height: 100% ; overflow: auto; background-color: white"
+	  ><TABLE
+	      border="0"
+	      cellpadding="0"
+	      cellspacing="0"
+	      width="100%"
+	      height="100%"
+              title=""
+	    >
+
+	      <TR
+                height="30"
+		valign="top">
+		<TD
+                  height="30"
+		  colspan="2"
+		  id="LogContainer">
+		</TD>
+	      </TR>
+
+	      <TR
+                valign="top">
+		<TD
+		  colspan="2"
+		  valign="top"
+                  height="70"
+		  width="100%"
+		  id="NoticeContainer"
+                  style="border-bottom: 6 solid #000050; behavior: url(Resources/Components/stretcher.htc)"
+                  stretchbottom="1"
+                  minheight="30"
+                  title="Drag to Resize Pane"
+                >
+		</TD>
+	      </TR>
+
+	      <TR
+		valign="top">
+
+		<TD
+		  valign="top"
+		  align="left"
+                  height="815"
+		  style="background-color: white">
+
+		  <DIV
+		    style="position: relative; top: 5; left: 5; width:440">
+
+		    <IMG
+		      id="Background"
+		      SRC="Resources/Images/SonyBackground.bmp"
+		      style="display: block; position: absolute; left: 0; top: 0"
+		    />
+
+		    <IMG
+		      src="Resources/Images/SonySmallHomeButton.bmp"
+		      style="display: block; position: absolute; left: 55; top: 670; cursor: hand"
+		      onmousedown="Gui.GotoGui('Home')"
+		    />
+
+		    <IMG
+		      src="Resources/Images/SonyHomeButton.bmp"
+		      style="display: block; position: absolute; left: 60; top: 545; cursor: hand"
+		      onmousedown="Gui.GotoGui('Home')"
+		    />
+
+		    <DIV
+		      style="display: block; position: absolute; left=54; top=216; width: 320; height=480"
+		    >
+
+		      <DIV
+			id="GuiContainer"
+			style="display: block; position: absolute; left=0; top=0; width: 100%; height=100%"
+		      />
+
+		    </DIV>
+
+		  </DIV>
+
+		</TD>
+
+		<TD
+		  valign="top"
+		  align="left"
+		  width="100%"
+		>
+
+                  <DIV
+                    style="overflow: auto; width: 100%; height: 100%; border: 2 outset; padding: 2; background-color: #c0c0ff"
+                  >
+                    <TABLE
+                      width="100%">
+                      <TR
+                        width="1%">
+                        <TD
+                          width="100%">
+                          <TABLE width="100%" cellpadding="4">
+                            <TR>
+                              <TD>
+                                <NOBR>
+                                  <SPAN
+                                    class="CommandButton"
+                                    title="Click for the Editor Index"
+                                    command="SelectEditor('Index')">Editor Index</SPAN>:
+                                  <SPAN
+                                    id="EditorSelectContainer">
+                                  </SPAN>
+                                </NOBR>
+                              </TD>
+                              <TD align="right" width="100%">
+                                <SPAN
+                                  class="CommandButton"
+                                    title="Click for Help"
+                                  command="SelectEditor('Help')">Help</SPAN>
+                              </TD>
+                            </TR>
+                          </TABLE>
+                          <HR/>
+                        </TD>
+                      </TR>
+                      <TR
+                        width="100%"
+                        valign="top">
+                        <TD
+                          width="100%"
+                          aligh="left">
+                          <DIV
+                            id="EditorContainer"
+                            style="background-color: #c0c0ff'">
+                            Watch this spot.
+                          </DIV>
+                        </TD>
+                      </TR>
+                    </TABLE>
+                  </DIV>
+		</TD>
+
+	      </TR>
+
+	    </TABLE>
+	  </DIV>
+
+	  <DIV
+	    id="OverlayDiv"
+	    style="display: none; position: absolute; z-index: 100; left: 0; top: 0; width: 100%; height: 100%; filter: progid:DXImageTransform.Microsoft.Shadow(direction=135, enabled=true), alpha(opacity=70)"
+	  ></DIV>
+
+	  <DIV
+	    id="TempDiv"
+	    style="display: none"
+	  ></DIV>
+
+	  <DIV
+	    id="PieDivGuiEditor"
+	    style="display: none"
+	  ></DIV>
+
+	  <DIV
+	    id="PieDivAttributeEditor"
+	    style="display: none"
+	  ></DIV>
+
+	</DIV>
+
+
+<!--
+************************************************************************ 
+* XHTML Error Templates
+************************************************************************
+-->
+
+
+        <DIV
+	  id="Error_NoCurrentSkin">
+	  <B>Error: No Current Skin.</B>
+	</DIV>
+
+
+        <DIV
+	  id="Error_NoCurrentResource">
+	  <B>Error: No Current Resource.</B>
+	</DIV>
+
+
+        <DIV
+	  id="Error_NoCurrentGui">
+	  <B>Error: No Current Gui.</B>
+	</DIV>
+
+
+        <DIV
+	  id="Error_NoCurrentButton">
+	  <B>Error: No Current Button.</B>
+	</DIV>
+
+
+        <DIV
+	  id="Error_NoCurrentCell">
+	  <B>Error: No Current Cell.</B>
+	</DIV>
+
+
+<!--
+************************************************************************ 
+* XHTML Editor Templates
+************************************************************************
+-->
+
+
+        <DIV
+	  id="Editor_UnknownEditor">
+	  <B>Unknown Editor: _NAME_.</B>
+	</DIV>
+
+
+        <DIV
+	  id="Editor_None">
+	  <B>No Editor Selected.</B>
+	</DIV>
+
+
+        <DIV
+	  id="Editor_Index">
+	  <B>ConnectedTV Skin Editor Index.</B>
+	  <HR/>
+	  <P/>
+	  <TABLE>
+	    _ROWS_
+	  </TABLE>
+	  <P/>
+	  <HR/>
+	  <P/>
+	</DIV>
+
+
+	<TR
+	  id="Editor_Index_Row">
+	  <TH
+	    align="right"
+	    width="80">
+	    _LABEL_:
+	  </TH>
+	  _COLUMNS_
+	</TR>
+
+	<TD
+	  id="Editor_Index_Column"
+	  width="60"
+	  align="center">
+	  <SPAN
+            class="CommandButton"
+	    title="Click for _LONGNAME_"
+	    command="SelectEditor('_EDITOR_')">_SHORTNAME_</SPAN>
+	</TD>
+
+        <DIV
+	  id="Editor_Help">
+	  <B>ConnectedTV Skin Editor Help.</B>
+	  <HR/>
+
+	  <P/>
+	  <DIV
+	    style='width: 100%; height: 670 ; border: 2 inset; padding: 2; background-color: white; overflow: auto; border-bottom: 6 solid #000050; behavior: url(Resources/Components/stretcher.htc)'
+            stretchbottom="1"
+            title="Drag to Resize Pane"
+            >
+
+            <DIV
+              isselectable='1'
+              style="width: 100%; height: 100%"
+              title="ConnectedTV Skin Editor Help"
+            >
+
+              <H3>Welcome to the ConnectedTV Skin Editor!</H3>
+              <P/>
+              This tool lets you test and create Skins
+              for the ConnectedTV Palm application.
+
+              <UL>
+                <LI>
+                  A Skin is a collection of Resouces and Guis.
+                </LI>
+                <LI>
+                  A Gui is a Graphical User Interface screen containing Buttons.
+                </LI>
+                <LI>
+                  A Button is a rectangular area containing a grid of one or more Cells.
+                </LI>
+                <LI>
+                  A Cell is a hot spot on the screen that can display an image or label, and trigger a Command. 
+                </LI>
+                <LI>
+                  A Command is a built-in function of ConnectedTV, that can take Arguments.
+                  <UL>
+                    <LI>
+                      Arguments are parameters which are used to modify the behavior of some commands.
+                    </LI>
+                  </UL>
+                </LI>
+                <LI>
+                  Skins, Guis, Buttons and Cells each have an Editor page
+                  with a list of Properties that you can edit.
+                  <UL>
+                    <LI>
+                      You can edit different properties with various types of specialized editors. 
+                    </LI>
+                    <LI>
+                      Click the Right Mouse Button on the name of a Property to pop up a pie menu of
+                      available editors that can be applied to that type of property.
+                    </LI>
+                    <LI>
+                      All properties support the "ReadOnly" editor,
+                      which is the default that just displays the value,
+                      so you won't accidentally change the value of a property by mistake.
+                      Select a type specific editor (other than "ReadOnly") to edit the value of a property. 
+                    </LI>
+                  </UL>
+                </LI>
+                <LI>
+                  Click the Left Mouse Button on the Palm Home icon to go the the Gui named "Home" in the current Skin.
+                </LI>
+                <LI>
+                  Click the Right Mouse Button on the Palm to pop up a pie menu of Gui editing commands.
+                  <UL>
+                    <LI>
+                      You can change the behavior of the Left Mouse Button with the pie menu on the Right Mouse Button.
+                    </LI>
+                    <LI>
+                      Select "Simulate Pen" to try out the interface with the Left Mouse Button.
+                    </LI>
+                    <LI>
+                      Select "Move Buttons" to drag Buttons around with the Left Mouse Button.
+                    </LI>
+                    <LI>
+                      Select "Resize Buttons" to change the size of Buttons with the Left Mouse Button.
+                      Pressing down on the corner resizes the two nearest edges at once. 
+                      Pressing down on the middle of an edge just resizes that edge. 
+                      Pressing down i nthe middle of the button moves the button, 
+                      which squishes smaller when you move it up against the edge of the Gui.
+                    </LI>
+                    <LI>
+                      Select "Button To Front" to raise the button to the top layer.
+                    </LI>
+                    <LI>
+                      Select "Button To Back" to lower the button to the bottom layer.
+                    </LI>
+                    <LI>
+                      Select "Help" to see this help page. 
+                    </LI>
+                    <LI>
+                      Select "Index" to see the editor index page. 
+                    </LI>
+                    <LI>
+                      Select the "Browse Objects" submenu to pop up another pie menu of
+                      all the objects you can browse.
+                      <UL>
+
+                        <LI>
+                          Select ":-)" to smile.
+                        </LI>
+
+                        <LI>
+                          Select ":-(" to frown.
+                        </LI>
+
+                        <LI>
+                          Select "Skin" to pop up the Skin submenu.
+                          <UL>
+                            <LI>
+                              Select "Edit" to edit the current Skin.
+                            </LI>
+                            <LI>
+                              Select "Index" to see the index of Skins.
+                            </LI>
+                            <LI>
+                              Select "Create" to create a new Skin.
+                            </LI>
+                            <LI>
+                              Select "Delete" to delete the current Skin.
+                            </LI>
+                          </UL>
+                        </LI>
+
+                        <LI>
+                          Select "Gui" to pop up the Gui submenu.
+                          <UL>
+                            <LI>
+                              Select "Edit" to edit the current Gui.
+                            </LI>
+                            <LI>
+                              Select "Index" to see the index of Guis in the current Skin.
+                            </LI>
+                            <LI>
+                              Select "Create" to create a new Gui in the current Skin.
+                            </LI>
+                            <LI>
+                              Select "Delete" to delete the current Gui.
+                            </LI>
+                            <LI>
+                              Select "Text" to see the Gui definition as text.
+                            </LI>
+                            <LI>
+                              Select "XML" to see the Gui definition as XML.
+                            </LI>
+                            <LI>
+                              Select ":-O" to be alarmed.
+                            </LI>
+                            <LI>
+                              Select ":-B" to be a rabbit.
+                            </LI>
+                          </UL>
+                        </LI>
+
+                        <LI>
+                          Select "Button" to pop up the Button submenu.
+                          <UL>
+                            <LI>
+                              Select "Edit" to edit the current Button (under the cursor).
+                            </LI>
+                            <LI>
+                              Select "Index" to see the index of Buttons in the current Gui.
+                            </LI>
+                            <LI>
+                              Select "Create" to create a new Button in the current Gui.
+                            </LI>
+                            <LI>
+                              Select "Delete" to delete the current Button (under the cursor).
+                            </LI>
+                          </UL>
+                        </LI>
+
+                        <LI>
+                          Select "Cell" to pop up the Cell submenu.
+                          <UL>
+                            <LI>
+                              Select "Edit" to edit the current Cell (under the cursor).
+                            </LI>
+                            <LI>
+                              Select "Index" to see the index of Cells in the current Button (under te cursor).
+                            </LI>
+                            <LI>
+                              Select "Create" to create a new Cell in the current Button (under the cursor).
+                            </LI>
+                            <LI>
+                              Select "Delete" to delete the current Cell (under the cursor).
+                            </LI>
+                          </UL>
+                        </LI>
+
+                        <LI>
+                          Select "Resource" to pop up the Resource submenu.
+                          <UL>
+                            <LI>
+                              Select "Edit" to edit the current Resource.
+                            </LI>
+                            <LI>
+                              Select "Index" to see the index of Resources in the current Skin.
+                            </LI>
+                            <LI>
+                              Select "Create" to create a new Resource in the current Skin.
+                            </LI>
+                            <LI>
+                              Select "Delete" to delete the current Resource from the current Skin.
+                            </LI>
+                          </UL>
+                        </LI>
+
+                        <LI>
+                          Select "Schema" to see the XML Schema Index, 
+                          which defines and documents the format of the various XML files.
+                        </LI>
+
+                      </UL>
+                    </LI>
+                  </UL>
+                </LI>
+              </UL>
+
+            </DIV>
+
+	  </DIV>
+
+	</DIV>
+
+
+        <DIV
+	  id="Editor_Commands">
+	  <B>ConnectedTV Skin Editor Commands.</B>
+	  <HR/>
+	  <P/>
+
+<!--
+	  <SPAN
+	    class="CommandButton"
+	    command="SaveSkins()">Save Skins</SPAN>.
+
+	  <SPAN
+	    class="CommandButton"
+	    command="SaveCurrentSkins()">Save Current Skin</SPAN>.
+
+	  <SPAN
+	    class="CommandButton"
+	    command="SaveCurrentGui()">Save Current Gui</SPAN>.
+-->
+
+	  <P/>
+	  <HR/>
+	  <P/>
+	</DIV>
+
+
+	<DIV
+	  id="Editor_GuiViewXML">
+	  <B>Gui XML View.</B>
+	  <BR/>
+	  _URL_
+	  <HR/>
+	  <P/>
+          <DIV
+            style='width: 100%; height: 650; border-bottom: 6 solid #000050; behavior: url(Resources/Components/stretcher.htc)'
+            stretchbottom="1"
+            title="Drag to Resize Pane"
+          >
+            <IFRAME
+              isselectable='1'
+              src='_URL_'
+              style='width: 100%; height: 100%'
+              title="Gui XML View"/>
+          </DIV>
+	</DIV>
+
+
+	<DIV
+	  id="Editor_GuiViewText">
+	  <B>Gui Text View.</B>
+	  <BR/>
+	  _URL_
+	  <HR/>
+	  <P/>
+          <DIV
+            style='width: 100%; height: 650; border-bottom: 6 solid #000050; behavior: url(Resources/Components/stretcher.htc)'
+            stretchbottom="1"
+            title="Drag to Resize Pane"
+          >
+            <DIV
+              isselectable='1'
+              style='width: 100%; height: 100% ; border: 2 inset; padding: 2; background-color: white'
+              title="Gui Text View"
+            >
+              _HTML_
+            </DIV>
+          </DIV>
+	</DIV>
+
+
+	<DIV
+	  id="Editor_SkinIndex">
+	  <B>Skin Index.</B>
+	  <BR/>
+	  Parents: (none).<BR/>
+	  Children: _N_ Skins.
+	  <BR/>
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('SkinCreator')"
+	  >Create Skin</SPAN>.
+	  <HR/>
+	  <OL
+	    start="0">
+	    _BODY_
+	  </OL>
+	  <P/>
+	  <HR/>
+	</DIV>
+
+
+	<LI
+	  id="Editor_SkinIndex_Item">
+	  <NOBR>
+	    <B>
+	      <SPAN
+                class="CommandButton"
+                title="Click for the Skin Editor"
+		command="SelectSkin(_I_, 1)"
+	      >Edit</SPAN> |
+	      <SPAN
+                class="CommandButton"
+                title="Click for the Skin's Gui Index"
+		command="SelectSkin(_I_, 0)"
+	      >Guis</SPAN> |
+	    </B>
+	    _NAME_
+	  </NOBR>
+	</LI>
+
+
+	<DIV
+	  id="Editor_SkinEditor">
+	  <B>
+	    Skin Editor.
+	    <SPAN
+	      class="CommandButton"
+              title="Click for the Previous Skin"
+	      command="EditNextSkin(-1, 1)"
+	    >Previous</SPAN>,
+	    <SPAN
+	      class="CommandButton"
+              title="Click for the Next Skin"
+	      command="EditNextSkin(1, 1)"
+	    >Next</SPAN>.
+	  </B>
+	  <BR/>
+	  Parents: 
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Skin Index"
+	    command="SelectEditor('SkinIndex')"
+	  >Skin Index</SPAN>.
+	  <BR/>
+	  Children:
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Gui Index"
+	    command="SelectEditor('GuiIndex')"
+	  >_NGUIS_ Guis</SPAN>,
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Resource Index"
+	    command="SelectEditor('ResourceIndex')"
+	  >_NRESOURCES_ Resources</SPAN>.
+	  <BR/>
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('SkinCreator')"
+	  >Create Skin</SPAN>.
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('SkinDeleter')"
+	  >Delete Skin</SPAN>.
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('GuiCreator')"
+	  >Create Gui</SPAN>.
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('ResourceCreator')"
+	  >Create Resource</SPAN>.
+	  <HR/>
+	  <P/>
+<!--
+	  <SPAN
+	    class="CommandButton"
+	    command="SaveCurrentSkin()"
+	  >Save Skin</SPAN>.
+	  <P/>
+-->
+	  _BODY_
+	</DIV>
+
+
+	<DIV
+	  id="Editor_SkinCreator">
+	  <B>
+	    Skin Creator.
+	  </B>
+	  <BR/>
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('SkinEditor')">
+	    Edit Skin</SPAN>,
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Skin Index"
+	    command="SelectEditor('SkinIndex')">
+	    Skin Index</SPAN>.
+	  <HR/>
+	  <P/>
+	  <TABLE>
+	    <TR>
+	      <TD align="right">
+	        <NOBR>Skin Name:</NOBR>
+	      </TD>
+	      <TD width="100%">
+		<INPUT
+		  id="_name"
+		  type="text"
+		  style="width: 100%"/>
+	      </TD>
+	    </TR>
+	    <TR>
+	      <TD align="right" valign="top">
+	        <NOBR>Base Directory:</NOBR>
+	      </TD>
+	      <TD width="100%">
+	        <NOBR>
+		  Subdirectory of "_BASE_":<BR/>
+		  <INPUT
+		    id="_base"
+		    type="string"
+		    style="width: 100%"/>
+		</NOBR>
+	      </TD>
+	    </TR>
+	  </TABLE>
+	  <P/>
+	  <SPAN
+	    class="CommandButton"
+	    command="CreateNewSkin()">
+	    Create New Skin
+	  </SPAN>
+	  <P/>
+	  <DIV id="_msg">
+	    Please enter new Skin name,
+	    and the base name of a new directory in which to store it,
+	    inside the editor directory "_BASE_".
+	    The new directory and initial resource files will be created for you.
+	  </DIV>
+	  <P/>
+	  <HR/>
+	</DIV>
+
+
+	<DIV
+	  id="Editor_SkinDeleter">
+	  <B>
+	    Delete Skin.
+	  </B>
+	  <HR/>
+	  <P/>
+	  <B>
+	    Are you sure you want to delete this Skin?
+	  </B>
+	  <BR/>
+	  <TABLE>
+	    <TR>
+	      <TD align="right">
+	        <NOBR>Skin Name:</NOBR>
+	      </TD>
+	      <TD>
+	        _NAME_
+	      </TD>
+	    </TR>
+	    <TR>
+	      <TD align="right">
+	        <NOBR>Base Directory:</NOBR>
+	      </TD>
+	      <TD>
+	        _BASE_
+	      </TD>
+	    </TR>
+	  </TABLE>
+	  <P/>
+	  <B>
+	    <SPAN
+	      class="CommandButton"
+              title="Click to really delete the Skin"
+	      command="DeleteSkinReally()">Yes, delete it!</SPAN>
+	    <P/>
+	    <SPAN
+	      class="CommandButton"
+              title="Click to return to the Skin Editor without deleting"
+	      command="SelectEditor('SkinEditor')">No, don't delete it.</SPAN>
+	  </B>
+	  <P/>
+	  <HR/>
+	</DIV>
+
+
+	<DIV
+	  id="Editor_GuiIndex">
+	  <B>
+	    Gui Index.
+	    <SPAN
+	      class="CommandButton"
+              title="Click for the Previous Skin's Gui Index"
+	      command="EditNextSkin(-1, 0)"
+	    >Previous</SPAN>,
+	    <SPAN
+	      class="CommandButton"
+              title="Click for the Next Skin's Gui Index"
+	      command="EditNextSkin(1, 0)"
+	    >Next</SPAN>.
+	  </B>
+	  <BR/>
+	  Parents:
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Skin Editor"
+	    command="SelectEditor('SkinEditor')"
+	  >Skin</SPAN>.
+	  <BR/>
+	  Children: _N_ Guis.
+	  <BR/>
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('GuiCreator')"
+	  >Create Gui</SPAN>.
+	  <HR/>
+	  <OL start="0">
+	    _BODY_
+	  </OL>
+	  <P/>
+	  <HR/>
+	</DIV>
+
+
+	<LI
+	  id="Editor_GuiIndex_Item">
+	  <NOBR>
+	    <B>
+	      <SPAN
+		class="CommandButton"
+                title="Click for the Gui Editor"
+		command="SelectGui(_I_, 1)"
+	      >Edit</SPAN> |
+	      <SPAN
+		class="CommandButton"
+                title="Click for the Gui's Button Index"
+		command="SelectGui(_I_, 0)"
+	      >Buttons</SPAN> |
+	      <SPAN
+		class="CommandButton"
+                title="Click to go to the Gui"
+		command="SelectGui(_I_, -1)"
+	      >Goto</SPAN> |
+	    </B>
+	    _NAME_
+	  </NOBR>
+	</LI>
+
+
+	<DIV
+	  id="Editor_GuiEditor">
+	  <B>
+	    Gui Editor.
+	    <SPAN
+	      class="CommandButton"
+              title="Click for the Previous Gui"
+	      command="EditNextGui(-1, 1)"
+	    >Previous</SPAN>,
+	    <SPAN
+	      class="CommandButton"
+              title="Click for the Next Gui"
+	      command="EditNextGui(1, 1)"
+	    >Next</SPAN>.
+	  </B>
+	  <BR/>
+	  Parents:
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Skin Editor"
+	    command="SelectEditor('SkinEditor')"
+	  >Skin</SPAN>.
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Skin's Gui Index"
+	    command="SelectEditor('GuiIndex')"
+	  >Gui Index</SPAN>.
+	  <BR/>
+	  Children:
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Gui's Button Index"
+	    command="SelectEditor('ButtonIndex')"
+	  >_N_ Buttons</SPAN>.
+	  <BR/>
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('GuiCreator')"
+	  >Create Gui</SPAN>.
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('GuiDeleter')"
+	  >Delete Gui</SPAN>.
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('ButtonCreator')"
+	  >Create Button</SPAN>.
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('ResourceCreator')"
+	  >Create Resource</SPAN>.
+	  <HR/>
+	  <P/>
+<!--
+	  <SPAN
+	    class="CommandButton"
+	    command="SaveCurrentGui()"
+	  >Save Gui</SPAN>.
+	  <P/>
+-->
+	  _BODY_
+	</DIV>
+
+
+	<DIV
+	  id="Editor_GuiCreator">
+	  <B>
+	    Gui Creator.
+	  </B>
+	  <BR/>
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Gui Editor"
+	    command="SelectEditor('GuiEditor')">
+	    Edit Gui</SPAN>,
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Skin's Gui Index"
+	    command="SelectEditor('GuiIndex')">
+	    Gui Index</SPAN>.
+	  <HR/>
+	  <P/>
+	  <TABLE>
+	    <TR>
+	      <TD align="right">
+	        <NOBR>Gui Title:</NOBR>
+	      </TD>
+	      <TD width="100%">
+		<INPUT
+		  id="_title"
+		  type="text"
+		  style="width: 100%"/>
+	      </TD>
+	    </TR>
+	    <TR>
+	      <TD align="right">
+	        <NOBR>Resource ID:</NOBR>
+	      </TD>
+	      <TD width="100%">
+		<INPUT
+		  id="_resid"
+		  type="string"
+		  value="_RESID_"
+		  style="width: 100%"/>
+	      </TD>
+	    </TR>
+	  </TABLE>
+	  <P/>
+	  <SPAN
+	    class="CommandButton"
+	    command="CreateNewGui()">
+	    Create New Gui
+	  </SPAN>
+	  <P/>
+	  <DIV id="_msg">
+	    Please enter new Gui title, and a unique resource id.
+	  </DIV>
+	  <P/>
+	  <HR/>
+	</DIV>
+
+
+	<DIV
+	  id="Editor_GuiDeleter">
+	  <B>
+	    Delete Gui.
+	  </B>
+	  <HR/>
+	  <P/>
+	  <B>
+	    Are you sure you want to delete this Gui?
+	  </B>
+	  <BR/>
+	  <TABLE>
+	    <TR>
+	      <TD align="right">
+	        <NOBR>Gui Title:</NOBR>
+	      </TD>
+	      <TD>
+	        _TITLE_
+	      </TD>
+	    </TR>
+	  </TABLE>
+	  <P/>
+	  <B>
+	    <SPAN
+	      class="CommandButton"
+              title="Click to really delete the Gui"
+	      command="DeleteGuiReally()">Yes, delete it!</SPAN>
+	    <P/>
+	    <SPAN
+	      class="CommandButton"
+              title="Click to return to the Gui Editor without deleting"
+	      command="SelectEditor('GuiEditor')">No, don't delete it.</SPAN>
+	  </B>
+	  <P/>
+	  <HR/>
+	</DIV>
+
+
+	<DIV
+	  id="Editor_ButtonIndex">
+	  <B>
+	    Button Index.
+	    <SPAN
+	      class="CommandButton"
+              title="Click for the Previous Gui's Button Index"
+	      command="EditNextGui(-1, 0)"
+	    >Previous</SPAN>,
+	    <SPAN
+	      class="CommandButton"
+              title="Click for the Next Gui's Button Index"
+	      command="EditNextGui(1, 0)"
+	    >Next</SPAN>.
+	  </B>
+	  <BR/>
+	  Parents:
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Skin Editor"
+	    command="SelectEditor('SkinEditor')"
+	  >Skin</SPAN>,
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Gui Editor"
+	    command="SelectEditor('GuiEditor')"
+	  >Gui</SPAN>.
+	  <BR/>
+	  Children: _N_ Buttons.
+	  <BR/>
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('ButtonCreator')"
+	  >Create Button</SPAN>.
+	  <HR/>
+	  <OL start="0">
+	    _BODY_
+	  </OL>
+	  <P/>
+	  <HR/>
+	</DIV>
+
+
+	<LI
+	  id="Editor_ButtonIndex_Item">
+	  <NOBR>
+	    <B>
+	      <SPAN
+		class="CommandButton"
+                title="Click for the Button Editor"
+		command="SelectButton(_I_, 1)"
+	      >Edit</SPAN> |
+	      <SPAN
+		class="CommandButton"
+                title="Click for the Button's Cell Index"
+		command="SelectButton(_I_, 0)"
+	      >Cells</SPAN> |
+	    </B>
+	    _NAME_
+	  </NOBR>
+	</LI>
+
+
+	<DIV
+	  id="Editor_ButtonEditor">
+	  <B>
+	    Button Editor.
+	    <SPAN
+	      class="CommandButton"
+              title="Click for the Previous Button"
+	      command="EditNextButton(-1, 1)"
+	    >Previous</SPAN>,
+	    <SPAN
+	      class="CommandButton"
+              title="Click for the Next Button"
+	      command="EditNextButton(1, 1)"
+	    >Next</SPAN>.
+	  </B>
+	  <BR/>
+	  Parents:
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Skin Editor"
+	    command="SelectEditor('SkinEditor')"
+	  >Skin</SPAN>,
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Gui Editor"
+	    command="SelectEditor('GuiEditor')"
+	  >Gui</SPAN>.
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Gui's Button Index"
+	    command="SelectEditor('ButtonIndex')"
+	  >Button Index</SPAN>.
+	  <BR/>
+	  Children:
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Button's Cell Index"
+	    command="SelectEditor('CellIndex')"
+	  >_N_ Cells</SPAN>.
+	  <BR/>
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('ButtonCreator')"
+	  >Create Button</SPAN>.
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('ButtonDeleter')"
+	  >Delete Button</SPAN>.
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('CellCreator')"
+	  >Create Cell</SPAN>.
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('ResourceCreator')"
+	  >Create Resource</SPAN>.
+	  <HR/>
+	  <P/>
+	  <P/>
+	  _BODY_
+	</DIV>
+
+
+	<DIV
+	  id="Editor_ButtonCreator">
+	  <B>
+	    Button Creator.
+	  </B>
+	  <BR/>
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Button Editor"
+	    command="SelectEditor('ButtonEditor')">
+	    Edit Button</SPAN>,
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Gui's Button Index"
+	    command="SelectEditor('ButtonIndex')">
+	    Button Index</SPAN>.
+	  <HR/>
+	  <P/>
+	  <TABLE>
+	    <TR>
+	      <TD align="right">
+	        <NOBR>Position:</NOBR>
+	      </TD>
+	      <TD width="100%">
+	        _MENU_
+	      </TD>
+	    </TR>
+	  </TABLE>
+	  <P/>
+	  <SPAN
+	    class="CommandButton"
+	    command="CreateNewButton()">
+	    Create New Button
+	  </SPAN>
+	  <P/>
+	  <DIV id="_msg">
+	    Please enter the position to insert the new button.
+	  </DIV>
+	  <P/>
+	  <HR/>
+	</DIV>
+
+
+	<DIV
+	  id="Editor_ButtonDeleter">
+	  <B>
+	    Delete Button.
+	  </B>
+	  <HR/>
+	  <P/>
+	  <B>
+	    Are you sure you want to delete this Button?
+	  </B>
+	  <BR/>
+	  <TABLE>
+	    <TR>
+	      <TD align="right">
+	        <NOBR>Button Name:</NOBR>
+	      </TD>
+	      <TD>
+	        _NAME_
+	      </TD>
+	    </TR>
+	  </TABLE>
+	  <P/>
+	  <B>
+	    <SPAN
+	      class="CommandButton"
+              title="Click to really delete the Button"
+	      command="DeleteButtonReally()">Yes, delete it!</SPAN>
+	    <P/>
+	    <SPAN
+	      class="CommandButton"
+              title="Click to return to the Button Editor without deleting"
+	      command="SelectEditor('ButtonEditor')">No, don't delete it.</SPAN>
+	  </B>
+	  <P/>
+	  <HR/>
+	</DIV>
+
+
+	<DIV
+	  id="Editor_CellIndex">
+	  <B>
+	    Cell Index.
+	    <SPAN
+	      class="CommandButton"
+              title="Click for the Previous Button's Cell Index"
+	      command="EditNextButton(-1, 0)"
+	    >Previous</SPAN>,
+	    <SPAN
+	      class="CommandButton"
+              title="Click for the Next Button's Cell Index"
+	      command="EditNextButton(1, 0)"
+	    >Next</SPAN>.
+	  </B>
+	  <BR/>
+	  Parents:
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('SkinEditor')"
+            title="Click for the Skin Editor"
+	  >Skin</SPAN>,
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('GuiEditor')"
+            title="Click for the Gui Editor"
+	  >Gui</SPAN>,
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('ButtonEditor')"
+            title="Click for the Button Editor"
+	  >Button</SPAN>.
+	  <BR/>
+	  Children: _N_ Cells.
+	  <BR/>
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('CellCreator')"
+	  >Create Cell</SPAN>.
+	  <HR/>
+	  <OL start="0">
+	    _BODY_
+	  </OL>
+	  <P/>
+	  <HR/>
+	</DIV>
+
+
+	<LI
+	  id="Editor_CellIndex_Item">
+	  <NOBR>
+	    <B>
+	      <SPAN
+		class="CommandButton"
+                title="Click for the Cell Editor"
+		command="SelectCell(_I_, 1)"
+	      >Edit</SPAN> |
+	    </B>
+	    _NAME_
+	  </NOBR>
+	</LI>
+
+
+	<DIV
+	  id="Editor_CellEditor">
+	  <B>
+	    Cell Editor.
+	    <SPAN
+	      class="CommandButton"
+              title="Click for the Previous Cell"
+	      command="EditNextCell(-1, 1)"
+	    >Previous</SPAN>,
+	    <SPAN
+	      class="CommandButton"
+              title="Click for the Next Cell"
+	      command="EditNextCell(1, 1)"
+	    >Next</SPAN>.
+	  </B>
+	  <BR/>
+	  Parents:
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Skin Editor"
+	    command="SelectEditor('SkinEditor')"
+	  >Skin</SPAN>,
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Gui Editor"
+	    command="SelectEditor('GuiEditor')"
+	  >Gui</SPAN>,
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Button Editor"
+	    command="SelectEditor('ButtonEditor')"
+	  >Button</SPAN>.
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Button's Cell Index"
+	    command="SelectEditor('CellIndex')"
+	  >Cell Index</SPAN>.
+	  <BR/>
+	  Children: (none).
+	  <BR/>
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('CellCreator')"
+	  >Create Cell</SPAN>.
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('CellDeleter')"
+	  >Delete Cell</SPAN>.
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('ResourceCreator')"
+	  >Create Resource</SPAN>.
+	  <HR/>
+	  <P/>
+	  _BODY_
+	</DIV>
+
+
+	<DIV
+	  id="Editor_CellCreator">
+	  <B>
+	    Cell Creator.
+	  </B>
+	  <BR/>
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Cell Editor"
+	    command="SelectEditor('CellEditor')">
+	    Edit Cell</SPAN>,
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Button's Cell Index"
+	    command="SelectEditor('CellIndex')">
+	    Cell Index</SPAN>.
+	  <HR/>
+	  <P/>
+	  <TABLE>
+	    <TR>
+	      <TD align="right">
+	        <NOBR>Position:</NOBR>
+	      </TD>
+	      <TD width="100%">
+	        _MENU_
+	      </TD>
+	    </TR>
+	  </TABLE>
+	  <P/>
+	  <SPAN
+	    class="CommandButton"
+	    command="CreateNewCell()">
+	    Create New Cell
+	  </SPAN>
+	  <P/>
+	  <DIV id="_msg">
+	    Please enter the position to insert the new cell.
+	  </DIV>
+	  <P/>
+	  <HR/>
+	</DIV>
+
+
+	<DIV
+	  id="Editor_CellDeleter">
+	  <B>
+	    Delete Cell.
+	  </B>
+	  <HR/>
+	  <P/>
+	  <B>
+	    Are you sure you want to delete this Cell?
+	  </B>
+	  <BR/>
+	  <TABLE>
+	    <TR>
+	      <TD align="right">
+	        <NOBR>Cell Name:</NOBR>
+	      </TD>
+	      <TD>
+	        _NAME_
+	      </TD>
+	    </TR>
+	  </TABLE>
+	  <P/>
+	  <B>
+	    <SPAN
+	      class="CommandButton"
+              title="Click to really delete the Cell"
+	      command="DeleteCellReally()">Yes, delete it!</SPAN>
+	    <P/>
+	    <SPAN
+	      class="CommandButton"
+              title="Click to return to the Cell Editor without deleting"
+	      command="SelectEditor('CellEditor')">No, don't delete it.</SPAN>
+	  </B>
+	  <P/>
+	  <HR/>
+	</DIV>
+
+
+	<DIV
+	  id="Editor_CellDeleter_NotLast">
+	  <B>
+	    Delete Cell.
+	  </B>
+	  <HR/>
+	  <P/>
+	  <B>
+	    You can't delete the last cell.
+	    <P/>
+	    <SPAN
+	      class="CommandButton"
+	      command="SelectEditor('ButtonDeleter')"
+	    >Delete Button</SPAN>.
+	  </B>
+	  <P/>
+	  <HR/>
+	</DIV>
+
+
+
+	<DIV
+	  id="Editor_ResourceIndex">
+	  <B>
+	    Resource Index.
+	  </B>
+	  <BR/>
+	  Parents:
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Skin Editor"
+	    command="SelectEditor('SkinEditor')"
+	  >Skin</SPAN>.
+	  <BR/>
+	  Children: _N_ Resources.
+	  <BR/>
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('ResourceCreator')"
+	  >Create Resource</SPAN>.
+	  <HR/>
+	  <OL start="0">
+	    _BODY_
+	  </OL>
+	</DIV>
+
+
+	<LI
+	  id="Editor_ResourceIndex_Item">
+	  <NOBR>
+	    <B>
+	      <SPAN
+		class="CommandButton"
+                title="Click for the Resource Editor"
+		command="SelectResource(_I_, 1)"
+	      >Edit</SPAN> |
+	    </B>
+	    Resource type: '_TYPE_' id: _ID_<BR/>
+	    <A
+	      target="_blank"
+	      href="_FULLURL_">_URL_</A>
+	  </NOBR>
+	</LI>
+
+
+	<DIV
+	  id="Editor_ResourceEditor">
+	  <B>
+	    Resource Editor.
+	    <SPAN
+	      class="CommandButton"
+              title="Click for the Previous Resource"
+	      command="EditNextResource(-1)"
+	    >Previous</SPAN>,
+	    <SPAN
+	      class="CommandButton"
+              title="Click for the Next Resource"
+	      command="EditNextResource(1)"
+	    >Next</SPAN>.
+	  </B>
+	  <BR/>
+	  Parents:
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Skin Editor"
+	    command="SelectEditor('SkinEditor')"
+	  >Skin</SPAN>.
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Skin's Resource Index"
+	    command="SelectEditor('ResourceIndex')"
+	  >Resources</SPAN>.
+	  <BR/>
+	  Children: (none).
+	  <BR/>
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('ResourceCreator')"
+	  >Create Resource</SPAN>.
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('ResourceDeleter')"
+	  >Delete Resource</SPAN>.
+	  <HR/>
+	  <P/>
+	  
+	  Resource type: '_TYPE_' id: _ID_<BR/>
+	  <NOBR>
+	    <A
+	      target="_blank"
+	      href="_URL_">_URL_</A>
+	  </NOBR>
+	  _BODY_
+	</DIV>
+
+
+	<DIV
+	  id="Editor_ResourceEditor_Bitmap">
+	  Width: _WIDTH_ Height: _HEIGHT_ Compress: _COMPRESS_<BR/>
+          <P/>
+	  <HR/>
+	  <P/>
+	  <CENTER>
+	    <IMG
+	      width='_WIDTH_'
+	      height='_HEIGHT_'
+	      src='_URL_'/>
+	  </CENTER>
+	  <P/>
+	  <HR/>
+	</DIV>
+
+
+	<DIV
+	  id="Editor_ResourceEditor_XML">
+	  <P/>
+          <HR/>
+	  <IFRAME
+	    isselectable='1'
+	    style='width: 100%; height: 530'
+	    src='_URL_'/>
+	</DIV>
+
+
+	<DIV
+	  id="Editor_ResourceCreator">
+	  <B>
+	    Resource Creator.
+	  </B>
+	  <BR/>
+	  <SPAN
+	    class="CommandButton"
+	    command="SelectEditor('ResourceEditor')">
+	    Edit Resource</SPAN>,
+	  <SPAN
+	    class="CommandButton"
+            title="Click for the Skin's Resource Index"
+	    command="SelectEditor('ResourceIndex')">
+	    Resource Index</SPAN>.
+	  <HR/>
+	  <P/>
+	  <TABLE>
+	    <TR>
+	      <TD align="right">
+	        <NOBR>Resource Type:</NOBR>
+	      </TD>
+	      <TD>
+		<SELECT
+		  id="_restype"
+		  onchange="DoSelectResourceFileOrType()">
+		  <OPTION value="Tbmp" selected="1">Bitmap</OPTION>
+		  <OPTION value="xBIN">XML</OPTION>
+		</SELECT>
+	      </TD>
+	    </TR>
+	    <TR>
+	      <TD align="right">
+	        <NOBR>Resource ID:</NOBR>
+	      </TD>
+	      <TD width="100%">
+		<INPUT
+		  id="_resid"
+		  type="text"
+		  value="_RESID_"
+		  size="8"
+		  style="width: 100%"/>
+	      </TD>
+	    </TR>
+	    <TR>
+	      <TD align="right">
+	        <NOBR>Resource File:</NOBR>
+	      </TD>
+	      <TD width="100%">
+		<INPUT
+		  id="_resfile"
+		  type="file"
+		  onchange="DoSelectResourceFileOrType()"
+		  style="width: 100%"/>
+	      </TD>
+	    </TR>
+	    <TR id="_cmdrow">
+	      <TD valign="top" align="right">
+		  <NOBR>Image Type:</NOBR>
+	      </TD>
+	      <TD width="100%">
+		<SELECT
+		  id="_rescmd">
+		  <OPTION value="BITMAP">Black and White</OPTION>
+		  <OPTION value="BITMAPCOLORGRAY16">16 Grays</OPTION>
+		  <OPTION value="BITMAPCOLORGRAY">256 Grays</OPTION>
+		  <OPTION value="BITMAPCOLOR16">16 Colors</OPTION>
+		  <OPTION value="BITMAPCOLOR">256 Colors</OPTION>
+		  <OPTION value="BITMAPCOLOR16k" selected="1">16k Colors</OPTION>
+		  <OPTION value="BITMAPCOLOR24k">24k Colors</OPTION>
+		  <OPTION value="BITMAPCOLOR32k">32k Colors</OPTION>
+		</SELECT>
+	      </TD>
+	    </TR>
+	    <TR id="_compressrow">
+	      <TD valign="top" align="right">
+		  <NOBR>Compress:</NOBR>
+	      </TD>
+	      <TD width="100%">
+		<INPUT
+                  type="checkbox"
+                  checked="1"
+		  id="_rescompress"/>
+	      </TD>
+	    </TR>
+	    <TR id="_imgrow" style="display: none">
+	      <TD valign="top" align="right">
+		  <NOBR>Image:</NOBR>
+	      </TD>
+	      <TD width="100%">
+		  <IMG id="_img"/>
+	      </TD>
+	    </TR>
+	  </TABLE>
+	  <P/>
+	  <SPAN
+	    class="CommandButton"
+	    command="CreateNewResource()">
+	    Create New Resource
+	  </SPAN>
+	  <P/>
+	  <DIV id="_msg">
+	    Please select the resource type, enter a unique ID,
+	    and select the name of an existing resource file.
+	  </DIV>
+	  <P/>
+	  <HR/>
+	</DIV>
+
+
+	<DIV
+	  id="Editor_ResourceDeleter">
+	  <B>
+	    Delete Resource.
+	  </B>
+	  <HR/>
+	  <P/>
+	  <B>
+	    Are you sure you want to delete this Resource?
+	  </B>
+	  <BR/>
+	  <TABLE>
+	    <TR>
+	      <TD align="right">
+	        <NOBR>Resource Type:</NOBR>
+	      </TD>
+	      <TD>
+	        _TYPE_
+	      </TD>
+	    </TR>
+	    <TR>
+	      <TD align="right">
+	        <NOBR>Resource ID:</NOBR>
+	      </TD>
+	      <TD>
+	        _ID_
+	      </TD>
+	    </TR>
+	    <TR>
+	      <TD align="right">
+	        URL:
+	      </TD>
+	      <TD>
+	        <NOBR>_URL_</NOBR>
+	      </TD>
+	    </TR>
+	  </TABLE>
+	  <P/>
+	  <B>
+	    <SPAN
+	      class="CommandButton"
+              title="Click to really delete the Resource"
+	      command="DeleteResourceReally()">Yes, delete it!</SPAN>
+	    <P/>
+	    <SPAN
+	      class="CommandButton"
+              title="Click to return to the Resource Editor without deleting"
+	      command="SelectEditor('ResourceEditor')">No, don't delete it.</SPAN>
+	  </B>
+	  <P/>
+	  <HR/>
+	</DIV>
+
+
+	<DIV
+	  id="Editor_SchemaIndex">
+	  <B>
+	    XML Schema Index.
+	  </B>
+	  <BR/>
+	  _URL_
+	  <HR/>
+	  <P/>
+	  <DIV
+	    style='width: 100%; height: 650 ; border: 2 inset; padding: 2; background-color: white; overflow: auto'>
+	    <UL>
+	      _BODY_
+	    </UL>
+	    <P/>
+	  </DIV>
+	</DIV>
+
+
+	<LI
+	  id="Editor_SchemaIndex_ComplexType">
+	  Complex Type: _LABEL_ (_NAME_)<BR/>
+	  Content Type: _CONTENT_<BR/>
+	  Documentation: <EM>_DOC_</EM><BR/>
+	  _LABEL_ Attributes: _NATTRIBUTES_
+	  <UL>
+	    _BODYATTRIBUTES_
+	  </UL>
+	  _LABEL_ Elements: _NELEMENTS_
+	  <UL>
+	    _BODYELEMENTS_
+	  </UL>
+	</LI>
+
+
+        <LI
+	  id="Editor_SchemaIndex_Attribute">
+	  _LABEL_ (_SCHEMANAME_._NAME_): _TYPE_<BR/>
+	  <EM>_DOC_</EM>
+	  _BODY_
+	</LI>
+
+
+        <LI
+	  id="Editor_SchemaIndex_Element">
+	  _NAME_: element; minOccurs: _MINOCCURS_ maxOccurs: _MAXOCCURS_<BR/>
+	  <EM>_DOC_</EM>
+	</LI>
+
+
+        <DIV
+	  id="Editor_SchemaIndex_Enumeration">
+	  Enumerations:
+	  <UL>
+	    _BODY_
+	  </UL>
+	</DIV>
+
+
+        <LI
+	  id="Editor_SchemaIndex_Enumeration_Item">
+	  _VAL_: _DOC_
+	</LI>
+
+
+<!--
+************************************************************************ 
+* XHTML Editor Schema Templates
+************************************************************************
+-->
+
+
+	<DIV
+	  id="EditSchema"
+	  _objid="_OBJID_"
+	  _schemaid="_SCHEMAID_">
+	  <TABLE
+	    style='width: 100%'
+	    _table='1'>
+	    _BODY_
+	  </TABLE>
+	  <P/>
+	  <HR/>
+	  <P/>
+	</DIV>
+
+
+	<TR
+	  id="EditSchema_Attribute"
+	  title="_TOOLTIP_"
+	  _attid="_ATTID_"
+	  _row="1"
+	  ><TD
+	    valign='top'
+	    align='right'
+	    width='1%'
+	    height='100%'
+	    onmousedown="ClickAttributeLabel()"
+	    _column="1">
+	    <NOBR>
+	      <B>_LABEL_</B>:
+	    </NOBR>
+	  </TD
+	  ><TD
+	    valign='top'
+	    align='left'
+	    width='100%'
+	    height='100%'
+	    _view='1'>
+	    _BODY_
+	  </TD>
+	</TR>
+
+
+        <DIV
+	  id="EditSchema_Attribute_Closed"
+	  onmousedown="ClickAttributeLabel()"
+	  style="width:100%; height:100%; border-bottom: 2 groove"
+	><!--return ({
+	  'SIZE': obj[att.name].length,
+	  'LABEL': att.label
+	})-->
+	  _SIZE_ _LABEL_. [Closed]
+        </DIV>
+
+
+        <DIV
+	  id="EditSchema_Attribute_ReadOnly"
+	  onmousedown="ClickAttributeLabel()"
+	  style="width:100%; height:100%; border-bottom: 2 groove"
+	><!--return ({
+	  'BODY': att.GetValueLabel(obj[att.name])
+	})-->
+	  <NOBR>
+	    _BODY_
+	  </NOBR>
+	</DIV>
+
+
+	<INPUT
+	  id="EditSchema_Attribute_String"
+	  type='text'
+	  isselectable='1'
+	  size='5'
+	  attname='_NAME_'
+	  onblur='DoUpdateAttributeString()'
+	  value='_VALUE_' style='width:100%'/>
+
+
+        <INPUT
+	  id="EditSchema_Attribute_Float"
+	  type='text'
+	  isselectable='1'
+	  size='5'
+	  onblur='DoUpdateAttributeFloat()'
+	  value='_VALUE_'
+	  style='width:100%'/>
+
+
+        <INPUT
+	  id="EditSchema_Attribute_Integer"
+	  type='text'
+	  isselectable='1'
+	  size='5'
+	  attname='_NAME_'
+	  onblur='DoUpdateAttributeInt()'
+	  value='_VALUE_'
+	  style='width:100%'/>
+
+
+	<SELECT
+	  id="EditSchema_Attribute_IntegerEnumeration"
+	  attname='_NAME_'
+	  onchange='DoUpdateAttributeInt()'>
+	  _BODY_
+	</SELECT>
+
+
+	<SELECT
+	  id="EditSchema_Attribute_StringEnumeration"
+	  attname='_NAME_'
+	  onchange='DoUpdateAttributeString()'>
+	  _BODY_
+	</SELECT>
+
+
+	<OPTION
+	  id="EditSchema_Attribute_Enumeration_Item"
+	  value='_VALUE_'
+	  _SELECTED_='1'
+	  style='width:100%'>
+	  _LABEL_
+	</OPTION>
+
+	<INPUT
+	  id="EditSchema_Attribute_Boolean"
+	  type='checkbox'
+	  _CHECKED_='1'
+	  onclick='DoUpdateAttributeBoolean()'
+	><!--
+	  var val = obj[att.name]
+	  val = ParseBool(val, false);
+	  return ({
+	  'CHECKED': (val ? "checked" : "unchecked")
+	})-->
+	</INPUT>
+
+
+	<DIV
+	  id="EditSchema_Attribute_Source"
+	><!--return ({
+	  'BODY': MakeSelectMenu(null, "DoUpdateAttributeString()", null, SourceNames, value)
+	})-->
+	  _BODY_
+	</DIV>
+
+
+	<DIV
+	  id="EditSchema_Attribute_Command"
+	><!--
+	  var handler = 
+	    "FindEventElement(1, '_cmd').value = event.srcElement.value; " +
+	    "FindEventElement(1, '_args').value = GetCommandArgs(event.srcElement.value); " +
+	    "DoUpdateAttributeCommand();"
+	  var cmd = value.split(" ")[0];
+	  var args = value.substr(cmd.length + 1);
+	  return ({
+	    "BODY": MakeSelectMenu(null, handler, null, CommandNames, cmd),
+	    "CMD": cmd,
+	    "ARGS": args
+	})-->
+	  <NOBR>
+	    _BODY_<BR/>
+	    <TABLE width='100%'>
+	      <TR>
+	        <TD align='right'>Command:</TD>
+		<TD width='100%'>
+		  <INPUT
+		    id="_cmd"
+		    type='text'
+		    isselectable='1'
+		    size='5'
+		    onblur='DoUpdateAttributeCommand()'
+		    value='_CMD_'
+		    style='width:100%'/>
+		</TD>
+	      </TR>
+	      <TR>
+	        <TD align='right'>Arguments:</TD>
+		<TD width='100%'>
+		  <INPUT
+		    id="_args"
+		    type='text'
+		    isselectable='1'
+		    size='5'
+		    onblur='DoUpdateAttributeCommand()'
+		    value='_ARGS_'
+		    style='width:100%'/>
+		</TD>
+	      </TR>
+	    </TABLE>
+	  </NOBR>
+	</DIV>
+
+
+	<DIV
+	  id="EditSchema_Attribute_LabelCommand"
+	><!--
+	  var handler =
+	    "FindEventElement(1, '_cmd').value = event.srcElement.value; " +
+	    "FindEventElement(1, '_args').value = GetCommandArgs(event.srcElement.value); " +
+	    "DoUpdateAttributeLabelCommand();";
+	  var label = value.split(":")[0];
+	  var rest = (label.length == value.length) ? "" : value.substr(label.length + 1);
+	  var cmd = rest.split(" ")[0];
+	  var args = rest.substr(cmd.length + 1);
+	  return ({
+	    "BODY":  MakeSelectMenu("_menu", handler, null, CommandNames, cmd),
+	    "LABEL": label,
+	    "CMD": cmd,
+	    "ARGS": args
+	})-->
+	  <NOBR>
+	    _BODY_<BR/>
+	    <TABLE width='100%'>
+	      <TR>
+	        <TD align='right'>Label:</TD>
+		<TD width='100%'>
+		  <INPUT
+		    id="_label"
+		    type='text'
+		    isselectable='1'
+		    size='5'
+		    onblur='DoUpdateAttributeLabelCommand()'
+		    value='_LABEL_'
+		    style='width:100%'/>
+		</TD>
+	      </TR>
+	      <TR>
+	        <TD align='right'>Command:</TD>
+		<TD width='100%'>
+		  <INPUT
+		    id="_cmd"
+		    type='text'
+		    isselectable='1'
+		    size='5'
+		    onblur='DoUpdateAttributeLabelCommand()'
+		    value='_CMD_'
+		    style='width:100%'/>
+		</TD>
+	      </TR>
+	      <TR>
+	        <TD align='right'>Arguments:</TD>
+		<TD width='100%'>
+		  <INPUT
+		    id="_args"
+		    type='text'
+		    isselectable='1'
+		    size='5'
+		    onblur='DoUpdateAttributeLabelCommand()'
+		    value='_ARGS_'
+		    style='width:100%'/>
+		</TD>
+	      </TR>
+	    </TABLE>
+	  </NOBR>
+	</DIV>
+
+
+	<DIV
+	  id="EditSchema_Attribute_LookMenu"
+	><!--
+          return MakeLookMenuDict(schema, att, obj, value);
+        -->
+	  _MENU_
+	  <DIV id="_body">_BODY_</DIV>
+	</DIV>
+
+
+	<DIV
+	  id="EditSchema_Attribute_LookView"
+	><!--
+	  var body = "";
+	  var resid = parseInt(obj[att.name]);
+	  var restype = "Tbmp";
+	  if (resid == -1) {
+	    body = "-1: (inherited)";
+	  } else if (resid == 0) {
+	    body = "0: (none)";
+	  } else if (resid == Math.NaN) {
+	    body = "NaN: (error)";
+	  } else {
+	    var res = CurrentSkin.GetResource(restype, resid);
+	    if (res == null) {
+	      body = resid + ": Missing Resource";
+	    } else {
+	      body =
+		Schema.ExpandTemplate(
+		  "EditSchema_Attribute_LookView_Valid", {
+		    '_RESTYPE_': restype,
+		    '_RESID_': resid,
+		    '_URL_': res.fullurl,
+		    '_WIDTH_': res.width,
+		    '_HEIGHT_': res.height
+		  });
+	    } // if
+	  } // if
+	  return ({
+	    'BODY': body
+	  })-->
+	  _BODY_
+	</DIV>
+
+
+	<DIV
+	  id="EditSchema_Attribute_LookView_Valid">
+	  <NOBR>
+	    Resource Type: _RESTYPE_ Id: _RESID_
+	    <BR/>
+	    URL: _URL_
+	    <BR/>
+	  </NOBR>
+	  <IMG
+	    id="_img"
+	    src="_URL_"
+	    width="_WIDTH_"
+	    height="_HEIGHT_"/>
+	</DIV>
+
+
+	<DIV
+	  id="EditSchema_Attribute_Font"
+	><!--return ({
+	  'BODY': MakeSelectMenu(null, DoUpdateAttributeFont(), null, FontNames, obj[att.name])
+	})-->
+	  _BODY_
+	</DIV>
+
+
+	<DIV
+	  id="EditSchema_Attribute_Color"
+	><!--return ({
+	  'BODY': MakeSelectMenu(null, DoUpdateAttributeColor(), null, ColorNames, obj[att.name])
+	})-->
+	  _BODY_
+	</DIV>
+
+
+	<DIV
+	  id="EditSchema_Attribute_Device"
+	><!--return ({
+	  'BODY': MakeSelectMenu(null, DoUpdateAttributeString(), null, DeviceNames, value)
+	})-->
+	  _BODY_
+	</DIV>
+
+
+	<DIV
+	  id="EditSchema_Attribute_GuiIndex"
+	><!--return ({
+	  'BODY': MakeGuiIndex()
+	})-->
+	  <OL start="0">
+	    _BODY_
+	  </OL>
+	</DIV>
+
+
+	<DIV
+	  id="EditSchema_Attribute_ButtonIndex"
+	><!--return ({
+	  'BODY': MakeButtonIndex()
+	})-->
+	  <OL start="0">
+	    _BODY_
+	  </OL>
+	</DIV>
+
+
+	<DIV
+	  id="EditSchema_Attribute_CellIndex"
+	><!--return ({
+	  'BODY': MakeCellIndex()
+	})-->
+	  <OL start="0">
+	    _BODY_
+	  </OL>
+	</DIV>
+
+
+<!--
+************************************************************************ 
+* Pie Menu Templates
+************************************************************************
+-->
+
+
+	<DIV
+	  id="Editor_PieDivGuiEditor"
+	  style="display: hidden; behavior: url(Resources/Components/piemenu.htc)">
+	  <XML>
+	    _PIEMENU_
+	  </XML>
+	</DIV>
+
+
+	<piemenu
+	  id="Editor_PieMenu_GuiEditor"
+	  minradius="50"
+	  centermargin="8"
+	>
+
+	  <html>
+	    <B>
+	      Gui Editor
+	    </B>
+	  </html>
+
+	  <item
+	    action="CurrentButtonToFront()"
+	  >
+	    <html>
+	      Button<br/>
+	      To Front
+	    </html>
+	  </item>
+
+	  <item
+	    action="SelectEditor('Help')"
+	  >
+	    <html>
+	      Help
+	    </html>
+	  </item>
+
+	  <item>
+
+	    <html>
+	      Browse<BR/>
+	      Objects
+	    </html>
+
+	    <piemenu
+	      minradius="50"
+	      centermargin="8"
+	    >
+
+	      <html>
+		<B>
+		  Browse<BR/>
+		  Objects
+		</B>
+	      </html>
+
+	      <item
+		name="Skin"
+	      >
+		<piemenu
+		  minradius="50"
+		  centermargin="8"
+		>
+		  <html>
+		    <B>
+		      Skin
+		    </B>
+		  </html>
+
+		  <item name="Index" action="SelectEditor('SkinIndex')"/>
+		  <item name="Delete" action="SelectEditor('SkinDeleter')"/>
+		  <item name="Edit" action="SelectEditor('SkinEditor')"/>
+		  <item name="Create" action="SelectEditor('SkinCreator')"/>
+		</piemenu>
+	      </item>
+
+	      <item
+		name="Gui"
+	      >
+		<piemenu
+		  minradius="50"
+		  centermargin="8"
+		>
+		  <html>
+		    <B>
+		      Gui
+		    </B>
+		  </html>
+
+		  <item name="Index" action="SelectEditor('GuiIndex')"/>
+		  <item name=":-O"/>
+		  <item name="Delete" action="SelectEditor('GuiDeleter')"/>
+		  <item name="XML" action="SelectEditor('GuiViewXML')"/>
+		  <item name="Edit" action="SelectEditor('GuiEditor')"/>
+		  <item name="Text" action="SelectEditor('GuiViewText')"/>
+		  <item name="Create" action="SelectEditor('GuiCreator')"/>
+		  <item name=":-B"/>
+		</piemenu>
+	      </item>
+
+	      <item
+		name="Button"
+	      >
+		<piemenu
+		  minradius="50"
+		  centermargin="8"
+		>
+		  <html>
+		    <B>
+		      Button
+		    </B>
+		  </html>
+
+		  <item name="Index" action="SelectEditor('ButtonIndex')"/>
+		  <item name="Delete" action="SelectEditor('ButtonDeleter')"/>
+		  <item name="Edit" action="SelectEditor('ButtonEditor')"/>
+		  <item name="Create" action="SelectEditor('ButtonCreator')"/>
+		</piemenu>
+	      </item>
+
+	      <item
+		name="Cell"
+	      >
+		<piemenu
+		  minradius="50"
+		  centermargin="8"
+		>
+		  <html>
+		    <B>
+		      Cell
+		    </B>
+		  </html>
+
+		  <item name="Index" action="SelectEditor('CellIndex')"/>
+		  <item name="Delete" action="SelectEditor('CellDeleter')"/>
+		  <item name="Edit" action="SelectEditor('CellEditor')"/>
+		  <item name="Create" action="SelectEditor('CellCreator')"/>
+		</piemenu>
+	      </item>
+
+	      <item
+		name="Resource"
+	      >
+		<piemenu
+		  minradius="50"
+		  centermargin="8"
+		>
+		  <html>
+		    <B>
+		      Resource
+		    </B>
+		  </html>
+
+		  <item name="Index" action="SelectEditor('ResourceIndex')"/>
+		  <item name="Delete" action="SelectEditor('ResourceDeleter')"/>
+		  <item name="Edit" action="SelectEditor('ResourceEditor')"/>
+		  <item name="Create" action="SelectEditor('ResourceCreator')"/>
+		</piemenu>
+	      </item>
+
+	      <item name=":-("/>
+
+	      <item
+		name="Schema"
+		action="SelectEditor('SchemaIndex')"
+	      />
+
+	      <item name=":-)"/>
+
+	    </piemenu>
+
+	  </item>
+
+	  <item
+	    action="SetButtonTool('Resize')"
+	  >
+	    <html>
+	      Resize<BR/>
+	      Buttons
+	    </html>
+	  </item>
+
+	  <item
+	    action="CurrentButtonToBack()"
+	  >
+	    <html>
+	      Button<br/>
+	      To Back
+	    </html>
+	  </item>
+
+	  <item
+	    action="SetButtonTool('Drag')"
+	  >
+	    <html>
+	      Move<BR/>
+	      Buttons
+	    </html>
+	  </item>
+
+	  <item
+	    action="SetButtonTool('Pen')"
+	  >
+	    <html>
+	      Simulate<BR/>
+	      Pen
+	    </html>
+	  </item>
+
+	  <item
+	    action="SelectEditor('Index')"
+	  >
+	    <html>
+	      Index
+	    </html>
+	  </item>
+
+	</piemenu>
+
+
+	<DIV
+	  id="Editor_PieDivAttributeEditor"
+	  onaftermakepie="this.HandleOnMouseDown()"
+	  style="display: hidden; behavior: url(Resources/Components/piemenu.htc)">
+	  <XML>
+	    _PIEMENU_
+	  </XML>
+	</DIV>
+
+
+	<piemenu
+	  id="Editor_PieMenu_AttributeEditor"
+	  minradius='25'
+	  maxpieitems='2'
+	  itemwidth='150'
+	  centermargin='10'
+	  onselect='this.DoSelect()'>
+	  <html>
+	    <B>
+	      Pick an<BR/>
+	      Editor
+	    </B>
+	  </html>
+	  _ITEMS_
+        </piemenu>
+
+
+<!--
+************************************************************************ 
+* End of Templates
+************************************************************************
+-->
+
+
+      </templates>
+
+
+    </appinfo>
+  </annotation>
+
+
+</schema>
+
+
+<!--
+
+HEY EMACS!!!
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+End:
+GOOD EMACS.
+
+-->
+
+
+<!--
+************************************************************************ 
+* End of File
+************************************************************************
+-->

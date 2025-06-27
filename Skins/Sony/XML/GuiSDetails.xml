@@ -1,0 +1,99 @@
+<gui
+  title="SShow Details"
+  width="160"
+  height="240"
+  bottomedge="15"
+  pagetype="3"
+  onback="gotopage SShows"
+  cellsperpage="1"
+>
+
+  <!-- Copyright 2002-2003 ConnectedMedia Corporation --> 
+
+  <button
+    x="0" y="0"
+    labeldy="2"
+    width="62" height="16"
+    active="0"
+    framed="0"
+    source="Show Details"
+  />
+
+  <button
+    x="62" y="0"
+    labeldy="2"
+    width="28" height="16"
+    active="0"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    label="Category"
+    x="90" y="0"
+    labeldy="2"
+    width="70" height="16"
+    style="4"
+    source="categoryname"
+    look="7010" stretch="12" states="3" hires="1"
+  />
+
+  <button
+    label=""
+    x="0" y="16"
+    labeldy="1"
+    width="160" height="161"
+    wrap="1"
+    source="currentprogramdescription"
+    pietouch="                           Shows:gotopage SShows"
+    piedown="                 Watch This Channel:gotocurrentchannel"
+    pieup="                           Shows:gotopage SShows"
+    pieleft="                    Previous Station:changechannel -1"
+    pieright="                       Next Station:changechannel 1"
+    look="7013" stretch="12" states="3" hires="1"
+    onsize="StretchToBottom 48"
+  />
+
+  <button
+    label=""
+    x="0" y="177"
+    width="110" height="48"
+    wrap="1"
+    source="currentprogramschedule"
+    xpieup="Previous Show (not yet):"
+    xpiedown="Next Show (not yet):"
+    xpietouch="Now:gotocurrenttime"
+    pieleft="        Previous Station:changechannel -1"
+    pieright="           Next Station:changechannel 1"
+    look="7013" stretch="12" states="3" hires="1"
+    onsize="StickToBottom 0"
+  />
+
+  <button
+    x="110" y="177"
+    width="50" height="48"
+    labeldx="0" labeldy="5"
+    rows="2" columns="1"
+    look="7010" stretch="12" states="3" hires="1"
+    onsize="StickToBottom 0"
+  >
+
+    <cell
+      label="My Rating"
+      pieup="  Favorite:RateCurrentProgram0 2"
+      piedown="     Bad:RateCurrentProgram0 -1"
+      pieleft="  Normal:RateCurrentProgram0 0"
+      pietouch="no change:"
+      look="7014"
+    />
+
+    <cell
+      label=   "    Shows"
+      pietouch=":gotopage SShows"
+      piedown="  Stations:gotopage SStations"
+    />
+
+  </button>
+
+</gui>

@@ -1,0 +1,315 @@
+<gui
+  title="SHome"
+  width="160"
+  height="240"
+  bottomedge="15"
+  onback="quit"
+>
+
+  <!-- Copyright 2002-2003 ConnectedMedia Corporation --> 
+
+  <!-- Cable upper left marker -->
+
+  <button
+    x="0" y="0"
+    width="115" height="25"
+    active="0"
+    framed="0"
+    look="8101" states="1" hires="1"
+  />
+
+  <!-- Cable Power button -->
+
+  <button
+    x="103" y="0"
+    width="57" height="25"
+    framed="0"
+    look="8102" states="1" hires="1"
+    action="send Power"
+  />
+
+  <!-- Main01, Main02 and Setup tabs  -->
+
+  <button
+    x="0" y="25"
+    width="53" height="18"
+    framed="0"
+    look="8104" states="1" hires="1"
+  />
+
+  <!-- show Main02 pushed in -->
+
+  <button
+    x="53" y="25"
+    width="54" height="18"
+    framed="0"
+    active="0"
+    look="8105" states="1" hires="1"
+  />
+
+  <button
+    x="107" y="25"
+    width="53" height="18"
+    framed="0"
+    active="0"
+    look="8107" states="1" hires="1"
+  />
+
+  <!-- Background Bands -->
+
+  <button
+    x="0" y="43"
+    width="160" height="115"
+    framed="0"
+    active="0"
+    look="8109" states="1" hires="1"
+    bands="2" background="1"
+  />
+
+  <!-- Cable Button Pressed -->
+
+  <button
+    x="0" y="43"
+    width="53" height="37"
+    framed="0"
+    look="8211" states="1" hires="1"
+    overbackground="1"
+    pietouch=":gotopage SShows"
+  />
+
+  <!-- TV Button Pressed -->
+
+  <button
+    x="0" y="80"
+    width="53" height="37"
+    framed="0"
+    look="8214" states="1" hires="1"
+    overbackground="1"
+    pietouch=":gotopage STV10Key"	  
+  />
+
+  <!-- DBS, DVR, etc buttons are all inert for now -->
+
+  <!-- DBS -->
+
+<!--
+  <button
+    x="53" y="43"
+    width="53" height="37"
+    framed="0"
+    look="8112" states="1" hires="1"
+    overbackground="1"
+  />
+-->
+
+  <!-- DVR -->
+
+<!--
+  <button
+    x="106" y="43"
+    width="54" height="37"
+    framed="0"
+    look="8113" states="1" hires="1"
+    overbackground="1"
+  />
+-->
+
+  <!-- More currently inert buttons -->
+
+  <!-- STR -->
+
+<!--
+  <button
+    x="53" y="80"
+    width="53" height="37"
+    framed="0"
+    look="8115" states="1" hires="1"
+    overbackground="1"
+  />
+-->
+
+  <!-- DVD -->
+
+<!--
+  <button
+    x="106" y="80"
+    width="54" height="37"
+    framed="0"
+    look="8116" states="1" hires="1"
+    overbackground="1"
+  />
+-->
+
+  <!-- VCR -->
+
+<!--
+  <button
+    x="0" y="117"
+    width="53" height="38"
+    framed="0"
+    look="8117" states="1" hires="1"
+    overbackground="1"
+  />
+-->
+
+  <!-- Video -->
+
+<!--
+  <button
+    x="53" y="117"
+    width="54" height="38"
+    framed="0"
+    look="8118" states="1" hires="1"
+    overbackground="1"
+  />
+-->
+
+  <!-- Tape -->
+
+<!--
+  <button
+    x="106" y="117"
+    width="54" height="38"
+    framed="0"
+    look="8119" states="1" hires="1"
+  />
+-->
+
+  <!--  Control Button Block - background and 11 buttons -->
+
+  <!-- Control area background with Volume etc -->
+
+  <button
+    x="0" y="155"
+    width="160" height="71"
+    framed="0"
+    active="0"
+    look="8090" states="1" hires="1"
+    background="1"
+  />
+
+  <!-- Mute button -->
+
+  <button
+    x="26" y="155"
+    width="26" height="29"
+    framed="0"
+    look="8043" states="1" hires="1"
+    overbackground="1"
+    action="send Mute"
+  />
+
+  <!-- Volume+ button -->
+
+  <button
+    x="52" y="166"
+    width="30" height="31"
+    framed="0"
+    look="8055" states="1" hires="1"
+    overbackground="1"
+    action="send Volume +"
+  />
+
+  <!-- Volume- button -->
+
+  <button
+    x="52" y="197"
+    width="30" height="29"
+    framed="0"
+    look="8056" states="1" hires="1"
+    overbackground="1"
+    action="send Volume -"
+  />
+
+  <!-- Channel+ button -->
+
+  <button
+    x="82" y="166"
+    width="28" height="31"
+    framed="0"
+    look="8053" states="1" hires="1"
+    overbackground="1"
+    action="send Channel +"
+  />
+
+  <!-- Channel- button -->
+
+  <button
+    x="82" y="197"
+    width="28" height="29"
+    framed="0"
+    look="8054" states="1" hires="1"
+    overbackground="1"
+    action="send Channel -"
+  />
+
+  <!-- Page+ button -->
+
+  <button
+    x="134" y="170"
+    width="26" height="28"
+    framed="0"
+    look="8057" states="1" hires="1"
+    overbackground="1"
+    action="send Page +"
+  />
+
+  <!-- Page- button -->
+
+  <button
+    x="134" y="198"
+    width="26" height="28"
+    framed="0"
+    look="8058" states="1" hires="1"
+    overbackground="1"
+    action="send Page -"
+  />
+
+  <!-- Forward button -->
+
+  <button
+    x="110" y="186"
+    width="24" height="40"
+    framed="0"
+    look="8051" states="1" hires="1"
+    overbackground="1"
+    action="send Forward"
+  />
+
+  <!-- Back button -->
+
+  <button
+    x="26" y="184"
+    width="26" height="42"
+    framed="0"
+    look="8052" states="1" hires="1"
+    overbackground="1"
+    action="send Back"
+  />
+
+  <!-- Favorite button -->
+
+  <button
+    x="110" y="155"
+    width="24" height="31"
+    framed="0"
+    look="8044" states="1" hires="1"
+    overbackground="1"
+    action="send Favorite"
+  />
+
+  <!-- Viewer button (People icon) -->
+
+  <button
+    x="0" y="155"
+    width="26" height="29"
+    framed="0"
+    look="8042" states="1" hires="1"
+    overbackground="1"
+    action="send People"
+    pietouch=":gotopage SCursor"
+  />
+
+  <!-- End Control Area buttons section -->
+
+</gui>

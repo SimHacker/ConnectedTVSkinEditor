@@ -1,0 +1,116 @@
+<gui
+  title="Stations"
+  width="160"
+  height="240"
+  bottomedge="15"
+  browser="Stations"
+  pagetype="1"
+  cachetype="0"
+  onback="Timeline"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="1" y="1"
+    width="62" height="13"
+    active="0"
+    framed="0"
+    source="guiname"
+  />
+
+  <button
+    x="65" y="1"
+    width="28" height="13"
+    active="0"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    id="Category"
+    label="Category"
+    x="95" y="0"
+    labeldx="1" labeldy="4"
+    width="64" height="19"
+    style="4"
+    source="categoryname"
+    pietouch="  Categories:Browse Categories"
+    piedown="    Timeline:Timeline"
+    pieup="      cancel:"
+    look="7010" states="2" stretch="4"
+  />
+
+  <button
+    id="Description"
+    x="1" y="19"
+    width="121" height="36"
+    labeldx="1" labeldy="1"
+    wrap="1"
+    source="currentprogramdescription"
+    pietouch="              Show Details:gotopage Show Details"
+    xpiedown="                 Timeline:Timeline"
+    xpieup="                    cancel:"
+    piedown="                Next Page:scrollchannels 1"
+    pieup="               Previous Page:scrollchannels -1"
+    look="7019" states="2" stretch="4"
+  />
+
+  <button
+    alt="Tune Show"
+    comment="ConnectedTV Icon button to tune show"
+    x="122" y="19"
+    width="37" height="36"
+    labeldx="6" labeldy="7"
+    pietouch="Tune Show:gotocurrentchannel"
+    piedown="Last Chan:send Last"
+    pieup="   cancel:"
+    look="7021" states="2" stretch="4"
+    wrap="1"
+  />
+
+  <button
+    x="1" y="55"
+    width="158" height="86"
+    labeldx="1" labeldy="3"
+    rows="5" columns="2"
+    rowlayout="0"
+    pager="1"
+    style="3"
+    source="channels"
+    index="0"
+    action="selectchannel"
+    piedown="Show Details:gotopage Show Details"
+    pieup="cancel:"
+    xpieleft="Previous Page:scrollchannels -1"
+    xpieright="Next Page:scrollchannels 1"
+    onsize="StretchToBottom 20 17"
+    look="7013" states="3" stretch="4"
+  />
+
+  <button
+    label="     List"
+    x="120" y="141"
+    width="39" height="19"
+    labeldx="0" labeldy="4"
+    pietouch=":ShowList"
+    piedown=" Details:gotopage Show Details"
+    pieup="Timeline:Timeline"
+    onsize="StickToBottom 1"
+    look="7010" states="2" stretch="4"  
+  />
+
+  <button
+    id="Schedule"
+    x="1" y="141"
+    width="119" height="19"
+    labeldx="0" labeldy="4"
+    wrap="1"
+    active="0"
+    source="currentprogramschedule"
+    onsize="StickToBottom 1"
+    look="7017" states="1" stretch="4"
+  />
+
+</gui>

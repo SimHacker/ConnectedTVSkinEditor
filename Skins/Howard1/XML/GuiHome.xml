@@ -1,0 +1,193 @@
+<gui
+  title="Home"
+  width="160"
+  height="160"
+  onback="quit"
+  cachetype="1"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+
+  <button
+    x="0" y="0"
+    width="65" height="13"
+    active="0"
+    framed="0"
+    label="Home"
+  />
+
+  <button
+    x="65" y="0"
+    width="28" height="13"
+    active="0"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+
+  <button
+    source="Expires"
+    x="0" y="15"
+    width="160" height="13"
+    wrap="0"
+    framed="0"
+    active="0"
+  />
+
+  <button
+    x="0" y="32"
+    width="95" height="60"
+    labeldx="6" labeldy="9"
+    look="7016" states="2" stretch="4"
+    rows="2" columns="2"
+    pieup="cancel:"
+    piedown="cancel:"
+  >
+
+    <cell
+      label="  Quit"
+      pietouch="  Bye!:quit"
+    />
+
+    <cell
+      label="Status"
+      pietouch=":gotopage Status"
+    />
+
+    <cell
+      label="Setup"
+      pietouch=":gotopage Setup"
+    />
+
+    <cell
+      label=" Train"
+      pietouch=":train"
+    />
+
+  </button>
+
+  <button
+    x="0" y="100"
+    width="95" height="60"
+    labeldx="12" labeldy="9"
+    look="7014"  states="2" stretch="4"
+    rows="2" columns="2"
+    piedown="   cancel:"
+  >
+
+    <cell
+      label="VCR"
+      pietouch=":gotopage VCR"
+    />
+
+    <cell
+      label="DVR"
+      pietouch=":gotopage DVR"
+    />
+
+    <cell
+      label="Box"
+      pietouch=":gotopage Box"
+    />
+
+    <cell
+      label=" TV"
+      pietouch=":gotopage TV"
+    />
+
+  </button>
+
+  <button
+    x="100" y="32"
+    width="60" height="128"
+    labeldx="7" labeldy="10"
+    look="7010"  states="2" stretch="4"
+    rows="4" columns="1"
+    piedown="   cancel:"
+  >
+
+    <cell
+      label="Categories"
+      pietouch=":Browse Categories"
+    />
+
+    <cell
+      label="    Shows"
+      pietouch=":gotopage ConnectedTV"
+    />
+
+    <cell
+      label="  Stations"
+      pietouch=":gotopage Stations"
+    />
+
+    <cell
+      label="      Help"
+      pietouch=":gotopage Help"
+    />
+
+  </button>
+
+
+  <!-- Standard IR Controls -->
+
+  <button
+    x="0" y="165"
+    width="60" height="30"
+    labeldx="2" labeldy="9"
+    look="7011" states="2" stretch="4"
+    rows="1" columns="2"
+  >
+
+    <cell
+      label="Input"
+      pietouch=":send Input"
+    />
+
+    <cell
+      label=" Last"
+      pietouch=":send Last"
+    />
+
+  </button>
+
+  <button
+    x="65" y="165"
+    width="30" height="60"
+    rows="2" columns="1"
+    look="7011"  states="2" stretch="4"
+  >
+
+    <cell
+      look="7040"
+      action="send Volume +"
+    />
+
+    <cell
+      look="7041"
+      action="send Volume -"
+    />
+
+  </button>
+
+  <button
+    x="100" y="165"
+    width="60" height="30"
+    rows="1" columns="2"
+  >
+
+    <cell
+      action="send Mute"
+      look="7039" states="2"
+    />
+
+    <cell
+      action="send Power"
+      look="7038" states="2"
+    />
+
+  </button>
+
+</gui>

@@ -1,0 +1,43 @@
+<HTML>
+
+	<HEAD>
+
+		<TITLE>ConnectedSkin Behavior Test Page</TITLE>
+
+		<OBJECT
+			ID="behave1"
+			CLASSID="clsid:CFDD0BBD-9906-11d3-953D-A200F804E031"
+			CODEBASE="ConnectedSkin.dll">
+		</OBJECT>
+
+		<script>
+			window.offscreenBuffering = 0;
+		</script>
+
+	</HEAD>
+
+	<BODY>
+
+<div
+  style="display: block; position: absolute; left: 10%; top: 10%; width: 80%; height: 80%; background-color: yellow">
+
+		<DIV 
+		  ID="target" 
+		  STYLE="behavior: url(#behave1); 
+				 display: block; position: absolute; 
+				 left: 10%; top: 10%; width: 80%; height: 80%; 
+				 background-color: #cccccc; 
+				 padding: 6"
+		  IMAGE="StretchButton.bmp"
+		  STRETCH="12"
+		  STATES="3"
+		  SCALE="1"
+		>
+			Bla bla bla. Blee bla blee. Foobar
+			Bla bla bla. Blee bla blee. Foobar
+		</DIV>
+</div>
+
+	</BODY>
+
+</HTML>

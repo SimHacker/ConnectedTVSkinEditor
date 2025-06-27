@@ -1,0 +1,152 @@
+<?XML version="1.0"?>
+
+<PACKAGE>
+
+  <?COMPONENT ERROR="TRUE" DEBUG="TRUE"?>
+
+  <COMMENT>
+    CommandButton Component.
+    Copyright (C) 2003 by Don Hopkins.
+    All Rights Reserved.
+  </COMMENT>
+
+  <COMPONENT ID="CommandButton">
+
+    <IMPLEMENTS ID="CommandButton" TYPE="Behavior" DEFAULT="">
+      <ATTACH FOR="element" EVENT="onreadystatechange" handler="DoOnReadyStateChange"/>
+      <ATTACH EVENT="onmouseenter" handler="DoOnMouseEnter"/>
+      <ATTACH EVENT="onmouseleave" handler="DoOnMouseLeave"/>
+      <ATTACH EVENT="onmousedown" handler="DoOnMouseDown"/>
+      <ATTACH EVENT="onmouseup" handler="DoOnMouseUp"/>
+      <ATTACH EVENT="onlosecapture" handler="DoOnLoseCapture"/>
+    </IMPLEMENTS>
+
+    <IMPLEMENTS TYPE="Automation">
+      <PUBLIC>
+        <PROPERTY NAME="Pressed"/>
+        <PROPERTY NAME="Hilited"/>
+        <PROPERTY NAME="Command"/>
+      </PUBLIC>
+    </IMPLEMENTS>
+
+    <SCRIPT LANGUAGE="JScript">
+
+
+////////////////////////////////////////////////////////////////////////
+
+
+var Pressed = 0;
+var Hilited = 0;
+var Command = "";
+var State = 0;
+
+function DoOnReadyStateChange()
+{
+  if (element.readyState == "complete") {
+    style.color = "blue";
+    style.fontWeight = "bold";
+    if (element.title == "") {
+      element.title = "Click to " + element.innerText;
+    } // if
+    UpdateView();
+  } // if
+}
+
+
+function UpdateView()
+{
+  if (Pressed && Hilited) {
+    style.backgroundColor = "yellow";
+  } else {
+    style.backgroundColor = "";
+  } // if
+
+  if (Hilited) {
+    style.textDecoration = "underline";
+  } else {
+    style.textDecoration = "none";
+  } // if
+}
+
+
+function DoOnMouseEnter()
+{
+  if (event.srcElement == element) {
+    Hilited = 1;
+    UpdateView();
+    event.cancelBubble = true;
+  } // if
+  return true;
+}
+
+
+function DoOnMouseLeave()
+{
+  if (event.srcElement == element) {
+    Hilited = 0;
+    UpdateView();
+    event.cancelBubble = true;
+  } // if
+  return true;
+}
+
+
+function DoOnMouseDown()
+{
+  State = 1;
+  element.setCapture(false);
+  Pressed = 1;
+  UpdateView();
+  event.cancelBubble = true;
+  return true;
+}
+
+
+function DoOnMouseUp()
+{
+  element.releaseCapture();
+  Pressed = 0;
+  UpdateView();
+
+  State--;
+
+  if (Hilited) {
+    if (State == 0) {
+      eval(Command);
+    } // if
+  } // if
+
+  State = 0;
+
+  event.cancelBubble = true;
+  return true;
+}
+
+
+function DoOnLoseCapture()
+{
+  DoOnMouseUp();
+  event.cancelBubble = true;
+  return true;
+}
+
+
+////////////////////////////////////////////////////////////////////////
+
+
+    </SCRIPT>
+
+  </COMPONENT>
+
+  <COMMENT>
+
+HEY EMACS!!!
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+End:
+GOOD EMACS.
+
+  </COMMENT>
+
+</PACKAGE>

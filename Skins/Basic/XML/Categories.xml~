@@ -1,0 +1,251 @@
+<categories
+  id="categories">
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <usercategories/>
+
+  <padcategories count="6"/>
+
+  <category name="All">
+  </category>
+
+  <category name="My Favorites">
+    <filter val="2"/>
+  </category>
+
+  <category name="Comedy">
+    <or>
+      <channel key="Comedy"/>
+      <genra key="Comedy"/>
+      <genra key="Comedy-drama"/>
+    </or>
+  </category>
+
+  <category name="Drama">
+    <or>
+      <genra key="Drama"/>
+      <genra key="Crime drama"/>
+    </or>
+  </category>
+
+  <category name="Movies">
+    <ismovie/>
+  </category>
+
+  <category name="News">
+    <or>
+      <channel key="News"/>
+      <genra key="News"/>
+    </or>
+  </category>
+
+  <category name="Documentary">
+    <genra key="Documentary"/>
+  </category>
+
+
+
+  <category name="Suspense">
+    <or>
+      <genra key="Mystery"/>
+      <genra key="Suspense"/>
+    </or>
+  </category>
+
+
+  <category name="Variety">
+    <genra key="Variety"/>
+  </category>
+
+
+  <category name="Sitcom">
+    <genra key="Sitcom"/>
+  </category>
+
+  <category name="Talk">
+    <or>
+      <genra key="Talk"/>
+      <genra key="Interview"/>
+    </or>
+  </category>
+
+
+  <category name="Reality">
+    <genra key="Reality"/>
+  </category>
+
+
+  <category name="Music Shows">
+    <and>
+      <not>
+        <channel key="Music"/>
+      </not>
+      <genra key="Music"/>
+    </and>
+  </category>
+
+
+  <padcategories count="6"/>
+
+  <category name="Kids">
+    <genra key="Children"/>
+  </category>
+
+  <category name="Animated">
+    <genra key="Animated"/>
+  </category>
+
+  <category name="Nature">
+    <or>
+      <genra key="Nature"/>
+      <genra key="Animals"/>
+    </or>
+  </category>
+
+  <category name="Fantasy">
+    <genra key="Fantasy"/>
+  </category>
+
+  <category name="Action">
+    <or>
+      <genra key="Action"/>
+      <genra key="Adventure"/>
+    </or>
+  </category>
+
+  <category name="Educational" major="1">
+    <or>
+      <channel key="Educational"/>
+      <genra key="Educational"/>
+    </or>
+  </category>
+
+  <padcategories count="6"/>
+
+
+
+  <category name="Crime">
+    <or>
+      <genra key="Crime"/>
+      <genra key="Crime drama"/>
+    </or>
+  </category>
+
+  <category name="Western">
+    <genra key="Western"/>
+  </category>
+
+  <category name="SciFi">
+    <or>
+      <channel key="SciFi"/>
+      <genra key="Science fiction"/>
+    </or>
+  </category>
+
+
+  <category name="Horror">
+    <genra key="Horror"/>
+  </category>
+
+  <category name="Romance">
+    <genra key="Romance"/>
+  </category>
+
+  <category name="Adult">
+    <or>
+      <channel key="Adult"/>
+      <genra key="Adults only"/>
+    </or>
+  </category>
+
+
+
+  <category name="Biography">
+    <genra key="Biography"/>
+  </category>
+
+  <category name="History">
+    <genra key="History"/>
+  </category>
+
+  <category name="International">
+    <or>
+      <channel key="International"/>
+      <genra key="International"/>
+    </or>
+  </category>
+
+  <category name="Public Affairs">
+    <genra key="Public Affairs"/>
+  </category>
+
+  <category name="Cooking">
+    <genra key="Cooking"/>
+  </category>
+
+  <category name="Health">
+    <or>
+      <genra key="Health"/>
+      <genra key="Medical"/>
+    </or>
+  </category>
+
+  <category name="Special">
+    <genra key="Special"/>
+  </category>
+
+  <category name="Spanish">
+    <or>
+      <channel key="Spanish"/>
+      <program key="lang=Spanish"/>
+    </or>
+  </category>
+
+  <padcategories count="6"/>
+
+
+  <category name="Sports">
+    <or>
+      <channel key="Sports"/>
+      <genra key="Sports"/>
+      <genra key="Baseball"/>
+      <genra key="Basketball"/>
+      <genra key="Soccer"/>
+      <genra key="Golf"/>
+      <genra key="Fishing"/>
+      <genra key="Wrestling"/>
+      <genra key="Skating"/>
+      <genra key="Hockey"/>
+      <genra key="Auto racing"/>
+    </or>
+  </category>
+
+
+  <padcategories count="6"/>
+
+
+  <category name="Top Rated Movies">
+    <and>
+      <ismovie/>
+      <starsgreater val="6"/>
+    </and>
+  </category>
+
+  <category name="Low Rated Movies" showall="1">
+    <and>
+      <ismovie/>
+      <starsless val="4"/>
+    </and>
+  </category>
+
+  <category name="My Bad Shows" showall="1">
+    <not>
+      <filter val="0"/>
+    </not>
+
+  </category>
+
+  <padcategories count="6"/>
+
+</categories>

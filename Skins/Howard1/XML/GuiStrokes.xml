@@ -1,0 +1,281 @@
+<gui
+  title="Strokes"
+  width="160"
+  height="160"
+  browser="Strokes"
+  cachetype="-1"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    label="Strokes &amp; Shortcuts"
+    x="0" y="0"
+    width="160" height="13"
+    active="0"
+    framed="0"
+  />
+
+  <button
+    label="Tune Show"
+    x="120" y="0"
+    width="35" height="25"
+    labeldx="5" labeldy="1"
+    wrap="1"
+    piedown= "Last Chan:"
+    look="7011"  states="2" stretch="4"
+  />
+
+  <button
+    label="Last"
+    x="120" y="31"
+    width="35" height="13"
+    labeldx="5" labeldy="0"
+    framed="0" active="0"
+  />
+
+  <button
+    label=""
+    comment="Tune down arrow"
+    x="133" y="25"
+    width="7" height="7"
+    framed="0" active="0"
+    look="7025" states="1"
+  />
+
+  <button
+    label="Guide Time &amp; Day"
+    x="32" y="45"
+    width="85" height="20"
+    labeldx="3" labeldy="4"
+    pietouch="Now:"
+    pieup="Next 1/2 hour:"
+    piedown="Previous 1/2 hour:"
+    pieleft="Set Time:"
+    pieright="Set Day:"
+    look="7015" states="2" stretch="4"
+  />
+
+  <button
+    label="Set Time"
+    x="4" y="40"
+    labeldx="0" labeldy="4"
+    width="25" height="30"
+    framed="0" active="0"
+    wrap="1"
+  />
+
+  <button
+    label="Set Day"
+    x="125" y="46"
+    labeldx="0" labeldy="4"
+    width="38" height="16"
+    framed="0" active="0"
+  />
+
+  <button
+    label="Next 1/2 hour"
+    x="32" y="24"
+    labeldx="12" labeldy="4"
+    width="85" height="16"
+    framed="0" active="0"
+  />
+
+  <button
+    label="Previous 1/2 hour"
+    x="32" y="68"
+    labeldx="3" labeldy="4"
+    width="85" height="16"
+    framed="0" active="0"
+  />
+
+  <button
+    label=""
+    comment="Guide up arrow"
+    x="72" y="38"
+    width="7" height="7"
+    framed="0" active="0"
+    look="7024" states="1"
+  />
+
+  <button
+    label=""
+    comment="Guide down arrow"
+    x="72" y="65"
+    width="7" height="7"
+    framed="0" active="0"
+    look="7025" states="1"
+  />
+
+  <button
+    label=""
+    comment="Guide right arrow"
+    x="117" y="52"
+    width="7" height="7"
+    framed="0" active="0"
+    look="7023" states="1"
+  />
+
+  <button
+    label=""
+    comment="Guide left arrow"
+    x="25" y="52"
+    width="7" height="7"
+    framed="0" active="0"
+    look="7022" states="1"
+  />
+
+  <button
+    label="Box"
+    x="0" y="95"
+    width="30" height="20"
+    labeldx="5" labeldy="4"
+    pietouch="Box:"
+    pieright="TV:"
+    pieup="DVR:"
+    piedown="VCR:"
+    look="7014" states="2" stretch="4"
+  />
+
+  <button
+    label="DVR"
+    x="5" y="73"
+    labeldx="0" labeldy="4"
+    width="30" height="13"
+    framed="0" active="0"
+  />
+
+  <button
+    label="VCR"
+    x="5" y="123"
+    labeldx="0" labeldy="0"
+    width="45" height="13"
+    framed="0" active="0"
+  />
+
+  <button
+    label=""
+    comment="Box up arrow"
+    x="13" y="88"
+    width="7" height="7"
+    framed="0" active="0"
+    look="7024" states="1"
+  />
+
+  <button
+    label=""
+    comment="Box down arrow"
+    x="13" y="115"
+    width="7" height="7"
+    framed="0" active="0"
+    look="7025" states="1"
+  />
+
+  <button
+    label=""
+    comment="Box right arrow"
+    x="30" y="101"
+    width="7" height="7"
+    framed="0" active="0"
+    look="7023" states="1"
+  />
+
+  <button
+    label="TV"
+    x="37" y="95"
+    labeldx="0" labeldy="4"
+    width="25" height="20"
+    framed="0" active="0"
+  />
+
+  <button
+    label="Favorite"
+    x="114" y="73"
+    labeldx="2" labeldy="4"
+    width="40" height="20"
+    framed="0" active="0"
+  />
+
+  <button
+    label="Normal"
+    x="65" y="95"
+    labeldx="4" labeldy="4"
+    width="40" height="20"
+    framed="0" active="0"
+  />
+
+  <button
+    label="Bad Show"
+    x="116" y="121"
+    labeldx="0" labeldy="0"
+    width="45" height="13"
+    framed="0" active="0"
+  />
+
+  <button
+    label=""
+    comment="Rating left arrow"
+    x="102" y="101"
+    width="7" height="7"
+    framed="0" active="0"
+    look="7022" states="1"
+  />
+
+  <button
+    label="My Rating"
+    x="110" y="95"
+    width="50" height="20"
+    labeldx="2" labeldy="4"
+    pieup="Favorite:"
+    pieleft="Normal:"
+    pietouch="no change:"
+    piedown="Bad:"
+    look="7015" states="2" stretch="4"  
+  />
+
+  <button
+    label=""
+    comment="Rating up arrow"
+    x="131" y="88"
+    width="7" height="7"
+    framed="0" active="0"
+    look="7024" states="1"
+  />
+
+  <button
+    label=""
+    comment="Rating down arrow"
+    x="131" y="115"
+    width="7" height="7"
+    framed="0" active="0"
+    look="7025" states="1"
+  />
+
+  <button
+    x="0" y="140"
+    width="160" height="20"
+    labeldx="12" labeldy="3"
+    pieup="  cancel:"
+    piedown="  cancel:"
+    columns="3"
+    look="7016"  states="2" stretch="6"
+  >
+
+    <cell
+      label="  Home"
+      pietouch=":gotopage Home"
+    />
+
+    <cell
+      label="   Help"
+      pietouch=":gotopage Help"
+    />
+
+    <cell
+      label="  More"
+      pietouch=":gotopage MoreHelp"
+    />
+
+  </button>
+
+</gui>

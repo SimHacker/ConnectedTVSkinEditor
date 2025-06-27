@@ -1,0 +1,85 @@
+<gui
+  title="Browser"
+  width="160"
+  height="160"
+  browser="Categories"
+  pagetype="4"
+  cellsperpage="12"
+  cachetype="1"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="1" y="1"
+    width="62" height="13"
+    active="0"
+    framed="0"
+    source="BrowserTitle"
+  />
+
+  <button
+    x="65" y="1"
+    width="28" height="13"
+    active="0"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    label="Shows"
+    x="95" y="0"
+    width="64" height="19"
+    labeldx="16" labeldy="4"
+    pietouch=":gotopage ConnectedTV"
+    piedown="Stations:gotopage Stations"
+    look="7010" states="2" stretch="4"
+  />
+
+  <button
+    label=""
+    x="1" y="19"
+    width="158" height="120"
+    rows="6" columns="2"
+    rowlayout="0"
+    labeldx="0" labeldy="4"
+    pager="1"
+    source="BrowserSource"
+    action="BrowserTap"
+    pieleft="Previous Page:BrowserPageBack"
+    pieright="Next Page:BrowserPageNext"
+    pietouch=":BrowserAction"
+    onsize="StretchToBottom 20 20"
+    look="7012" states="3" stretch="4"
+  />
+
+  <button 
+    label="Page 1 of 10"
+    x="1" y="139"
+    width="101" height="20"
+    labeldx="15" labeldy="4"
+    source="BrowserPageLabel"
+    index="0"
+    piedown="Select:BrowserAction"
+    pieup="Cancel:BrowserCancel"
+    pieleft="Previous Page:BrowserPageBack"
+    pieright="Next Page:BrowserPageNext"
+    pietouch="Next Page:BrowserPageNext"
+    onsize="StickToBottom 1"
+    look="7016" states="2" stretch="4"
+  />
+
+  <button
+    label="Shows"
+    x="102" y="139"
+    width="57" height="20"
+    labeldx="10" labeldy="4"
+    pietouch=":gotopage ConnectedTV"
+    piedown="Stations:gotopage Stations"
+
+    onsize="StickToBottom 1"
+    look="7010" states="2" stretch="4"
+  />
+
+</gui>

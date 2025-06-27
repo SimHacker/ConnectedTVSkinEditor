@@ -1,0 +1,370 @@
+<categories
+  id="categories">
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <usercategories/>
+
+  <padcategories count="6"/>
+
+  <category name="My Favorites">
+    <filter val="2"/>
+  </category>
+
+  <category name="Comedy">
+    <or>
+      <channel key="Comedy"/>
+      <genra key="Comedy"/>
+      <genra key="Comedy-drama"/>
+    </or>
+  </category>
+
+  <category name="Drama">
+    <or>
+      <genra key="Drama"/>
+      <genra key="Crime drama"/>
+    </or>
+  </category>
+
+  <category name="Action">
+    <genra key="Action"/>
+  </category>
+
+  <category name="News">
+    <or>
+      <channel key="News"/>
+      <genra key="News"/>
+    </or>
+  </category>
+
+  <category name="Music Shows">
+    <genra key="Music"/>
+  </category>
+
+  <category name="Biography">
+    <genra key="Biography"/>
+  </category>
+
+  <category name="Mystery">
+    <genra key="Mystery"/>
+  </category>
+
+  <category name="Documentary">
+    <genra key="Documentary"/>
+  </category>
+
+  <category name="SciFi">
+    <or>
+      <channel key="SciFi"/>
+      <genra key="Science fiction"/>
+    </or>
+  </category>
+
+  <category name="Situation">
+    <genra key="Situation"/>
+  </category>
+
+  <category name="Reality">
+    <genra key="Reality"/>
+  </category>
+
+  <category name="Variety">
+    <genra key="Variety"/>
+  </category>
+
+  <category name="Classic">
+    <genra key="Classic"/>
+  </category>
+
+  <padcategories count="12"/>
+
+  <category name="Kids">
+    <genra key="Children"/>
+  </category>
+
+  <category name="Animated">
+    <genra key="Animated"/>
+  </category>
+
+  <category name="Nature">
+    <genra key="Nature"/>
+  </category>
+
+  <category name="Animals">
+    <genra key="Animals"/>
+  </category>
+
+  <category name="Fantasy">
+    <genra key="Fantasy"/>
+  </category>
+
+  <category name="Adventure">
+    <genra key="Adventure"/>
+  </category>
+
+  <category name="Art">
+    <genra key="Art"/>
+  </category>
+
+  <category name="Games">
+    <genra key="Game"/>
+  </category>
+
+  <category name="Family">
+    <genra key="Family"/>
+  </category>
+
+  <category name="Cooking">
+    <genra key="Cooking"/>
+  </category>
+
+  <category name="Educational" major="1">
+    <or>
+      <channel key="Educational"/>
+      <genra key="Educational"/>
+    </or>
+  </category>
+
+  <padcategories count="6"/>
+
+  <category name="Romance">
+    <genra key="Romance"/>
+  </category>
+
+  <category name="Suspense">
+    <genra key="Suspense"/>
+  </category>
+
+  <category name="Thriller">
+    <genra key="Thriller"/>
+  </category>
+
+  <category name="Horror">
+    <genra key="Horror"/>
+  </category>
+
+  <category name="Crime">
+    <or>
+      <genra key="Crime"/>
+      <genra key="Crime drama"/>
+    </or>
+  </category>
+
+  <category name="Adult">
+    <or>
+      <channel key="Adult"/>
+      <genra key="Adults only"/>
+    </or>
+  </category>
+
+  <category name="Interviews">
+    <genra key="Interview"/>
+  </category>
+
+  <category name="Talk Shows">
+    <genra key="Talk"/>
+  </category>
+
+  <category name="Western">
+    <genra key="Western"/>
+  </category>
+
+  <category name="Historical">
+    <genra key="Historical"/>
+  </category>
+
+  <category name="Public Affairs">
+    <genra key="Public Affairs"/>
+  </category>
+
+  <category name="International">
+    <or>
+      <channel key="International"/>
+      <genra key="International"/>
+    </or>
+  </category>
+
+  <padcategories count="12"/>
+
+  <category name="Magazine">
+    <genra key="Magazine"/>
+  </category>
+
+  <category name="Auto">
+    <genra key="Auto"/>
+  </category>
+
+  <category name="Travel">
+    <genra key="Travel"/>
+  </category>
+
+  <category name="Health">
+    <genra key="Health"/>
+  </category>
+
+  <category name="Special">
+    <genra key="Special"/>
+  </category>
+
+  <category name="Event">
+    <genra key="Event"/>
+  </category>
+
+  <category name="Fashion">
+    <genra key="Fashion"/>
+  </category>
+
+  <category name="Outdoors">
+    <genra key="Outdoors"/>
+  </category>
+
+  <category name="House/Garden">
+    <genra key="House/Garden"/>
+  </category>
+
+  <category name="Spanish">
+    <or>
+      <channel key="Spanish"/>
+      <program key="lang=Spanish"/>
+    </or>
+  </category>
+
+  <padcategories count="6"/>
+
+
+  <category name="Sports">
+    <or>
+      <channel key="Sports"/>
+      <genra key="Sports"/>
+    </or>
+  </category>
+
+  <category name="Baseball">
+    <genra key="Baseball"/>
+  </category>
+
+  <category name="Basketball">
+    <genra key="Basketball"/>
+  </category>
+
+  <category name="Soccer">
+    <genra key="Soccer"/>
+  </category>
+
+  <category name="Golf">
+    <genra key="Golf"/>
+  </category>
+
+  <category name="Fishing">
+    <genra key="Fishing"/>
+  </category>
+
+  <category name="Martial arts">
+    <genra key="Martial arts"/>
+  </category>
+
+  <category name="Wrestling">
+    <genra key="Wrestling"/>
+  </category>
+
+  <category name="Skating">
+    <genra key="Skating"/>
+  </category>
+
+  <category name="Hockey">
+    <genra key="Hockey"/>
+  </category>
+
+  <category name="Auto Racing">
+    <and>
+      <genra key="Auto"/>
+      <genra key="Racing"/>
+    </and>
+  </category>
+
+  <category name="Snow Racing">
+    <and>
+      <genra key="Snow"/>
+      <genra key="Racing"/>
+    </and>
+  </category>
+
+  <padcategories count="12"/>
+
+  <category name="How-to">
+    <genra key="How-to"/>
+  </category>
+
+  <category name="Self-help">
+    <genra key="Self-help"/>
+  </category>
+
+  <category name="Medical">
+    <genra key="Medical"/>
+  </category>
+
+  <category name="War">
+    <genra key="War"/>
+  </category>
+
+  <category name="Religious">
+    <or>
+      <channel key="Religious"/>
+      <genra key="Religious"/>
+    </or>
+  </category>
+
+  <category name="Holiday">
+    <genra key="Holiday"/>
+  </category>
+
+  <category name="Shopping">
+    <genra key="Shopping"/>
+  </category>
+
+  <category name="Collectibles">
+    <genra key="Collectibles"/>
+  </category>
+
+  <category name="Jewelry">
+    <genra key="Jewelry"/>
+  </category>
+
+  <padcategories count="6"/>
+
+  <category name="My Bad Shows" showall="1">
+    <not>
+      <filter val="0"/>
+    </not>
+
+  </category>
+
+  <padcategories count="6"/>
+
+  <category name="Top Rated Movies">
+    <and>
+      <ismovie/>
+      <starsgreater val="6"/>
+    </and>
+  </category>
+
+  <category name="Average Movies">
+    <and>
+      <ismovie/>
+      <starsless val="7"/>
+      <starsgreater val="3"/>
+    </and>
+  </category>
+
+  <category name="Low Rated Movies" showall="1">
+    <and>
+      <ismovie/>
+      <starsless val="4"/>
+    </and>
+  </category>
+
+  <category name="Movies">
+    <ismovie/>
+  </category>
+
+</categories>

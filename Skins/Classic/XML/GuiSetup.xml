@@ -1,0 +1,94 @@
+<gui
+  title="Setup"
+  width="160"
+  height="160"
+  cachetype="-1"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="1" y="1"
+    width="62" height="13"
+    framed="0"
+    source="guiname"
+  />
+
+  <button
+    x="65" y="1"
+    width="28" height="13"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    x="35" y="27"
+    width="90" height="100"
+    labeldx="1" labeldy="6"
+    rows="4" columns="1"
+  >
+
+  <cell
+    label="User Setup"
+    action="UserSetup"
+  />
+
+  <cell
+    label="Guide Setup"
+    action="GuideSetup"
+  />
+
+  <cell
+    label="TV Tuner Setup"
+    action="TVTunerSetup"
+  />
+
+  <cell
+    label="Train with Remote"
+    action="train"
+  />
+
+ </button>
+
+  <xbutton
+    label="Device"
+    x="1" y="100"
+    width="51" height="17"
+    labeldx="1" labeldy="3"
+    action="Browse Devices"
+  />
+
+  <xbutton
+    label="Room"
+    x="55" y="100"
+    width="51" height="17"
+    labeldx="1" labeldy="3"
+    action="Browse Rooms"
+  />
+
+  <xbutton
+    label="User"
+    x="109" y="100"
+    width="50" height="17"
+    labeldx="1" labeldy="3"
+    action="Browse Users"
+  />
+
+  <button
+    label="Home"
+    x="1" y="135"
+    width="40" height="24"
+    labeldx="4" labeldy="5"
+    action="gotopage Home"
+  />
+
+  <button
+    label="Shows"
+    x="118" y="135"
+    width="41" height="24"
+    labeldx="6" labeldy="5"
+    action="gotopage ConnectedTV"
+  />
+
+</gui>

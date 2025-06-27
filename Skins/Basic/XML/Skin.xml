@@ -1,0 +1,119 @@
+<skin
+  name="Basic"
+  base="Basic"
+  resourceurl="XML/Resources.xml"
+>
+
+  <!-- Copyright (C) 2003 by ConnectedMedia. All rights reserved. -->
+
+  <!-- Users -->
+
+  <user name="Default User" url="XML/UserDefaultUser.xml"/>
+
+  <!-- Categories -->
+
+  <categories name="categories" url="XML/Categories.xml"/>
+
+  <!-- Devices -->
+
+  <device name="Box" url="XML/DeviceBox.xml"/>
+
+  <!-- Guis -->
+
+  <gui
+    name="Browser"
+    id="6000"
+    url="XML/GuiBrowser.xml"
+  />
+
+  <gui
+    name="ConnectedTV"
+    id="6001"
+    url="XML/GuiConnectedTV.xml"
+  />
+
+  <gui
+    name="Setup"
+    id="6002"
+    url="XML/GuiSetup.xml"
+  />
+
+  <gui
+    name="MoreHelp"
+    id="6003"
+    url="XML/GuiMoreHelp.xml"
+  />
+
+  <gui
+    name="Home"
+    id="6004"
+    url="XML/GuiHome.xml"
+  />
+
+  <gui
+    name="Show Details"
+    id="6005"
+    url="XML/GuiDetails.xml"
+  />
+
+  <gui
+    name="Stations"
+    id="6006"
+    url="XML/GuiStations.xml"
+  />
+
+  <gui
+    name="Box"
+    id="6007"
+    url="XML/GuiBox.xml"
+  />
+
+  <gui
+    name="DVR"
+    id="6008"
+    url="XML/GuiDVR.xml"
+  />
+
+  <gui
+    name="TV"
+    id="6009"
+    url="XML/GuiTV.xml"
+  />
+
+  <gui
+    name="VCR"
+    id="6010"
+    url="XML/GuiVCR.xml"
+  />
+
+  <gui
+    name="Help"
+    id="6011"
+    url="XML/GuiHelp.xml"
+  />
+
+  <gui
+    name="Status"
+    id="6012"
+    url="XML/GuiStatus.xml"
+  />
+
+  <gui
+    name="Basics"
+    id="6013"
+    url="XML/GuiBasics.xml"
+  />
+
+  <gui
+    name="Strokes"
+    id="6014"
+    url="XML/GuiStrokes.xml"
+  />
+
+  <gui
+    name="ShowList"
+    id="6015"
+    url="XML/GuiShowList.xml"
+  />
+
+</skin>

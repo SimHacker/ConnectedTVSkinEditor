@@ -1,0 +1,175 @@
+<gui
+  title="ListHelp"
+  width="160"
+  height="160"
+  browser="Strokes"
+  cachetype="-1"
+  onback="gotopage MoreHelp"
+  buttonpageup="gotopage MoreHelp"
+  buttonpagedown="gotopage Basics"
+  buttonjogup="gotopage MoreHelp"
+  buttonjogdown="gotopage Basics"
+  buttonjogpushed="Timeline"
+  buttonnavleft="gotopage MoreHelp"
+  buttonnavright="gotopage Basics"
+  buttonnavselect="Timeline"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    label="Show List Shortcuts"
+    x="0" y="0"
+    width="160" height="13"
+    active="0"
+    framed="0"
+  />
+
+  <button
+    label="   Title"
+    comment="grid of show titles"
+    x="45" y="18"
+    width="70" height="30"
+    labeldx="1" labeldy="1"
+    rows="2" columns="2"
+    rowlayout="0"
+    pager="1"
+    style="3"
+    index="0"
+    pietouch=" Select:"
+    pieup=  "  cancel:"
+    piedown="Details:"
+    pieleft="   Prev:"
+    pieright="  Next:"
+    look="7013" states="3" stretch="4"
+  />
+
+  <button
+    x="76" y="49"
+    comment="Show Details down arrow"
+    width="7" height="7"
+    look="7025" states="1"
+    framed="0" active="0"
+  />
+
+  <button
+    x="50" y="56"
+    comment="Show Details down arrow label"
+    width="60" height="13"
+    labeldx="0" labeldy="0"
+    framed="0" active="0"
+    label="Show Details"
+   />
+
+
+  <button
+    label="Guide Time &amp; Day"
+    x="36" y="90"
+    width="85" height="20"
+    labeldx="3" labeldy="4"
+    pietouch="Now:"
+    pieup="Next 1/2 hour:"
+    piedown="Previous 1/2 hour:"
+    pieleft="Set Time:"
+    pieright="Set Day:"
+    look="7015" states="2" stretch="4"
+  />
+
+  <button
+    label="Set Time"
+    x="8" y="88"
+    labeldx="0" labeldy="4"
+    width="25" height="30"
+    framed="0" active="0"
+    wrap="1"
+  />
+
+  <button
+    label="Set Day"
+    x="129" y="88"
+    labeldx="0" labeldy="4"
+    width="35" height="30"
+    framed="0" active="0"
+    wrap="1"
+  />
+
+  <button
+    label="Next 1/2 hour"
+    x="36" y="69"
+    labeldx="12" labeldy="4"
+    width="85" height="16"
+    framed="0" active="0"
+  />
+
+  <button
+    label="Previous 1/2 hour"
+    x="36" y="113"
+    labeldx="3" labeldy="4"
+    width="85" height="16"
+    framed="0" active="0"
+  />
+
+  <button
+    label=""
+    comment="Guide up arrow"
+    x="76" y="83"
+    width="7" height="7"
+    framed="0" active="0"
+    look="7024" states="1"
+  />
+
+  <button
+    label=""
+    comment="Guide down arrow"
+    x="76" y="110"
+    width="7" height="7"
+    framed="0" active="0"
+    look="7025" states="1"
+  />
+
+  <button
+    label=""
+    comment="Guide right arrow"
+    x="121" y="97"
+    width="7" height="7"
+    framed="0" active="0"
+    look="7023" states="1"
+  />
+
+  <button
+    label=""
+    comment="Guide left arrow"
+    x="29" y="97"
+    width="7" height="7"
+    framed="0" active="0"
+    look="7022" states="1"
+  />
+
+
+
+  <button
+    x="0" y="140"
+    width="160" height="20"
+    labeldx="9" labeldy="3"
+    columns="3"
+    look="7016" states="2" stretch="6"
+  >
+
+    <cell
+      label="  Home"
+      pietouch=":gotopage Home"
+    />
+
+    <cell
+      label="   Help"
+      pietouch=":gotopage Help"
+    />
+
+    <cell
+      label="  More"
+      pietouch=":gotopage Basics"
+    />
+
+  </button>
+
+</gui>

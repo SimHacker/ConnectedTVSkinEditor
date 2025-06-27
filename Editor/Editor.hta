@@ -1,0 +1,118 @@
+<HTML>
+
+
+<!--
+
+////////////////////////////////////////////////////////////////////////
+//
+// ConnectedTV User Interface Editor.
+//
+// Copyright (C) 2003 by ConnectedMedia.
+// All rights reserved.
+//
+// Architecture and implemention by Don Hopkins.
+// For more information, please visit: http://www.Connected.TV
+//
+////////////////////////////////////////////////////////////////////////
+
+-->
+
+
+<HEAD>
+
+  <TITLE>ConnectedTV Skin Editor</TITLE>
+
+
+  <HTA:APPLICATION
+    id = "ApplicationTag"
+    applicationName="ConnectedTV Skin Editor"
+    version="Version 0.9.3 [ZOMBIEWOOF PRE-RELEASE]"
+    navigable="yes"
+    scroll="no"
+    icon="Resources/Images/ConnectedTV.ico"
+  />
+
+
+  <STYLE>
+    TD DIV {
+      font-size: 12pt; 
+      font-family: arial 
+    }
+    SPAN.CommandButton {
+      behavior: url(Resources/Components/CommandButton.htc)
+    }
+  </STYLE>
+
+
+  <OBJECT
+    ID="ConnectedSkinBehavior"
+    CLASSID="clsid:CFDD0BBD-9906-11d3-953D-A200F804E031"
+    CODEBASE="Resources/Components/ConnectedSkin.dll">
+  </OBJECT>
+
+
+</HEAD>
+
+
+<BODY
+  onload="DoLoadPage()"
+  onbeforeunload="DoBeforeUnloadPage()"
+  onunload="DoUnloadPage()"
+  oncontextmenu="return DoOnSelectStart();"
+  ondragstart="return DoOnSelectStart();"
+  onmousedown="return DoOnSelectStart();"
+  onmouseup="return DoOnSelectStart();"
+  ondblclick="return DoOnSelectStart();"
+  onselectstart="return DoOnSelectStart();"
+  style="background-color: white; cursor: default; border-width: 0; margin: 0; padding: 0">
+
+
+<DIV
+  id="RootSite"
+  style="width:100%; height:100%">
+
+  <TABLE
+    width="100%"
+    height="100%">
+    <TR>
+      <TD
+        height="30"
+        >
+
+        <DIV
+          id="Log"
+          style="width: 100% ; height: 100% ; background-color: #c0c0ff; overflow: clip; border: 2 outset; padding: 2; font-size: 12pt"
+          title="Important Message Shown Here"
+        >
+          Initializing...
+        </DIV>
+
+      </TD>
+    </TR>
+    <TR>
+      <TD height="100%" style="overflow: auto">
+
+        <DIV
+          id="Notice"
+          isselectable="1"
+          style="width: 100% ; height: 100% ; background-color: #c0c0ff; overflow: auto; border: 2 outset; padding: 2; font-size: 12pt"
+          title="Important Messages Shown Here"
+        >
+          <B><SPAN id="TitleVersionSpan">ConnectedTV Skin Editor</SPAN></B>.
+          Copyright (C) 2003 by ConnectedMedia. All Rights Reserved.<BR/>
+          The source code and data are trade secrets of ConnectedMedia.
+          Use only with permission. Unauthorized redistribution prohibited.<BR/>
+          Architecture and implemention by Don Hopkins.
+          For more information, please visit:
+          <A target="_blank"
+             href="http://www.Connected.TV">http://www.Connected.TV</A>
+        </DIV></TD>
+    </TR>
+  </TABLE></DIV>
+
+<SCRIPT src="Resources/Components/EditorMain.js"/>
+
+
+
+
+</SCRIPT></BODY></HTML>

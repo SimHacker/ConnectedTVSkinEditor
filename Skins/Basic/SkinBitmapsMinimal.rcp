@@ -1,0 +1,23 @@
+////////////////////////////////////////////////////////////////////////
+// Skin Basic Bitmaps Mono
+
+
+////////////////////////////////////////////////////////////////////////
+
+
+#include "SkinRsc.h"
+
+
+////////////////////////////////////////////////////////////////////////
+
+
+BITMAPFAMILY ID CalcSearchBitmapFamily "Images/CalcSearch1Bitmap.bmp" "" "" "" COMPRESS
+BITMAPFAMILY ID HardwareButtonsBitmapFamily "Images/HardwareButtons1Bitmap.bmp" "" "" "" COMPRESS
+BITMAPFAMILY ID DownStrokeBitmapFamily "Images/DownStroke1Bitmap.bmp" "" "" "" COMPRESS
+BITMAPFAMILY ID UpStrokeBitmapFamily "Images/UpStroke1Bitmap.bmp" "" "" "" COMPRESS
+BITMAPFAMILY ID RightStrokeBitmapFamily "Images/RightStroke1Bitmap.bmp" "" "" "" COMPRESS
+BITMAPFAMILY ID LeftStrokeBitmapFamily "Images/LeftStroke1Bitmap.bmp" "" "" "" COMPRESS
+BITMAPFAMILY ID ConnectedTVButtonBitmapFamily "Images/ConnectedTVButton1Bitmap.bmp" "" "" "" COMPRESS
+
+
+////////////////////////////////////////////////////////////////////////

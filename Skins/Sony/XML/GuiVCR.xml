@@ -1,0 +1,221 @@
+<gui
+  title="VCR"
+  width="160"
+  height="240"
+  bottomedge="15"
+  device="VCR"
+  onback="gotopage ConnectedTV"
+>
+
+  <!-- Copyright 2002-2003 ConnectedMedia Corporation --> 
+
+  <button
+    x="0" y="0"
+    width="62" height="16"
+    labeldy="2"
+    active="0"
+    framed="0"
+    source="guiname"
+  />
+
+  <button
+    x="62" y="0"
+    width="28" height="16"
+    labeldy="2"
+    active="0"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    x="0" y="16"
+    labeldx="2" labeldy="4"
+    width="160" height="20"
+    rows="1" columns="5"
+    look="7011" stretch="12" states="3" hires="1"
+  >
+
+    <cell
+      label=" Last"
+      pietouch=":send Last"
+    />
+
+    <cell
+      label=" Input"
+      pietouch=":send Input"
+    />
+
+    <cell
+      label=" Menu"
+      labeldx="-2"
+      pietouch=":send Menu"
+      piedown="Menu2:send Menu2"
+    />
+
+    <cell
+      label="Guide"
+      pietouch=":send Guide"
+    />
+
+    <cell
+      label=" View"
+      pietouch=":send View"
+    />
+
+  </button>
+
+  <button
+    x="96" y="36"
+    labeldx="2" labeldy="4"
+    width="64" height="80"
+    rows="4" columns="2"
+    look="7011" stretch="12" states="3" hires="1"
+  >
+
+    <cell
+      label=" Info"
+      pietouch=":send Info"
+      pieleft="Info2:send Info2"
+    />
+
+    <cell
+      label=" Help"
+      pietouch=":send Help"
+    />
+
+    <cell
+      look="0" framed="0" active="0"
+    />
+
+    <cell
+      label="SP/EP"
+      pietouch=":send SP/EP"
+    />
+
+    <cell
+      look="0" framed="0" active="0"
+    />
+
+    <cell
+      label="    +"
+      pietouch=":send +"
+    />
+
+    <cell
+      look="0" framed="0" active="0"
+    />
+
+    <cell
+      label="     -"
+      pietouch=":send -"
+    />
+
+  </button>
+
+  <button
+    x="30" y="40"
+    width="30" height="30"
+    rows="1" columns="1"
+    states="2" hires="1" look="7049"
+    framed="0"
+    pietouch=":send Up"
+  />
+
+  <button
+    x="0" y="70"
+    width="90" height="90"
+    rows="3" columns="3"
+    states="2" hires="1"
+    framed="0"
+  >
+
+    <cell
+      pietouch=":send Left"
+      look="7051"
+    />
+
+    <cell
+      pietouch=":send Select"
+      look="7057"
+    />
+
+    <cell
+      pietouch=":send Right"
+      look="7052"
+    />
+
+    <cell
+      pietouch=":send Record"
+      look="7037"
+    />
+
+    <cell
+      pietouch=":send Down"
+      look="7050"
+    />
+
+    <cell
+      pietouch=":send Stop"
+      look="7031"
+    />
+
+    <cell
+      pietouch=":send Rewind"
+      look="7034"
+    />
+
+    <cell
+      pietouch=":send Pause"
+      look="7032"
+    />
+
+    <cell
+      pietouch=":send FF"
+      look="7033"
+    />
+
+  </button>
+
+  <button
+    x="90" y="130"
+    width="30" height="30"
+    rows="1" columns="1"
+    states="2" hires="1"
+  >
+
+    <cell
+      pietouch=":send Play"
+      look="7030"
+    />
+
+  </button>
+
+  <button
+    x="128" y="120"
+    labeldx="1" labeldy="4"
+    width="32" height="40"
+    rows="2" columns="1"
+    look="7010" stretch="12" states="3" hires="1" 
+    onsize="StickToBottom 0"
+  >
+
+    <cell
+      label=" Box"
+      pieleft="  TV:gotopage TV"
+      pieup=" DVR:gotopage DVR"
+      piedown=" Box:gotopage Box"
+      pietouch=":gotopage Box"
+    />
+
+    <cell
+      label="Shows"
+      pietouch=":gotopage ConnectedTV"
+      pieup="Categories:Browse Categories"
+      piedown="Stations:gotopage Stations"
+      pieleft="Home:gotopage Home"
+    />
+
+  </button>
+
+</gui>

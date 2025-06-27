@@ -1,0 +1,215 @@
+<gui
+  title="Home"
+  width="160"
+  height="240"
+  bottomedge="15"
+  cachetype="1"
+  onback="quit"
+  buttonpageup="gotopage Basics"
+  buttonpagedown="gotopage Help"
+  buttonjogup="gotopage Basics"
+  buttonjogdown="gotopage Help"
+  buttonjogpushed="Timeline"
+  buttonnavleft="gotopage Basics"
+  buttonnavright="gotopage Help"
+  buttonnavselect="Timeline"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="1" y="1"
+    width="62" height="13"
+    active="0"
+    framed="0"
+    label="Home"
+  />
+
+  <button
+    x="65" y="1"
+    width="28" height="13"
+    active="0"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    source="Expires"
+    x="1" y="15"
+    width="158" height="13"
+    wrap="0"
+    framed="0"
+    active="0"
+  />
+
+  <button
+    x="71" y="32"
+    width="40" height="28"
+    labeldy="8"
+    label="    Help"
+    pietouch=":gotopage Help"
+    look="7016" states="2" stretch="4"
+    />
+
+  <button
+    x="115" y="32"
+    width="44" height="28"
+    labeldx="1" labeldy="8"
+    label="Category"
+    pietouch=":Browse Categories"
+    look="7010" states="2" stretch="4"
+  />
+
+
+  <button
+    x="71" y="64"
+    width="44" height="30"
+    labeldy="9"
+    look="7011" states="2" stretch="4"
+    rows="1" columns="1"
+  >
+
+    <cell
+      label="    Input"
+      pietouch=":send Input"
+    />
+
+  </button>
+
+  <button
+    alt="Power"
+    x="122" y="64"
+    width="30" height="30"
+    labeldx="1" labeldy="8"
+    pietouch=":send Power"
+    look="7038" states="2"
+  />
+
+  <button
+    x="1" y="99"
+    width="90" height="60"
+    labeldy="9"
+    look="7014" states="2" stretch="4"
+    rows="2" columns="2"
+  >
+
+    <cell
+      label="     VCR"
+      pietouch=":gotopage VCR"
+      piedown="   cancel:"
+    />
+
+    <cell
+      label="     DVR"
+      pietouch=":gotopage DVR"
+    />
+
+    <cell
+      label="     Box"
+      pietouch=":gotopage Box"
+    />
+
+    <cell
+      label="      TV"
+      pietouch=":gotopage TV"
+    />
+
+  </button>
+
+  <button
+    x="1" y="32"
+    width="66" height="62"
+    labeldy="9"
+    look="7016" states="2" stretch="4"
+    rows="2" columns="2"
+  >
+
+    <cell
+      label="  Quit"
+      pietouch="  Bye!:quit"
+      pieup="cancel:"
+      piedown="cancel:"
+    />
+
+    <cell
+      label=" Status"
+      labeldx="-1"
+      pietouch=":gotopage Status"
+    />
+
+    <cell
+      label=" Setup"
+      labeldx= "1"
+      pietouch=":gotopage Setup"
+    />
+
+    <cell
+      label="  Train"
+      pietouch=":train"
+    />
+
+  </button>
+
+  <button
+    x="115" y="99"
+    width="44" height="60"
+    labeldx="-1" labeldy="9"
+    look="7010" states="2" stretch="4"
+    rows="2" columns="1"
+  >
+
+    <cell
+      label=" Show List"
+      pietouch=":ShowList"
+    />
+
+    <cell
+      label="  Timeline"
+      pietouch=":Timeline"
+    />
+
+  </button>
+
+  <button
+    x="65" y="164"
+    width="30" height="60"
+    look="7011" states="2"
+    rows="2" columns="1"
+  >
+
+   <cell
+      alt="Vol+"
+      look="7040"
+      labeldx="4" labeldy="12"
+      pietouch="Vol+:send Volume +"
+    />
+
+   <cell
+      alt="Vol-"
+      look="7041"
+      labeldx="4" labeldy="6"
+      pietouch="Vol-:send Volume -"
+    />
+
+  </button>
+
+  <button
+    x="97" y="165"
+    width="30" height="30"
+    labeldx="2" labeldy="8"
+    alt="Mute"
+    pietouch="Mute:send Mute"
+    look="7039" states="2"
+  />
+
+  <button
+    alt="Power"
+    x="129" y="165"
+    width="30" height="30"
+    labeldx="1" labeldy="8"
+    pietouch=":send Power"
+    look="7038" states="2"
+  />
+
+</gui>

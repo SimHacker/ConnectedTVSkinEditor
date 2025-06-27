@@ -1,0 +1,296 @@
+<gui
+  title="SVOD"
+  width="160"
+  height="240"
+  bottomedge="15"
+  onback="gotopage SHome"
+ >
+
+  <!-- Copyright 2002-2003 ConnectedMedia Corporation --> 
+
+  <!-- Cable upper left marker -->
+
+  <button
+    x="0" y="0"
+    width="115" height="25"
+    framed="0"
+    look="8001" states="1" hires="1"
+    action="gotopage SHome"
+  />
+
+  <!-- Cable Power button -->
+
+  <button
+    x="110" y="0"
+    width="50" height="25"
+    framed="0"
+    look="8002" states="1" hires="1"
+    action="send Power"
+  />
+
+  <!-- Four buttons: 10Key, Cursor, VOD(pushed) and EPG -->
+
+  <button
+    x="0" y="25"
+    width="40" height="18"
+    framed="0"
+    look="8006" states="1" hires="1"
+    action="gotopage S10Key"
+  />
+
+  <button
+    x="40" y="25"
+    width="40" height="18"
+    framed="0"
+    look="8007" states="1" hires="1"
+    action="gotopage SCursor"
+  />
+
+  <button
+    x="80" y="25"
+    width="40" height="18"
+    framed="0"
+    look="8018" states="1" hires="1"
+  />
+
+  <button
+    x="120" y="25"
+    width="40" height="18"
+    framed="0"
+    look="8009" states="1" hires="1"
+    action="gotopage SShows"	  
+  />
+
+  <!-- VOD Content Background Bands -->
+
+  <button
+    x="0" y="43"
+    width="160" height="115"
+    framed="0"
+    active="0"
+    look="8085" states="1" hires="1"
+    bands="2" background="1"
+  />
+
+  <!-- VOD and transport Buttons -->
+
+  <!-- Play Button -->
+
+  <button
+    x="56" y="43"
+    width="47" height="35"
+    framed="0"
+    look="8061" states="1" hires="1"
+    overbackground="1"
+    action="send Play"
+  />
+
+  <!-- Stop Button -->
+
+  <button
+    x="58" y="122"
+    width="44" height="33"
+    framed="0"
+    look="8062" states="1" hires="1"
+    overbackground="1"
+    action="send Stop"
+    pietouch=":gotopage SCursor"
+  />
+
+  <!-- Rewind Button -->
+
+  <button
+    x="30" y="78"
+    width="28" height="43"
+    framed="0"
+    look="8063" states="1" hires="1"
+    overbackground="1"
+    action="send Rewind"
+  />
+
+  <!-- Pause Button -->
+
+  <button
+    x="58" y="78"
+    width="44" height="44"
+    framed="0"
+    look="8064" states="1" hires="1"
+    overbackground="1"
+    action="send Pause"
+  />
+
+  <!-- FastForward Button -->
+
+  <button
+    x="102" y="78"
+    width="29" height="44"
+    framed="0"
+    look="8065" states="1" hires="1"
+    overbackground="1"
+    action="send FF"
+  />
+
+  <!-- Other VOD buttons -->
+
+  <!-- Movies Button -->
+
+  <button
+    x="0" y="43"
+    width="56" height="35"
+    framed="0"
+    look="8066" states="1" hires="1"
+    overbackground="1"
+    action="send Movies"
+    pietouch=":gotopage SCursor"
+  />
+
+  <!-- Rented Videos button -->
+
+  <button
+    x="103" y="43"
+    width="57" height="35"
+    framed="0"
+    look="8067" states="1" hires="1"
+    overbackground="1"
+    action="send Rented Videos"
+    pietouch=":gotopage SCursor"
+  />
+
+  <!--  Control Button Block - background and 11 buttons -->
+
+  <!-- Control area background with Volume etc -->
+
+  <button
+    x="0" y="155"
+    width="160" height="71"
+    framed="0"
+    active="0"
+    look="8090" states="1" hires="1"
+    background="1"
+  />
+
+  <!-- Mute button -->
+
+  <button
+    x="26" y="155"
+    width="26" height="29"
+    framed="0"
+    look="8043" states="1" hires="1"
+    overbackground="1"
+    action="send Mute"
+  />
+
+  <!-- Volume+ button -->
+
+  <button
+    x="52" y="166"
+    width="30" height="31"
+    framed="0"
+    look="8055" states="1" hires="1"
+    overbackground="1"
+    action="send Volume +"
+  />
+
+  <!-- Volume- button -->
+
+  <button
+    x="52" y="197"
+    width="30" height="29"
+    framed="0"
+    look="8056" states="1" hires="1"
+    overbackground="1"
+    action="send Volume -"
+  />
+
+  <!-- Channel+ button -->
+
+  <button
+    x="82" y="166"
+    width="28" height="31"
+    framed="0"
+    look="8053" states="1" hires="1"
+    overbackground="1"
+    action="send Channel +"
+  />
+
+  <!-- Channel- button -->
+
+  <button
+    x="82" y="197"
+    width="28" height="29"
+    framed="0"
+    look="8054" states="1" hires="1"
+    overbackground="1"
+    action="send Channel -"
+  />
+
+  <!-- Page+ button -->
+
+  <button
+    x="134" y="170"
+    width="26" height="28"
+    framed="0"
+    look="8057" states="1" hires="1"
+    overbackground="1"
+    action="send Page +"
+  />
+
+  <!-- Page- button -->
+
+  <button
+    x="134" y="198"
+    width="26" height="28"
+    framed="0"
+    look="8058" states="1" hires="1"
+    overbackground="1"
+    action="send Page -"
+  />
+
+  <!-- Forward button -->
+
+  <button
+    x="110" y="186"
+    width="24" height="40"
+    framed="0"
+    look="8051" states="1" hires="1"
+    overbackground="1"
+    action="send Forward"
+  />
+
+  <!-- Back button -->
+
+  <button
+    x="26" y="184"
+    width="26" height="42"
+    framed="0"
+    look="8052" states="1" hires="1"
+    overbackground="1"
+    action="send Back"
+  />
+
+  <!-- Favorite button -->
+
+  <button
+    x="110" y="155"
+    width="24" height="31"
+    framed="0"
+    look="8044" states="1" hires="1"
+    overbackground="1"
+    action="send Favorite"
+  />
+
+  <!-- Viewer button (People icon) -->
+
+  <button
+    x="0" y="155"
+    width="26" height="29"
+    framed="0"
+    look="8042" states="1" hires="1"
+    overbackground="1"
+    action="send People"
+    pietouch=":gotopage SCursor"
+  />
+
+  <!-- End Control Area buttons section -->
+
+</gui>

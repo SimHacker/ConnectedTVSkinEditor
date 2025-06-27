@@ -1,0 +1,101 @@
+========================================================================
+App Icon Family
+
+	AppIcon			#1002	1:1000 2:1001        8:1002
+
+========================================================================
+Bitmap Family
+
+	UpArrow			#1450	1:1450
+	DownArrow		#1451	1:1451
+
+	Splash			#1500	1:1300        4:1400
+		Banding -- Splash screen draws this and all consecutive bitmap
+		resource ids after this, because of the limit on palm bitmap
+		size and tall screens. The bitmap id after the last splash
+		bitmap must be undefined. In this skin we don't use color or
+		support tall screens, so the splash screen fits in one bitmap. 
+
+	NavStretchButton	#7010	1:7210 2:7110        8:7010
+	IRStretchButton		#7011	1:7210 2:7110        8:7011
+	BrowseStretchButton	#7012	1:7213 2:7113        8:7012
+	ContentButton		#7013	1:7213 2:7113        8:7013
+	DeviceStretchButton	#7014	1:7210 2:7110        8:7014
+	TimeStretchButton	#7015	1:7210 2:7110        8:7016
+	SystemStretchButton	#7016	1:7210 2:7110        8:7016
+	NeutralStretchButton	#7017	1:7217	             8:7017
+	CalcSearch		#7018	1:7218 2:7118
+	HardwareButtons		#7020	1:7220 2:7120
+	ConnectedTVButton	#7021	1:7221 2:7121        8:7021
+	LeftStroke		#7022	1:7222
+	RightStroke		#7023	1:7223
+	UpStroke		#7024	1:7224
+	DownStroke		#7025	1:7225
+	PlayIRButton		#7030	1:7230 2:7130        8:7030
+	StopIRButton		#7031	1:7231 2:7131        8:7031
+	PauseIRButton		#7032	1:7232 2:7132        8:7032
+	FastForwardIRButton	#7033	1:7233 2:7133        8:7033
+	RewindIRButton		#7034	1:7234 2:7134        8:7034
+	RecordIRButton		#7037	1:7237 2:7137        8:7037
+	PowerIRButton		#7038	1:7238 2:7138        8:7038
+	MuteIRButton		#7039	1:7239 2:7139        8:7039
+	VolUpIRButton		#7040	1:7240 2:7140        8:7040
+	VolDownIRButton		#7041	1:7241 2:7141        8:7041
+	UpIRButton		#7049	1:7249 2:7149        8:7049
+	DownIRButton		#7050	1:7250 2:7150        8:7050
+	LeftIRButton		#7051	1:7251 2:7151        8:7051
+	RightIRButton		#7052	1:7252 2:7152        8:7052
+	PlusIRButton		#7055	1:7255 2:7155        8:7055
+	MinusIRButton		#7056	1:7256 2:7156        8:7056
+	SelectIRButton		#7057	1:7257 2:7157        8:7057
+
+========================================================================
+Bitmaps
+
+	Bitmap ID 1000		1000
+	Bitmap ID 1001		1001
+	Bitmap ID 1002		1002
+
+	Company Logo 1		1110
+
+	Splash2			1300
+	Splash16		1400
+
+	UpArrow1		1450
+	DownArrow1		1451
+
+	NavStretchButton8	7010
+	IRStretchButton8	7011
+	Bitmap ID 7009		7012
+	ContentButton8		7013
+	DeviceStretchButton8	7014
+	SystemStretchButton8	7016
+	NeutralStretchButton8	7017
+	CalcSearchButton8	7018
+	ConnectedTVButton8	7021
+	LeftStroke1		7022
+	RightStroke1		7023
+	UpStroke1		7024
+	DownStroke1		7025
+	PlayIRButton8		7030
+	StopIRButton8		7031
+	PauseIRButton8		7032
+	FastForwardIRButton8	7033
+	RewindIRButton8		7034
+	RecordIRButton8		7037
+	PowerIRButton8		7038
+	MuteIRButton8		7039
+	VolUpIRButton8		7040
+	VolDownIRButton8	7041
+	UpIRButton8		7049
+	DownIRButton8		7050
+	LeftIRButton8		7051
+	RightIRButton8		7052
+	PlusIRButton8		7055
+	MinusIRButton8		7056
+	SelectIRButton8		7057
+
+	NavStretchButton2	7110
+	IRStretchButton2	7111
+	BrowseStretchButton2	7112
+

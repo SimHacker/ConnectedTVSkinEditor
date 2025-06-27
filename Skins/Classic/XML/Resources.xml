@@ -1,0 +1,125 @@
+<?xml version='1.0'?>
+<?xml-stylesheet type="text/xsl" href="Resources.xsl" ?>
+
+<resources>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <comment>ConnectedTV Logo Tiles</comment>
+
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="1500" 
+    url="Images/ConnectedTVLogo320x450-0.bmp" 
+    width="320" height="90"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="1501" 
+    url="Images/ConnectedTVLogo320x450-1.bmp" 
+    width="320" height="90"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="1502" 
+    url="Images/ConnectedTVLogo320x450-2.bmp" 
+    width="320" height="90"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="1503" 
+    url="Images/ConnectedTVLogo320x450-3.bmp" 
+    width="320" height="90"
+    compress="1"/>
+  <resource
+    cmd="BITMAPCOLOR16K" type="Tbmp" id="1504" 
+    url="Images/ConnectedTVLogo320x450-4.bmp" 
+    width="320" height="90"
+    compress="1"/>
+
+  <comment>Default User</comment>
+
+  <resource
+    cmd="DATA" type="xBIN" id="5000" 
+    url="XML/UserDefaultUser.xml"/>
+
+  <comment>Default Categories</comment>
+
+  <resource
+    cmd="DATA" type="xBIN" id="5001" 
+    url="XML/Categories.xml"/>
+
+  <comment>Default Devices</comment>
+
+  <resource
+    cmd="DATA" type="xBIN" id="5002" 
+    url="XML/DeviceBox.xml"/>
+
+<!--
+  <resource
+    cmd="DATA" type="xBIN" id="5003" 
+    url="XML/DeviceCD.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="5004" 
+    url="XML/DeviceDVD.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="5005" 
+    url="XML/DeviceDVR.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="5006" 
+    url="XML/DeviceTV.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="5007" 
+    url="XML/DeviceVCR.xml"/>
+-->
+
+<!--
+  <comment>Default Room</comment>
+
+  <resource
+    cmd="DATA" type="xBIN" id="5008" 
+    url="XML/RoomDefaultRoom.xml"/>
+-->
+
+  <comment>Default Guis</comment>
+
+  <resource
+    cmd="DATA" type="xBIN" id="6000" 
+    url="XML/GuiBrowser.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6001" 
+    url="XML/GuiConnectedTV.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6002" 
+    url="XML/GuiSetup.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6003" 
+    url="XML/GuiHello.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6004" 
+    url="XML/GuiHome.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6005" 
+    url="XML/GuiDetails.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6006" 
+    url="XML/GuiStations.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6007" 
+    url="XML/GuiBox.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6008" 
+    url="XML/GuiDVD.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6009" 
+    url="XML/GuiDVR.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6010" 
+    url="XML/GuiTV.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6011" 
+    url="XML/GuiVCR.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6012" 
+    url="XML/GuiHelp.xml"/>
+  <resource
+    cmd="DATA" type="xBIN" id="6013" 
+    url="XML/GuiStatus.xml"/>
+
+</resources>

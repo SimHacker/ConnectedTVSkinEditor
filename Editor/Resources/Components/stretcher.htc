@@ -1,0 +1,230 @@
+<?XML version="1.0"?>
+
+<PACKAGE>
+
+  <?COMPONENT ERROR="TRUE" DEBUG="TRUE"?>
+
+  <COMMENT>
+    Stretcher Component.
+    Copyright (C) 2003 by Don Hopkins.
+    All Rights Reserved.
+  </COMMENT>
+
+  <COMPONENT ID="stretcher">
+
+    <IMPLEMENTS ID="stretcher" TYPE="Behavior" DEFAULT="">
+      <ATTACH FOR="element" EVENT="onreadystatechange" handler="DoOnReadyStateChange"/>
+      <ATTACH EVENT="onmousedown" handler="DoOnMouseDown"/>
+      <ATTACH EVENT="onmousemove" handler="DoOnMouseMove"/>
+      <ATTACH EVENT="onmouseup" handler="DoOnMouseUp"/>
+    </IMPLEMENTS>
+
+    <IMPLEMENTS TYPE="Automation">
+      <PUBLIC>
+        <PROPERTY NAME="stretchtop" INTERNALNAME="StretchTop"/>
+        <PROPERTY NAME="stretchleft" INTERNALNAME="StretchLeft"/>
+        <PROPERTY NAME="stretchbottom" INTERNALNAME="StretchBottom"/>
+        <PROPERTY NAME="stretchright" INTERNALNAME="StretchRight"/>
+        <PROPERTY NAME="minwidth" INTERNALNAME="MinWidth"/>
+        <PROPERTY NAME="minheight" INTERNALNAME="MinHeight"/>
+      </PUBLIC>
+    </IMPLEMENTS>
+
+    <SCRIPT LANGUAGE="JScript">
+
+
+////////////////////////////////////////////////////////////////////////
+// Public Globals
+
+
+var StretchTop = false;
+var StretchLeft = false;
+var StretchRight = false;
+var StretchBottom = false;
+
+var MinWidth = 40;
+var MinHeight = 40;
+
+
+////////////////////////////////////////////////////////////////////////
+// Private Globals
+
+
+var Tracking = false;
+
+var CurX = 0;
+var CurY = 0;
+var OffsetX = 0;
+var OffsetY = 0;
+
+var GrabLeft = false;
+var GrabTop = false;
+var GrabRight = false;
+var GrabBottom = false;
+
+var GrabLeftStart = 0;
+var GrabTopStart = 0;
+var GrabRightStart = 0;
+var GrabBottomStart = 0;
+
+
+////////////////////////////////////////////////////////////////////////
+// Utilities
+
+
+function GetBorder(str)
+{
+  var i = parseInt(str);
+  if (isNaN(i)) {
+    i = 0;
+  } // if
+  return i;
+}
+
+
+////////////////////////////////////////////////////////////////////////
+// Handlers
+
+
+function DoOnReadyStateChange()
+{
+  if (element.readyState != "complete") {
+    return;
+  } // if
+
+  element.style.overflow = "auto";
+}
+
+
+function DoOnMouseDown()
+{
+  var r = element.getBoundingClientRect();
+  var left = r.left;
+  var top = r.top;
+  var right = r.right;
+  var bottom = r.bottom;
+  var width = right - left;
+  var height = bottom - top;
+
+  OffsetX = -left;
+  OffsetY = -top;
+
+  CurX = event.clientX + OffsetX;
+  CurY = event.clientY + OffsetY;
+
+  DownX = CurX;
+  DownY = CurY;
+
+  var style = element.style;
+
+  var borderleft = GetBorder(style.borderLeftWidth);
+  var bordertop = GetBorder(style.borderTopWidth);
+  var borderright = GetBorder(style.borderRightWidth);
+  var borderbottom = GetBorder(style.borderBottomWidth);
+
+  GrabLeft = (CurX < borderleft);
+  GrabRight = (CurX >= (width - borderright));
+  GrabTop = (CurY < bordertop);
+  GrabBottom = (CurY >= (height - borderbottom));
+
+  if (GrabLeft || GrabRight || GrabTop || GrabBottom) {
+    GrabLeftStart = left;
+    GrabTopStart = top;
+    GrabRightStart = right;
+    GrabBottomStart = bottom;
+
+    event.cancelBubble = true;
+    element.setCapture(true);
+    Tracking = true;
+  } // if
+
+}
+
+
+function DoOnMouseMove()
+{
+  if (!Tracking) {
+    return;
+  } // if
+
+  CurX = event.clientX + OffsetX;
+  CurY = event.clientY + OffsetY;
+
+  var dx = CurX - DownX;
+  var dy = CurY - DownY;
+  var heightstart = GrabBottomStart - GrabTopStart;
+  var widthstart = GrabRightStart - GrabLeftStart;
+
+  var style = element.style;
+
+  var borderleft = parseInt(style.borderLeft);
+  var bordertop = parseInt(style.borderTop);
+  var borderright = parseInt(style.borderRight);
+  var borderbottom = parseInt(style.borderBottom);
+
+  var minw = parseInt(MinWidth);
+  if (isNaN(minw) || (minw < 1)) {
+    minw = 1;
+  } // if
+
+  var minh = parseInt(MinHeight);
+  if (isNaN(minh) || (minh < 1)) {
+    minh = 1;
+  } // if
+
+  if ((StretchRight && GrabRight) ||
+      (StretchLeft && GrabLeft)) {
+    if (GrabLeft) {
+      dx = -dx;
+    } // if
+    var width = widthstart + dx;
+    if (width < minw) {
+      width = minw;
+    } // if
+    style.width = width;
+  } // if
+
+  if ((StretchBottom && GrabBottom) ||
+      (StretchTop && GrabTop)) {
+    if (GrabTop) {
+      dy = -dy;
+    } // if
+    var height = heightstart + dy;
+    if (height < minh) {
+      height = minh;
+    } // if
+    style.height = height;
+  } // if
+
+}
+
+
+function DoOnMouseUp()
+{
+  if (Tracking) {
+    DoOnMouseMove();
+    element.releaseCapture();
+    Tracking = false;
+  } // if
+}
+
+
+////////////////////////////////////////////////////////////////////////
+
+
+    </SCRIPT>
+
+  </COMPONENT>
+
+  <COMMENT>
+
+HEY EMACS!!!
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+End:
+GOOD EMACS.
+
+  </COMMENT>
+
+</PACKAGE>

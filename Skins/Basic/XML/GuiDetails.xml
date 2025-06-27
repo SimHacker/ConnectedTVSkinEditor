@@ -1,0 +1,117 @@
+<gui
+  title="Show Details"
+  width="160"
+  height="240"
+  bottomedge="15"
+  browser="ProgramDescriptions"
+  pagetype="6"
+  cellsperpage="1"
+  cachetype="1"
+  onback="gotopage ConnectedTV"
+>
+
+  <!--  Copyright 2002-2003 ConnectedMedia Corporation   --> 
+
+  <button
+    x="1" y="1"
+    width="62" height="13"
+    active="0"
+    framed="0"
+    source="guiname"
+  />
+
+  <button
+    x="65" y="1"
+    width="28" height="13"
+    active="0"
+    framed="0"
+    clock="1"
+    source="showclock"
+  />
+
+  <button
+    id="Category"
+    label="Category"
+    x="95" y="0"
+    labeldx="1" labeldy="4"
+    width="64" height="19"
+    source="categoryname"
+    style="4"
+    pietouch="  Categories:Browse Categories"
+    piedown="   Show List:ShowList"
+    pieup="      Timeline:Timeline"
+    look="7010" states="2" stretch="4"
+  />
+
+  <button
+    id="Description"
+    x="1" y="19"
+    width="158" height="91"
+    labeldx="1" labeldy="1"
+    background="1"
+    wrap="1"
+    source="currenttimelineprogramdescription"
+    pietouch="                        Timeline:Timeline"
+    pieup="                    Previous Station:changechannel -1"
+    piedown="                           Next Station:changechannel 1"
+    xpieup="                        Timeline:gotopage ConnectedTV"
+    xpiedown="                     Show List:ShowList"
+    look="7019" states="2" stretch="4"
+    onsize="StretchToBottom 49"
+  />
+
+  <button
+    alt="Tune Show"
+    comment="ConnectedTV Icon button to tune show"
+    x="121" y="76"
+    width="38" height="34"
+    labeldx="5" labeldy="6"
+    pietouch="Tune Show:gotocurrentchannel"
+    piedown="Last Chan:send Last"
+    pieup="   cancel:"
+    look="7021" states="2" stretch="4"
+    wrap="1"
+    onsize="StickToBottom 49"
+    overlay="1"
+  />
+
+  <button
+    id="Schedule"
+    x="1" y="112"
+    labeldx="1" labeldy="1"
+    width="108" height="48"
+    wrap="1"
+    source="currenttimelineprogramschedule"
+    active="0"
+    look="7017" states="1" stretch="4"
+    onsize="StickToBottom 1"
+  />
+
+  <button
+    x="109" y="111"
+    width="50" height="24"
+    labeldx="2" labeldy="6"
+    label="My Rating"
+    pieup="  Favorite:RateCurrentProgram0 2"
+    piedown="     Bad:RateCurrentProgram0 -1"
+    pieleft="  Normal:RateCurrentProgram0 0"
+    pieright="no change:"
+    pietouch="no change:"
+    look="7016" states="2" stretch="4"
+    onsize="StickToBottom 25"
+  />
+
+  <button
+    x="109" y="135"
+    width="50" height="24"
+    labeldx="3" labeldy="6"
+    label=" Timeline"
+    pietouch=" Timeline:Timeline"
+    pieup="Show List:ShowList"
+    pieleft=" Stations:gotopage Stations"
+    piedown="Categories:Browse Categories"
+    look="7010" states="2" stretch="4"
+    onsize="StickToBottom 1"
+  />
+
+</gui>
